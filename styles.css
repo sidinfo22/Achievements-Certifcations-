@@ -5,11 +5,13 @@
     box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: white; /* Standard white background */
+    background-color: white;
     color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Header Styling */
@@ -17,12 +19,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px;
     background: none;
 }
 
 .header .name {
-    font-size: 1.5em;
+    font-size: 1.2em; /* Slightly smaller font size */
     font-weight: bold;
     color: black;
 }
@@ -33,69 +35,147 @@ body {
     gap: 15px;
 }
 
-.header .icons a {
-    color: black;
+.header .icon-linkedin i {
+    color: #0a66c2; /* LinkedIn Blue */
     font-size: 1.5em;
-    text-decoration: none;
 }
 
-/* Mobile Menu Icon (Only visible on mobile) */
+.header .icon-youtube i {
+    color: #ff0000; /* YouTube Red */
+    font-size: 1.5em;
+}
+
+.view-projects-btn {
+    background-color: #0073e6; /* Blue button */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
 .mobile-menu-icon {
     display: none;
+}
+
+/* Banner Styling */
+.banner img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info h2 {
+    font-size: 1.4em;
+    color: black;
+    margin: 0;
+}
+
+.profile-info h3 {
+    font-size: 1.1em;
+    color: gray;
+    margin: 5px 0;
+}
+
+.profile-info p {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+/* Certifications Section */
+.certifications {
+    text-align: center;
+    padding: 20px;
+}
+
+.certifications h2 {
     font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.certifications h3 {
+    font-size: 1.3em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.certification-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.certification-gallery img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer Styling */
 footer {
+    background-color: white;
     text-align: center;
     padding: 20px;
-    background-color: white;
-    color: black;
-    margin-top: 20px;
+    border-top: 1px solid #ddd;
 }
 
-.view-projects-btn {
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    margin: 20px 0;
-    cursor: pointer;
-    display: inline-block;
-}
-
-/* Footer Info Section */
 .footer-info {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.contact-info {
+    display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.footer-info p {
-    margin: 5px 0;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.footer-info p i {
+.location {
+    margin-top: 10px;
     font-size: 1em;
 }
 
-.copyright {
+footer i {
+    color: black;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+footer .copyright {
     margin-top: 10px;
-    text-align: right;
-    width: 100%;
+    font-size: 0.85em;
+    color: gray;
 }
 
 /* Responsive Styling */
 @media (max-width: 768px) {
-    /* Mobile header adjustments */
     .mobile-menu-icon {
         display: inline-block;
+        font-size: 1.5em;
+        color: black;
     }
-    .icons .fa-linkedin, .icons .fa-youtube {
-        display: inline-block;
+    .header .icons > .view-projects-btn {
+        display: none; /* Hide button on mobile if needed */
     }
 }
