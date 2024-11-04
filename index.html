@@ -4,72 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awards and Achievements</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset and styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Header styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            position: relative;
+        }
+        .logo {
+            font-size: 1.5em;
+            color: gold;
+        }
+        .social-icons {
+            display: flex;
+            align-items: center;
+        }
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+            margin: 0 5px;
+        }
+
+        /* Hamburger menu icon */
+        .menu-toggle {
+            display: none;
+            font-size: 1.5em;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Dropdown menu */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background-color: #000;
+            padding: 10px;
+            border-radius: 5px;
+            width: 150px;
+        }
+        .dropdown-menu a {
+            display: block;
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .dropdown-menu a:hover {
+            background-color: gold;
+            color: #000;
+        }
+
+        /* Mobile styling */
+        @media (max-width: 768px) {
+            .social-icons {
+                display: none;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .menu-open .dropdown-menu {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
 
 <header>
-    <h1>Sidiq Daniel</h1>
-    <h2>Cybersecurity Specialist</h2>
-    <div class="tabs">
-        <a href="index.html" class="tab">Home</a>
-        <a href="gallery.html" class="tab">Gallery</a>
+    <div class="logo">Sidiq Daniel</div>
+    <div class="social-icons">
+        <a href="https://linkedin.com/in/sidiqdaniel" target="_blank">
+            <img src="path/to/linkedin-icon.png" alt="LinkedIn">
+        </a>
+        <a href="https://youtube.com/channel/yourchannel" target="_blank">
+            <img src="path/to/youtube-icon.png" alt="YouTube">
+        </a>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="dropdown-menu">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
     </div>
 </header>
 
-<main>
-    <div class="profile">
-        <img src="path/to/profile-picture.jpg" alt="Profile Picture">
-        <div>
-            <h2>Sidiq Daniel</h2>
-            <h3>Cybersecurity Specialist</h3>
-        </div>
-    </div>
-
-    <div class="statement">
-        <p>
-            Dedicated and results-driven IT professional focused on cybersecurity. Committed to safeguarding digital assets and advancing security protocols through continuous learning and certifications.
-        </p>
-    </div>
-
-    <h3>Degrees and Educational Achievements</h3>
-    <div class="gallery">
-        <div class="card">
-            <img src="path/to/degree1.jpg" alt="Degree 1">
-            <p>Degree Title 1</p>
-        </div>
-        <!-- Add more cards as needed -->
-    </div>
-
-    <h3>Professional Tech Certifications</h3>
-    <div class="gallery">
-        <div class="card">
-            <img src="path/to/cert1.jpg" alt="Certification 1">
-            <p>Certification Title 1</p>
-        </div>
-        <!-- Add more cards as needed -->
-    </div>
-
-    <h3>Industry Standardized Exams</h3>
-    <div class="gallery">
-        <div class="card">
-            <img src="path/to/exam1.jpg" alt="Exam 1">
-            <p>Exam Title 1</p>
-        </div>
-        <!-- Add more cards as needed -->
-    </div>
-</main>
-
-<footer>
-    <p>&copy; 2024 Sidiq Daniel</p>
-    <div class="contact-info">
-        <p>Email: sidinfo21@gmail.com | Phone: (516) 368-6457 | Location: New York, New York</p>
-    </div>
-    <div class="social-icons">
-        <a href="https://linkedin.com/in/sidiqdaniel" target="_blank"><img src="path/to/linkedin-icon.png" alt="LinkedIn"></a>
-        <a href="https://youtube.com/channel/yourchannel" target="_blank"><img src="path/to/youtube-icon.png" alt="YouTube"></a>
-    </div>
-</footer>
+<script>
+    function toggleMenu() {
+        document.body.classList.toggle('menu-open');
+    }
+</script>
 
 </body>
 </html>
