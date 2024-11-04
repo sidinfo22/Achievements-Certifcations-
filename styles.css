@@ -1,0 +1,101 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* Standard white background */
+    color: black;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: none;
+}
+
+.header .name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+}
+
+.header .icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header .icons a {
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+/* Mobile Menu Icon (Only visible on mobile) */
+.mobile-menu-icon {
+    display: none;
+    font-size: 1.5em;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+}
+
+.view-projects-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin: 20px 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Footer Info Section */
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-info p i {
+    font-size: 1em;
+}
+
+.copyright {
+    margin-top: 10px;
+    text-align: right;
+    width: 100%;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    /* Mobile header adjustments */
+    .mobile-menu-icon {
+        display: inline-block;
+    }
+    .icons .fa-linkedin, .icons .fa-youtube {
+        display: inline-block;
+    }
+}
