@@ -13,7 +13,7 @@
         }
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9fafb;
+            background-color: #ffffff;
             color: #333;
             line-height: 1.6;
             display: flex;
@@ -22,38 +22,47 @@
             padding: 20px;
         }
 
-        /* Header styling with icons and logo/title */
+        /* Header styling */
         header {
             background-color: #000;
             color: #fff;
+            padding: 20px;
             width: 100%;
             text-align: center;
-            padding: 20px;
             position: relative;
         }
         header h1 {
-            margin: 0;
-            font-size: 1.5em;
+            font-size: 2em;
+            color: gold;
         }
-        .logo-title {
-            position: absolute;
-            top: 50%;
-            left: 20px;
-            transform: translateY(-50%);
-            font-weight: bold;
+        header h2 {
             font-size: 1.2em;
+            color: #fff;
         }
-        .social-icons {
+        /* Tabs at the bottom */
+        .tabs {
             position: absolute;
-            top: 50%;
-            right: 20px;
-            transform: translateY(-50%);
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
             display: flex;
-            gap: 10px;
+            width: 100%;
+            max-width: 200px;
+            justify-content: space-between;
+            padding: 10px 0;
         }
-        .social-icons img {
-            width: 24px;
-            height: 24px;
+        .tab {
+            width: 50%;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            background-color: #333;
+            padding: 10px 0;
+            border-top: 2px solid gold;
+        }
+        .tab:hover {
+            background-color: gold;
+            color: #000;
         }
 
         /* Main content area */
@@ -64,167 +73,141 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 30px;
-            margin-top: 20px;
+            margin-top: 40px;
         }
 
-        /* Professional statement section */
-        .statement {
-            margin-bottom: 30px;
-        }
-        .statement h2 {
-            color: #000;
-            font-size: 1.4em;
-            border-left: 5px solid #000;
-            padding-left: 10px;
-        }
-        .statement p {
-            margin-top: 10px;
-        }
-
-        /* Gallery styling */
-        .gallery {
+        /* Profile section */
+        .profile {
             display: flex;
-            flex-wrap: wrap;
+            align-items: center;
             gap: 15px;
-            justify-content: center;
+            margin-bottom: 20px;
         }
-        .gallery-item {
-            width: calc(33.333% - 10px);
-            background-color: #f0f0f0;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        .profile img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
         }
-        .gallery-item img {
-            width: 100%;
-            height: auto;
-            display: block;
+        .profile h2 {
+            font-size: 1.6em;
+            color: gold;
+            margin: 0;
         }
-        .gallery-item p {
-            padding: 10px;
-            text-align: center;
-            font-weight: bold;
+        .profile h3 {
+            font-size: 1em;
             color: #333;
         }
 
-        /* Button styling */
-        .view-projects-btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            font-weight: bold;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        .view-projects-btn:hover {
-            background-color: #555;
+        /* Professional statement */
+        .statement {
+            color: #333;
+            margin-bottom: 20px;
         }
 
-        /* Tabs in black box */
-        .black-box {
-            background-color: #000;
-            color: #fff;
-            padding: 10px 0;
-            width: 100%;
-            text-align: center;
-            position: relative;
-            margin-top: 20px;
-        }
-        .black-box h2 {
-            margin: 0;
-            font-size: 1.6em;
-        }
-        .tabs {
+        /* Carousel / Card Styling */
+        .gallery {
             display: flex;
-            justify-content: center;
-            margin-top: 10px;
+            gap: 10px;
+            overflow-x: auto;
         }
-        .tab {
-            width: 50%;
-            padding: 10px 0;
+        .card {
+            min-width: 150px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
             text-align: center;
-            color: #fff;
-            font-weight: bold;
-            text-decoration: none;
-            border-top: 1px solid #fff;
+            color: #333;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
-        .tab:hover {
-            background-color: #333;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .gallery-item {
-                width: calc(50% - 10px);
-            }
-        }
-        @media (max-width: 480px) {
-            .gallery-item {
-                width: 100%;
-            }
+        .card img {
+            width: 100%;
+            height: auto;
         }
 
         /* Footer styling */
         footer {
-            margin-top: 30px;
+            margin-top: 20px;
             font-size: 0.9em;
             text-align: center;
             color: #777;
+        }
+        .contact-info {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons img {
+            width: 24px;
+            margin: 0 5px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="logo-title">My Portfolio</div>
-    <div class="social-icons">
-        <a href="https://www.linkedin.com"><img src="path/to/linkedin-icon.png" alt="LinkedIn"></a>
-        <a href="https://www.youtube.com"><img src="path/to/youtube-icon.png" alt="YouTube"></a>
+    <h1>Sidiq Daniel</h1>
+    <h2>Cybersecurity Specialist</h2>
+    <div class="tabs">
+        <a href="index.html" class="tab">Home</a>
+        <a href="gallery.html" class="tab">Gallery</a>
     </div>
-    <h1>Achievements and Certifications</h1>
 </header>
 
-<div class="black-box">
-    <h2>Achievements and Certifications</h2>
-    <div class="tabs">
-        <a href="#home" class="tab">Home</a>
-        <a href="#gallery" class="tab">Gallery</a>
-    </div>
-</div>
-
 <main>
-    <section class="statement">
-        <h2>Professional Statement</h2>
-        <p>
-            Dedicated and results-driven IT professional with a focus on cybersecurity and technical support. Leveraging a solid foundation in information technology, reinforced by industry-recognized certifications and hands-on experience. Committed to continuous learning and growth, I am passionate about safeguarding digital assets and advancing security protocols.
-        </p>
-    </section>
+    <div class="profile">
+        <img src="path/to/profile-picture.jpg" alt="Profile Picture">
+        <div>
+            <h2>Sidiq Daniel</h2>
+            <h3>Cybersecurity Specialist</h3>
+        </div>
+    </div>
 
-    <section class="gallery">
-        <!-- Each gallery-item represents one certification or achievement -->
-        <div class="gallery-item">
-            <img src="path/to/certification1.jpg" alt="Certification 1">
+    <div class="statement">
+        <p>
+            Dedicated and results-driven IT professional focused on cybersecurity. Committed to safeguarding digital assets and advancing security protocols through continuous learning and certifications.
+        </p>
+    </div>
+
+    <h3>Degrees and Educational Achievements</h3>
+    <div class="gallery">
+        <div class="card">
+            <img src="path/to/degree1.jpg" alt="Degree 1">
+            <p>Degree Title 1</p>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+
+    <h3>Professional Tech Certifications</h3>
+    <div class="gallery">
+        <div class="card">
+            <img src="path/to/cert1.jpg" alt="Certification 1">
             <p>Certification Title 1</p>
         </div>
-        <div class="gallery-item">
-            <img src="path/to/certification2.jpg" alt="Certification 2">
-            <p>Certification Title 2</p>
+        <!-- Add more cards as needed -->
+    </div>
+
+    <h3>Industry Standardized Exams</h3>
+    <div class="gallery">
+        <div class="card">
+            <img src="path/to/exam1.jpg" alt="Exam 1">
+            <p>Exam Title 1</p>
         </div>
-        <div class="gallery-item">
-            <img src="path/to/certification3.jpg" alt="Certification 3">
-            <p>Certification Title 3</p>
-        </div>
-        <!-- Add more certifications as needed -->
-    </section>
-    <a href="#projects" class="view-projects-btn">View My Projects</a>
+        <!-- Add more cards as needed -->
+    </div>
 </main>
 
 <footer>
-    <p>sidinfo21@gmail.com | (516) 368-6457 | New York, New York</p>
+    <p>&copy; 2024 Sidiq Daniel</p>
+    <div class="contact-info">
+        <p>Email: sidinfo21@gmail.com | Phone: (516) 368-6457 | Location: New York, New York</p>
+    </div>
+    <div class="social-icons">
+        <a href="https://linkedin.com/in/sidiqdaniel" target="_blank"><img src="path/to/linkedin-icon.png" alt="LinkedIn"></a>
+        <a href="https://youtube.com/channel/yourchannel" target="_blank"><img src="path/to/youtube-icon.png" alt="YouTube"></a>
+    </div>
 </footer>
 
 </body>
