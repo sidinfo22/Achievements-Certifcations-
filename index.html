@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
         }
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9fafb;
+            background-color: #ffffff;
             color: #333;
             line-height: 1.6;
             display: flex;
@@ -24,10 +24,191 @@
 
         /* Header styling */
         header {
-            background-color: #005f99;
+            background-color: #000;
             color: #fff;
             padding: 20px;
             width: 100%;
             text-align: center;
+            position: relative;
         }
         header h1 {
+            font-size: 2em;
+            color: gold;
+        }
+        header h2 {
+            font-size: 1.2em;
+            color: #fff;
+        }
+        /* Tabs at the bottom */
+        .tabs {
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            width: 100%;
+            max-width: 200px;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+        .tab {
+            width: 50%;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            background-color: #333;
+            padding: 10px 0;
+            border-top: 2px solid gold;
+        }
+        .tab:hover {
+            background-color: gold;
+            color: #000;
+        }
+
+        /* Main content area */
+        main {
+            width: 100%;
+            max-width: 800px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        /* Profile section */
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .profile h2 {
+            font-size: 1.6em;
+            color: gold;
+            margin: 0;
+        }
+        .profile h3 {
+            font-size: 1em;
+            color: #333;
+        }
+
+        /* Professional statement */
+        .statement {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Carousel / Card Styling */
+        .gallery {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+        }
+        .card {
+            min-width: 150px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            text-align: center;
+            color: #333;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            text-align: center;
+            color: #777;
+        }
+        .contact-info {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons img {
+            width: 24px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sidiq Daniel</h1>
+    <h2>Cybersecurity Specialist</h2>
+    <div class="tabs">
+        <a href="index.html" class="tab">Home</a>
+        <a href="gallery.html" class="tab">Gallery</a>
+    </div>
+</header>
+
+<main>
+    <div class="profile">
+        <img src="path/to/profile-picture.jpg" alt="Profile Picture">
+        <div>
+            <h2>Sidiq Daniel</h2>
+            <h3>Cybersecurity Specialist</h3>
+        </div>
+    </div>
+
+    <div class="statement">
+        <p>
+            Dedicated and results-driven IT professional focused on cybersecurity. Committed to safeguarding digital assets and advancing security protocols through continuous learning and certifications.
+        </p>
+    </div>
+
+    <h3>Degrees and Educational Achievements</h3>
+    <div class="gallery">
+        <div class="card">
+            <img src="path/to/degree1.jpg" alt="Degree 1">
+            <p>Degree Title 1</p>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+
+    <h3>Professional Tech Certifications</h3>
+    <div class="gallery">
+        <div class="card">
+            <img src="path/to/cert1.jpg" alt="Certification 1">
+            <p>Certification Title 1</p>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+
+    <h3>Industry Standardized Exams</h3>
+    <div class="gallery">
+        <div class="card">
+            <img src="path/to/exam1.jpg" alt="Exam 1">
+            <p>Exam Title 1</p>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Sidiq Daniel</p>
+    <div class="contact-info">
+        <p>Email: sidinfo21@gmail.com | Phone: (516) 368-6457 | Location: New York, New York</p>
+    </div>
+    <div class="social-icons">
+        <a href="https://linkedin.com/in/sidiqdaniel" target="_blank"><img src="path/to/linkedin-icon.png" alt="LinkedIn"></a>
+        <a href="https://youtube.com/channel/yourchannel" target="_blank"><img src="path/to/youtube-icon.png" alt="YouTube"></a>
+    </div>
+</footer>
+
+</body>
+</html>
