@@ -4,110 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awards and Achievements</title>
-    <style>
-        /* Reset and styling */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-        }
-        
-        /* Header styling */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #000;
-            color: #fff;
-            position: relative;
-        }
-        .logo {
-            font-size: 1.5em;
-            color: gold;
-        }
-        .social-icons {
-            display: flex;
-            align-items: center;
-        }
-        .social-icons img {
-            width: 24px;
-            height: 24px;
-            margin: 0 5px;
-        }
-
-        /* Hamburger menu icon */
-        .menu-toggle {
-            display: none;
-            font-size: 1.5em;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        /* Dropdown menu */
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            top: 60px;
-            right: 20px;
-            background-color: #000;
-            padding: 10px;
-            border-radius: 5px;
-            width: 150px;
-        }
-        .dropdown-menu a {
-            display: block;
-            color: #fff;
-            padding: 10px;
-            text-decoration: none;
-        }
-        .dropdown-menu a:hover {
-            background-color: gold;
-            color: #000;
-        }
-
-        /* Mobile styling */
-        @media (max-width: 768px) {
-            .social-icons {
-                display: none;
-            }
-            .menu-toggle {
-                display: block;
-            }
-            .menu-open .dropdown-menu {
-                display: block;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include FontAwesome for icons if needed -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <div class="name">Your Name</div>
+            <div class="icons">
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <div class="mobile-menu-icon">
+                    <i class="fas fa-bars"></i> <!-- Mobile menu icon -->
+                </div>
+            </div>
+        </div>
+    </header>
 
-<header>
-    <div class="logo">Sidiq Daniel</div>
-    <div class="social-icons">
-        <a href="https://linkedin.com/in/sidiqdaniel" target="_blank">
-            <img src="path/to/linkedin-icon.png" alt="LinkedIn">
-        </a>
-        <a href="https://youtube.com/channel/yourchannel" target="_blank">
-            <img src="path/to/youtube-icon.png" alt="YouTube">
-        </a>
-    </div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <div class="dropdown-menu">
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-    </div>
-</header>
+    <!-- Main Content -->
+    <main>
+        <!-- Your main content goes here -->
+    </main>
 
-<script>
-    function toggleMenu() {
-        document.body.classList.toggle('menu-open');
-    }
-</script>
-
+    <!-- Footer Section -->
+    <footer>
+        <button class="view-projects-btn">View My Projects</button>
+        <p>sidinfo21@gmail.com</p>
+        <p>(516) 368-6457</p>
+        <p>New York, New York</p>
+    </footer>
 </body>
 </html>
