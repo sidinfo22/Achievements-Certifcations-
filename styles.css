@@ -65,7 +65,10 @@ body {
     gap: 20px;
     padding: 20px;
 }
-
+.gradpic {
+  width: 25%;
+  height: auto;
+}
 .profile-pic {
     width: 150px;
     height: 150px;
