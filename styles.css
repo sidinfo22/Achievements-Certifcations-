@@ -1,4 +1,4 @@
-/* Basic Reset */
+e/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -54,7 +54,7 @@ body {
 .banner img {
     width: 100%;
     height: 500px;
-    object-fit: contain;
+    object-fit: cover;
     margin-bottom: 15px;
 }
 
