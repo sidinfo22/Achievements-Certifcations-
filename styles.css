@@ -30,8 +30,6 @@ body {
 }
 
 .header .icons {
-    display: flex;
-    align-items: center;
     gap: 15px;
 }
 
@@ -42,11 +40,6 @@ body {
 
 .header .icon-youtube i {
     color: #ff0000;
-    font-size: 1.5em;
-}
-
-.header .icon-web i {
-    color: #000;
     font-size: 1.5em;
 }
 
