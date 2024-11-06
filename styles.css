@@ -55,7 +55,6 @@ body {
 @media (max-width: 768px) {
     .banner img {
         height: 275px; 
-        object-fit: contain;
     }
 }
 /* Profile Section */
