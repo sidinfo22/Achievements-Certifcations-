@@ -52,7 +52,11 @@ body {
     object-fit: cover;
     margin-bottom: 15px;
 }
-
+@media (max-width: 768px) {
+    .banner img {
+        height: 250px; /
+    }
+}
 /* Profile Section */
 .profile {
     display: flex;
