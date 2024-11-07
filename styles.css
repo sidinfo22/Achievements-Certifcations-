@@ -391,7 +391,7 @@ display: flex;
    display: flex;
     justify-content: center;
     margin: 20px 0;
-    padding: 20px; /* Add padding to create some spacing above the button */
+    padding: 10px; /* Add padding to create some spacing above the button */
     border-top: 3px groove black; /* Apply top border */
     border-bottom: 3px groove black; /* Apply bottom border */
     background: #D3D3D3; /* Match background color of .certifications h2 */
