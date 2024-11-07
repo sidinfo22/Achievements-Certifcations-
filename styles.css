@@ -470,14 +470,14 @@ footer .copyright {
     left: 50%;
     transform: translate(-50%, -50%); /* Centers button horizontally and vertically */
     color: white; /* White text */
-    padding: 10px 20px;
-    font-size: 1.2em;
+    padding: 8px 16px; /* Smaller padding for a smaller button */
+    font-size: 1em; /* Adjust font size if needed */
     text-decoration: none; /* Remove underline */
-    border: 2px solid white; /* White border */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* More transparent white border */
     border-radius: 4px;
     background-color: transparent; /* Transparent background */
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .overlay-button:hover {
