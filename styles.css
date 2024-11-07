@@ -13,6 +13,28 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: none;
+}
+
+.header .name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black; /* Header name in black */
+}
+
+.header .icons {
+ display: flex;
+ justify-content: center;
+ gap: 15px;
+}
+
+
 
 .navbar {
     background: red;
