@@ -386,32 +386,26 @@ ul li a:hover {
 }
 
 /* View My Projects Button */
-/* Button Container */
 .button-container {
-    display: flex;
+display: flex;
+   display: flex;
     justify-content: center;
     margin: 20px 0;
-    padding: 10px;
-    border-top: 3px groove #B0B0B0; /* Soft concrete color */
-    border-bottom: 3px groove #B0B0B0;
-    background: #E0E0E0; /* Concrete-like background */
+    padding: 10px; /* Add padding to create some spacing above the button */
+    border-top: 3px groove black; /* Apply top border */
+    border-bottom: 3px groove black; /* Apply bottom border */
+    background: #D3D3D3; /* Match background color of .certifications h2 */
 }
 
-/* Updated View My Projects Button */
 .view-projects-btn {
-    background-color: #0073e6; /* Bright blue for a modern look */
-    color: white;
-    padding: 12px 20px;
+  background-color: #0073e6; /* Set button background to black */
+    color: white; /* Set text color to white */
+    padding: 10px 15px;
     border: none;
-    border-radius: 30px; /* Rounded button for a modern, pill shape */
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 1.1em;
-    font-weight: 600;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+    font-size: 1.05em;
 }
-
 /* Hover Effect */
 .view-projects-btn:hover {
     background-color: #005bb5; /* Darker blue on hover */
