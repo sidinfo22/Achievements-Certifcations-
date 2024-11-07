@@ -279,7 +279,7 @@ ul li a:hover {
 }  
 @media (max-width: 768px) {
     .certifications h3 {
-        font-size: 0.9em; /* This will make the font slightly smaller on mobile */
+        font-size: 0.6em; /* This will make the font slightly smaller on mobile */
     }
 }
 .certifications h3 {
