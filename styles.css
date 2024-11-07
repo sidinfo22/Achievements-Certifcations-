@@ -176,7 +176,7 @@ ul li a:hover {
 
  .icon-linkedin i {
     color: #0a66c2  !important;
-    font-size: 1.5em;e
+    font-size: 1.5em;
 }
 
  .icon-youtube i {
@@ -316,6 +316,8 @@ ul li a:hover {
     border-radius: 4px;
     cursor: pointer;
     font-size: 1.05em;
+    border-top: 1px solid #ddd;
+    
 }
 
 /* Footer Styling */
@@ -324,6 +326,7 @@ footer {
     text-align: center;
     padding: 20px;
     border-top: 1px solid #ddd;
+    padding-top: 10px;
 }
 
 .footer-info {
