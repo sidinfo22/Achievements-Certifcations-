@@ -191,11 +191,12 @@ ul li a:hover {
     object-fit: cover;
     margin-bottom: 15px;
     border-bottom: 1px solid black;
-    border-top: 0.5px solid black;
+    border-top: 0.8px solid black;
 }
 @media (max-width: 768px) {
     .banner img {
         height: 275px; 
+        width: 100vw; /* Full viewport width */
     }
 }
 /* Profile Section */
@@ -267,6 +268,7 @@ ul li a:hover {
     background: #D3D3D3;
     margin-left: -20px; /* Adjust based on your page's padding */
     margin-right: -20px;
+    width: 100vw; /* Full viewport width */
 }  
 
 .certifications h3 {
