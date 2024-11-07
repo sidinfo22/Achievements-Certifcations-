@@ -31,18 +31,19 @@ body {
     margin-right: 5px; 
 }
 
-li {
+ul li {
     list-style: none;
     display: inline-block;
     margin-right: 15px; 
     display: block;
 }
 
-li a {
+ul li a {
     text-decoration: none;
     display: block;
 }
-
+ul li a:hover {
+    color:red;
 
 .words {
     color: black;
