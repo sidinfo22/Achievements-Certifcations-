@@ -131,6 +131,7 @@ ul li a:hover {
 @media (min-width: 769px) {
     .close-button {
         display: none; /* Ensure hidden on desktop */
+        color: red;
     }
 }
         
