@@ -15,25 +15,28 @@ body {
 }
 
 .navbar {
-  
+
+}
+.navdiv {
+    display: flex; align-items: center; justify-content: space-between;
  .name { 
 
 .icons {
     margin-right: 5px; 
 }
 
-.orderlist {
+li {
     list-style: none;
     display: inline-block;
     margin-right: 5px; 
 }
 
-.orderlist a {
+li a {
     text-decoration: none;
 }
 
 
-.words a {
+.words {
     color: black;
    
 
