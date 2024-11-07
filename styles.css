@@ -261,6 +261,44 @@ ul li a:hover {
     line-height: 2;
 }
 
+
+/* General Styling for SecurityPlus Logo */
+.security-logo {
+    width: 100px; /* Adjust size as needed */
+    margin-top: 20px; /* Space above logo */
+}
+
+/* Desktop view: Logo under paragraph */
+@media (min-width: 768px) {
+    .security-logo {
+        display: block;
+        margin: 20px auto 0; /* Centered under the paragraph */
+    }
+}
+
+/* Mobile view: Logo to the left of the paragraph */
+@media (max-width: 767px) {
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .gradpic {
+        margin-bottom: 10px; /* Space between gradpic and logo on mobile */
+    }
+    .profile-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .security-logo {
+        order: -1; /* Places the logo above the paragraph */
+        align-self: flex-start; /* Aligns to the left on mobile */
+        margin-top: 10px; /* Adds space above the logo */
+    }
+}
+
 /* Certifications Section */
 .certifications {
     padding: 20px;
