@@ -38,6 +38,7 @@ body {
 
 li a {
     text-decoration: none;
+    margin-right: 25px; 
 }
 ul li a:hover {
     color:red;
