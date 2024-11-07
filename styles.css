@@ -45,7 +45,7 @@ ul li a:hover {
 }
 
 .words {
-    color: black;
+    color: black  !important;
     font-size: 1.2em;
     font-weight: bold;
 }   
@@ -77,15 +77,14 @@ ul li a:hover {
         display: block; /* Show hamburger icon on mobile */
     }
 }
-}
 
  .icon-linkedin i {
-    color: #0a66c2;
+    color: #0a66c2  !important;
     font-size: 1.5em;
 }
 
  .icon-youtube i {
-    color: #ff0000;
+    color: #ff0000  !important;
     font-size: 1.5em;
 }
 
