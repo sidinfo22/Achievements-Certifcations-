@@ -54,6 +54,9 @@ li a {
     text-decoration: none;
     display: block;
 }
+ul li:hover {
+       background: red;
+}
 ul li a:hover {
     color: white;
 }
