@@ -276,12 +276,14 @@ ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none; /* Remove any borders */
 }
 
 /* Style the images */
 .security-logo {
     width: 100px; /* Adjust size as needed */
     height: auto;
+    border: none; /* Remove any borders */
 }
 
 /* Mobile view: Stack images vertically */
@@ -289,12 +291,14 @@ ul li a:hover {
     .certification-logos {
         flex-direction: column;
         align-items: center; /* Center align for mobile view */
+            border: none; /* Remove any borders */
     }
 }
 /* General Styling for SecurityPlus Logo */
 .security-logo {
     width: 100px; /* Adjust size as needed */
     margin-top: 20px; /* Space above logo */
+        border: none; /* Remove any borders */
 }
 
 /* Desktop view: Logo under paragraph */
@@ -302,6 +306,7 @@ ul li a:hover {
     .security-logo {
         display: block;
         margin: 20px auto 0; /* Centered under the paragraph */
+            border: none; /* Remove any borders */
     }
 }
 
@@ -312,9 +317,11 @@ ul li a:hover {
         flex-direction: column;
         align-items: center;
         text-align: center;
+            border: none; /* Remove any borders */
     }
     .gradpic {
         margin-bottom: 10px; /* Space between gradpic and logo on mobile */
+            border: none; /* Remove any borders */
     }
     .profile-info {
         display: flex;
@@ -325,6 +332,7 @@ ul li a:hover {
         order: -1; /* Places the logo above the paragraph */
         align-self: flex-start; /* Aligns to the left on mobile */
         margin-top: 10px; /* Adds space above the logo */
+            border: none; /* Remove any borders */
     }
 }
 
