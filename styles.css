@@ -71,40 +71,56 @@ ul li a:hover {
         right: 0;
         height: 100%;
         width: 200px;
-        background-color: #9da9ad;
+        background-color: white; /* Set background color to white when open */
         padding-top: 60px;
         transform: translateX(100%); /* Position off-screen by default */
         transition: transform 0.3s ease;
         text-align: center;
     }
-  .menu-title {
+
+ .orderlist.show .menu-title {
     font-size: 1.5em;
     font-weight: bold;
     padding: 15px 0;
     border-bottom: 1px solid #ddd; /* Divider under the title */
     color: black;
     text-align: center;
-}      
-        .close-button {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 1.5em;
-    cursor: pointer;
-    color: black;
-}
+}     
+     .menu-title {
+        display: none; /* Hide title by default */
+    }
+       .orderlist.show .close-button {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 1.5em;
+        cursor: pointer;
+        color: black;
+    }     
+   .close-button {
+        display: none; /* Hide close button by default */
+    }
     .orderlist.show {
-    display: flex; /* Display menu when .show is added */
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 200px;
-    background-color: #white;
-    padding-top: 60px;
-    transform: translateX(0); /* Slide in when 'show' class is added */
-    transition: transform 0.3s ease;
+   display: flex; /* Display menu when .show is added */
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 200px;
+        background-color: white; /* Set background color to white when open */
+        padding-top: 60px;
+        transform: translateX(0); /* Slide in when 'show' class is added */
+        transition: transform 0.5s ease;
+    }
+        
+    .orderlist.show li {
+        padding: 15px 0;
+        border-bottom: 1px solid #ddd; /* Divider between items */
+    }
+ .orderlist li a {
+        padding: 10px; /* Additional padding for links when menu is open */
     }
 
     .hamburger {
