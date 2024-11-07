@@ -47,13 +47,13 @@ ul {
     
 }
 
-ul li {
+.orderlist {
     list-style: none;
     display: inline-block;
     margin-right: 5px; 
 }
 
-ul li a {
+.orderlist a {
     text-decoration: none;
 }
 
