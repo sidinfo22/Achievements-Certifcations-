@@ -17,10 +17,10 @@ body {
 .navbar {
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 1000;
+    position: sticky; /* Make navbar sticky */
+    top: 0; /* Stick to the top */
+    background-color: white; /* Ensure background stays white when scrolling */
+    z-index: 1000; /* Keep it above other content */
 }
 .navdiv {
     display: flex;
@@ -28,19 +28,20 @@ body {
     justify-content: space-between;
     gap: 20px;
 }
-.name { 
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
-    font-size:1.2em;
-    margin-left: 10px;
-    font-family: 'Playfair Display', serif;
-    padding-right: 10px;
-}
+ .name { 
+     border-right: 1px solid rgba(0, 0, 0, 0.2);
+     font-size:1.2em;
+     margin-left: 10px;
+     font-family: 'Playfair Display', serif;
+     padding-right: 5px;
+     padding-right: 10px;
+ }
 
-li {
+ li {
     list-style: none;
     display: inline-block;
     border-right: 1px solid rgba(0, 0, 0, 0.2);
-}
+ }
 li:last-child {
     border-right: none;
 }
@@ -48,9 +49,10 @@ li a {
     text-decoration: none;
     margin-right: 25px; 
     padding: 10px 15px;
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-size: 1.2em;
     color: black;
+    text-decoration: none;
     display: block;
 }
 
@@ -59,100 +61,104 @@ ul li a:hover {
 }
 
 .words {
-    color: black !important;
+    color: black  !important;
     font-size: 1.2em;
     font-weight: bold;
 }   
-
 .hamburger {
     display: none; /* Hide by default */
     font-size: 1.5em;
     cursor: pointer;
 }
-
-@media (max-width: 768px) {
+    @media (max-width: 768px) {
     .orderlist {
-        display: none; /* Hide menu on mobile */
+      display: none; /* Hide menu on mobile */
         flex-direction: column;
         position: fixed;
         top: 0;
         right: 0;
         height: 100%;
         width: 200px;
-        background-color: rgba(255, 255, 255, 0.4);
+        background-color: rgba(255, 255, 255, 0.4); /* Set transparent background */
         padding-top: 60px;
         transform: translateX(100%); /* Position off-screen by default */
         transition: transform 0.3s ease;
         text-align: center;
     }
-}
-    
-@media (max-width: 768px) {
+        @media (max-width: 768px) {
     .hamburger {
-        display: block; /* Show hamburger icon on mobile */
-        margin-right: 20px;
-        border-left: 1px solid rgba(0, 0, 0, 0.2);
-        padding-left: 10px;
+        margin-right: 20px; /* Move hamburger icon left on mobile */
+        border-left: 1px solid rgba(0, 0, 0, 0.2); /* Add left border on mobile */
+        padding-left: 10px; /* Add padding to create space between icon and border */
     }
-}
 
     .name {
         border-right: none; /* Hide border-right on .name in mobile view */
     }
+}
 
-    /* Style for the close button on mobile */
+ .orderlist.show .menu-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd; /* Divider under the title */
+    color: black;
+    text-align: center;
+}     
+     .menu-title {
+        display: none; /* Hide title by default */
+    }
+
+        @media (max-width: 768px) {
     .close-button {
-        display: none; /* Hide by default */
+        display: none; /* Hide by default on mobile */
     }
 
     .orderlist.show .close-button {
-        display: block; /* Show only when the menu is open on mobile */
+        display: block; /* Show when menu is open on mobile */
         position: absolute;
         top: 10px;
         left: 10px;
         font-size: 1.5em;
         cursor: pointer;
-        color: red !important; /* Make it red */
-        background: none;
+        color: red !important; /* Force red color */
+        background: none; /* Remove any background or border */
         border: none;
     }
+}
 
 
-/* Ensure the close button is hidden on desktop */
 @media (min-width: 769px) {
     .close-button {
-        display: none;
+        display: none; /* Ensure hidden on desktop */
     }
 }
+        
+       .orderlist.show .close-button {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 1.5em;
+        cursor: pointer;
+        color: red;
+        background: none; /* Remove background/border around the X */
+        border: none;
+    }     
 
-/* Remove redundant close-button styling */
-/* .orderlist.show .close-button {
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 1.5em;
-    cursor: pointer;
-    color: red;
-    background: none;
-    border: none;
-} */
-    
-.orderlist.show {
-    display: flex; /* Display menu when .show is added */
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 200px;
-    background-color: white;
-    padding-top: 60px;
-    transform: translateX(0); /* Slide in when 'show' class is added */
-    transition: transform 0.5s ease;
-}
-
-/* Rest of your CSS remains unchanged */
+    .orderlist.show {
+        display: flex; /* Display menu when .show is added */
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 200px;
+        background-color: white; /* Set background color to white when open */
+        padding-top: 60px;
+        transform: translateX(0); /* Slide in when 'show' class is added */
+        transition: transform 0.5s ease;
+    }
 
         
     .orderlist.show li {
