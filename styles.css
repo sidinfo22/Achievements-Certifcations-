@@ -197,6 +197,7 @@ ul li a:hover {
     .banner img {
         height: 275px; 
         width: 100vw; /* Full viewport width */
+        margin-left: calc(-50vw + 50%); /* Centering trick */
     }
 }
 /* Profile Section */
@@ -269,6 +270,7 @@ ul li a:hover {
     margin-left: -20px; /* Adjust based on your page's padding */
     margin-right: -20px;
     width: 100vw; /* Full viewport width */
+    margin-left: calc(-50vw + 50%); /* Centering trick */
 }  
 
 .certifications h3 {
