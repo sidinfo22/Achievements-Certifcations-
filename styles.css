@@ -25,6 +25,7 @@ body {
 }
  .name { 
      font-size:1.5em;
+     padding-left: 15px;
  }
 .icons {
     margin-right: 5px; 
