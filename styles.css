@@ -34,7 +34,18 @@ body {
  justify-content: center;
  gap: 15px;
 }
+ul {
+    
+}
 
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+}
 .header .icon-linkedin i {
     color: #0a66c2;
     font-size: 1.5em;
