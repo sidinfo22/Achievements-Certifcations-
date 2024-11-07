@@ -1,4 +1,4 @@
-/* Basic Reset */
+af/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -267,7 +267,7 @@ ul li a:hover {
     background: #D3D3D3;
     margin-left: -20px; /* Adjust based on your page's padding */
     margin-right: -20px;
-    
+}  
 
 .certifications h3 {
     font-size: 1.3em;
