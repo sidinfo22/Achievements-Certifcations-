@@ -17,7 +17,10 @@ body {
 .navbar {
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
-
+    position: sticky; /* Make navbar sticky */
+    top: 0; /* Stick to the top */
+    background-color: white; /* Ensure background stays white when scrolling */
+    z-index: 1000; /* Keep it above other content */
 }
 .navdiv {
     display: flex;
@@ -30,6 +33,7 @@ body {
      font-size:1.2em;
      margin-left: 20px;
      font-family: 'Playfair Display', serif;
+     padding-right: 10px;
  }
 
  li {
@@ -48,9 +52,10 @@ li a {
     font-size: 1.2em;
     color: black;
     text-decoration: none;
+    display: block;
 }
 ul li a:hover {
-    color:red;
+    color: white;
 }
 
 .words {
@@ -72,7 +77,7 @@ ul li a:hover {
         right: 0;
         height: 100%;
         width: 200px;
-        background-color: rgba(255, 255, 255, 0.9); /* Set transparent background */
+        background-color: rgba(255, 255, 255, 0.7); /* Set transparent background */
         padding-top: 60px;
         transform: translateX(100%); /* Position off-screen by default */
         transition: transform 0.3s ease;
@@ -133,7 +138,7 @@ ul li a:hover {
 
  .icon-linkedin i {
     color: #0a66c2  !important;
-    font-size: 1.5em;
+    font-size: 1.5em;e
 }
 
  .icon-youtube i {
