@@ -34,15 +34,19 @@ body {
  li {
     list-style: none;
     display: inline-block;
-    border-right: 1px solid rgba(0, 0, 0, 2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
  }
 li:last-child {
     border-right: none;
 }
-
 li a {
     text-decoration: none;
     margin-right: 25px; 
+    padding: 10px 15px;
+    font-family: arial, sans-serif;
+    font-size: 1.2em;
+    color: black;
+    text-decoration: none;
 }
 ul li a:hover {
     color:red;
@@ -71,10 +75,21 @@ ul li a:hover {
         padding-top: 60px;
         transform: translateX(100%); /* Position off-screen by default */
         transition: transform 0.3s ease;
+        text-align: center;
     }
         
     .orderlist.show {
-        transform: translateX(0); /* Slide in when 'show' class is added */
+         display: flex; /* Display menu when .show is added */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #9da9ad;
+    padding-top: 60px;
+    transform: translateX(0); /* Slide in when 'show' class is added */
+    transition: transform 0.3s ease;
     }
 
     .hamburger {
