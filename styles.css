@@ -34,13 +34,10 @@ body {
  li {
     list-style: none;
     display: inline-block;
-    border-right: 1px solid rgba (0, 0, 0, 2);
+    border-right: 1px solid rgba(0, 0, 0, 2);
  }
 li:last-child {
     border-right: none;
-}
-    
-    
 }
 
 li a {
