@@ -449,3 +449,28 @@ footer .copyright {
 .navbar {
     background-color: white;
 }
+/* Centered overlay button for banner */
+.banner {
+    position: relative; /* To position the button inside the banner */
+}
+
+.overlay-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers button horizontally and vertically */
+    color: white; /* White text */
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none; /* Remove underline */
+    border: 2px solid white; /* White border */
+    border-radius: 4px;
+    background-color: transparent; /* Transparent background */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.overlay-button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slight background color on hover */
+    color: white;
+}
