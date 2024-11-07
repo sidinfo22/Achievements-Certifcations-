@@ -229,6 +229,7 @@ ul li a:hover {
     border-top: 3px groove black;
     border-bottom: 3px groove black;
     text-align: center;
+    background: #D3D3D3;
 }
 
 .certifications h3 {
