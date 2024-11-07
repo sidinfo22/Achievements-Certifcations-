@@ -212,7 +212,7 @@ ul li a:hover {
 }
 @media (max-width: 768px) {
   .gradpic {
-    width: 20%; /* Adjust the width to a percentage */
+    width: 30%; /* Adjust the width to a percentage */
     max-width: 200px; /* Set a maximum width */
     height: auto; /* Maintain aspect ratio */
     margin-top: -10px; /* Remove any negative margin on mobile */
