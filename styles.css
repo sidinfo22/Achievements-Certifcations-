@@ -386,25 +386,45 @@ ul li a:hover {
 }
 
 /* View My Projects Button */
+/* Button Container */
 .button-container {
-display: flex;
-   display: flex;
+    display: flex;
     justify-content: center;
     margin: 20px 0;
-    padding: 10px; /* Add padding to create some spacing above the button */
-    border-top: 3px groove black; /* Apply top border */
-    border-bottom: 3px groove black; /* Apply bottom border */
-    background: #D3D3D3; /* Match background color of .certifications h2 */
+    padding: 10px;
+    border-top: 3px groove #B0B0B0; /* Soft concrete color */
+    border-bottom: 3px groove #B0B0B0;
+    background: #E0E0E0; /* Concrete-like background */
 }
 
+/* Updated View My Projects Button */
 .view-projects-btn {
-  background-color: #0073e6; /* Set button background to black */
-    color: white; /* Set text color to white */
-    padding: 10px 15px;
+    background-color: #0073e6; /* Bright blue for a modern look */
+    color: white;
+    padding: 12px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 30px; /* Rounded button for a modern, pill shape */
     cursor: pointer;
-    font-size: 1.05em;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+}
+
+/* Hover Effect */
+.view-projects-btn:hover {
+    background-color: #005bb5; /* Darker blue on hover */
+    color: #E0E0E0; /* Text changes to concrete gray on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25); /* Deepen shadow on hover */
+}
+
+/* Cool Concrete Gray Colors */
+.button-container {
+    background: #B2B2B2; /* Cool concrete gray for a refined background */
+    border-top: 2px solid #A6A6A6; /* Slightly darker for a realistic effect */
+    border-bottom: 2px solid #A6A6A6;
+}
 }
 /* Footer Styling */
 footer {
