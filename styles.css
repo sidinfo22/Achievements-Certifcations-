@@ -206,6 +206,7 @@ ul li a:hover {
     .banner img {
         height: 275px; 
         border-top: 1px solid black;
+        border-bottom: 0.5px solid black;
     }
 }
 /* Profile Section */
