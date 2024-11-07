@@ -210,6 +210,14 @@ ul li a:hover {
   height: 300px;
   margin-top: -12px;
 }
+@media (max-width: 768px) {
+  .gradpic {
+    width: 80%; /* Adjust the width to a percentage */
+    max-width: 200px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 0; /* Remove any negative margin on mobile */
+  }
+}
 .profile-pic {
     width: 150px;
     height: 150px;
