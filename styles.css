@@ -257,7 +257,7 @@ ul li a:hover {
 }
 
 .certifications h2 {
-    font-size: 2em;
+  font-size: 2em;
     font-family: 'Playfair Display', serif; /* Fancy font for main title */
     margin-bottom: 20px;
     padding: 10px 0;
@@ -265,8 +265,9 @@ ul li a:hover {
     border-bottom: 3px groove black;
     text-align: center;
     background: #D3D3D3;
-    width: 100%; 
-}
+    margin-left: -20px; /* Adjust based on your page's padding */
+    margin-right: -20px;
+    
 
 .certifications h3 {
     font-size: 1.3em;
