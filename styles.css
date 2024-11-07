@@ -311,7 +311,8 @@ h3 {
 }
 
 /* View My Projects Button */
- display: flex;
+.button-container {
+display: flex;
    display: flex;
     justify-content: center;
     margin: 20px 0;
