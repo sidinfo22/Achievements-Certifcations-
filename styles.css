@@ -26,9 +26,9 @@ body {
     gap: 20px;
 }
  .name { 
-     font-size:1.5em;
+     font-size:1.2em;
      margin-left: 20px;
-     border-right: 1px solid #ddd;
+     font-family: 'Playfair Display', serif;
  }
 
  li {
