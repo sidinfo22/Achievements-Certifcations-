@@ -346,9 +346,8 @@ ul li a:hover {
     border-top: 1px solid black; /* Thinner border */
     border-bottom: 1px solid black; /* Thinner border */
     text-align: center;
-    background-image: url('cobblestone.jpg');
-    background-size: contain; /* Show the entire cobblestone image */
-    background-repeat: no-repeat; /* Prevent tiling */
+    background-image: url('cobblestone2.jpg');
+    background-size: cover; /* Show the entire cobblestone image */
     background-position: center; /* Center the image within the element */
     margin-left: -20px; /* Adjust based on your page's padding */
     margin-right: -20px;
