@@ -227,7 +227,7 @@ ul li a:hover {
     margin-bottom: 20px;
     padding: 10px 0;
     border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-bottom: 1px groove black;
     text-align: center;
 }
 
