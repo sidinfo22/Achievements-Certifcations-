@@ -49,7 +49,34 @@ ul li a:hover {
     font-size: 1.2em;
     font-weight: bold;
    
+.hamburger {
+    display: none; /* Hide by default */
+    font-size: 1.5em;
+    cursor: pointer;
+}
+    @media (max-width: 768px) {
+    .orderlist {
+        display: none; /* Hide menu on mobile */
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 200px;
+        background-color: #9da9ad;
+        padding-top: 60px;
+        transform: translateX(100%); /* Position off-screen by default */
+        transition: transform 0.3s ease;
+    }
+        
+    .orderlist.show {
+        transform: translateX(0); /* Slide in when 'show' class is added */
+    }
 
+    .hamburger {
+        display: block; /* Show hamburger icon on mobile */
+    }
+}
 }
 
  .icon-linkedin i {
