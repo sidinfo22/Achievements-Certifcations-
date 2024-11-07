@@ -226,8 +226,8 @@ ul li a:hover {
     font-family: 'Playfair Display', serif; /* Fancy font for main title */
     margin-bottom: 20px;
     padding: 10px 0;
-    border-top: 1px groove black;
-    border-bottom: 1px groove black;
+    border-top: 3px groove black;
+    border-bottom: 3px groove black;
     text-align: center;
 }
 
