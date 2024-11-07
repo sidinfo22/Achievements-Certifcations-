@@ -41,14 +41,18 @@ ul {
 ul li {
     list-style: none;
     display: inline-block;
+    margin-right: 5px; 
 }
 
 ul li a {
     text-decoration: none;
 }
 
+ul li:last-child {
+    margin-right: 0;
 .words a {
     color: black;
+    font-weight: bold;
 }
 
 .header .icon-linkedin i {
