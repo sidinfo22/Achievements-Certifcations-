@@ -454,6 +454,16 @@ footer .copyright {
     position: relative; /* To position the button inside the banner */
 }
 
+* Centered overlay button for banner */
+.banner {
+    position: relative; /* Make banner container relative */
+}
+
+* Centered overlay button for banner */
+.banner {
+    position: relative; /* Make banner container relative */
+}
+
 .overlay-button {
     position: absolute;
     top: 50%;
@@ -473,4 +483,7 @@ footer .copyright {
 .overlay-button:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Slight background color on hover */
     color: white;
+}
+.overlay-button {
+    z-index: 1;
 }
