@@ -317,6 +317,7 @@ h3 {
     margin: 20px 0;
     padding-top: 20px; /* Add padding to create some spacing above the button */
     border-top: 1px solid #ddd; /* Add the border to create separation */
+        background: #D3D3D3;
 }
 
 .view-projects-btn {
