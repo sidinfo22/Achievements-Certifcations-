@@ -28,11 +28,6 @@ body {
      font-size:1.5em;
      margin-left: 20px;
  }
-.orderlist {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
 
  li {
     list-style: none;
