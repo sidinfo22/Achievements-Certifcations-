@@ -261,7 +261,34 @@ ul li a:hover {
     line-height: 2;
 }
 
+.certification-logos {
+    list-style: none; /* Remove bullet points */
+    display: flex;
+    gap: 15px; /* Space between images */
+    padding: 0;
+    margin-top: 20px; /* Space above the image list */
+}
 
+/* Style each list item */
+.certification-logos li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style the images */
+.security-logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Mobile view: Stack images vertically */
+@media (max-width: 768px) {
+    .certification-logos {
+        flex-direction: column;
+        align-items: center; /* Center align for mobile view */
+    }
+}
 /* General Styling for SecurityPlus Logo */
 .security-logo {
     width: 100px; /* Adjust size as needed */
