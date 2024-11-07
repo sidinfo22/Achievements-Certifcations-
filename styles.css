@@ -316,14 +316,14 @@ display: flex;
    display: flex;
     justify-content: center;
     margin: 20px 0;
-    padding-top: 20px; /* Add padding to create some spacing above the button */
+    padding: 20px; /* Add padding to create some spacing above the button */
     border-top: 3px groove black; /* Apply top border */
     border-bottom: 3px groove black; /* Apply bottom border */
     background: #D3D3D3; /* Match background color of .certifications h2 */
 }
 
 .view-projects-btn {
-  background-color: black; /* Set button background to black */
+  background-color: #0073e6; /* Set button background to black */
     color: white; /* Set text color to white */
     padding: 10px 15px;
     border: none;
