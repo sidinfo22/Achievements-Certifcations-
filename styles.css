@@ -57,7 +57,7 @@ li a {
 }
 
 ul li a:hover {
-    color: red;
+    color: w;
 }
 
 .words {
@@ -131,7 +131,7 @@ ul li a:hover {
 @media (min-width: 769px) {
     .close-button {
         display: none; /* Ensure hidden on desktop */
-        color: red;
+        color: red !important;
     }
 }
         
@@ -142,7 +142,7 @@ ul li a:hover {
         left: 10px;
         font-size: 1.5em;
         cursor: pointer;
-        color: red;
+        color: red !important;
         background: none; /* Remove background/border around the X */
         border: none;
     }     
