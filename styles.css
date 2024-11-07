@@ -337,18 +337,22 @@ ul li a:hover {
 
 
 .certifications h2 {
- font-size: 2em;
-    font-family: 'Playfair Display', serif; /* Fancy font for main title */
+    font-size: 2em;
+    font-family: 'Merriweather', serif; /* Darker and more classic font */
+    font-weight: 700; /* Increase font weight for visibility */
+    color: #333333; /* Dark gray color for better contrast */
     margin-bottom: 20px;
     padding: 10px 0;
-    border-top: 3px groove black;
-    border-bottom: 3px groove black;
+    border-top: 1px solid black; /* Thinner border */
+    border-bottom: 1px solid black; /* Thinner border */
     text-align: center;
-    background-image: url('cobblestone.jpg'); /* End this line with a semicolon */
-    background-size: cover; /* Ensure the image covers the area */
+    background-image: url('cobblestone.jpg');
+    background-size: contain; /* Show the entire cobblestone image */
+    background-repeat: no-repeat; /* Prevent tiling */
     background-position: center; /* Center the image within the element */
     margin-left: -20px; /* Adjust based on your page's padding */
-    mar
+    margin-right: -20px;
+}
 @media (max-width: 768px) {
     .certifications h3 {
         font-size: 0.6em; /* This will make the font slightly smaller on mobile */
