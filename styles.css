@@ -108,6 +108,10 @@ ul li a:hover {
      .menu-title {
         display: none; /* Hide title by default */
     }
+           .close-button {
+        display: none; /* Hide close button by default */
+        color: red;
+    }
        .orderlist.show .close-button {
         display: block;
         position: absolute;
@@ -119,9 +123,7 @@ ul li a:hover {
         background: none; /* Remove background/border around the X */
         border: none;
     }     
-   .close-button {
-        display: none; /* Hide close button by default */
-    }
+
     .orderlist.show {
         display: flex; /* Display menu when .show is added */
         flex-direction: column;
@@ -225,6 +227,10 @@ ul li a:hover {
     font-size: 2em;
     font-family: 'Playfair Display', serif; /* Fancy font for main title */
     margin-bottom: 20px;
+    padding: 10px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid block;
+    text-align: center;
 }
 
 .certifications h3 {
