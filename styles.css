@@ -15,12 +15,16 @@ body {
 }
 
 .navbar {
-
+    padding: 20px 0;
+    background-color: 9da9ad; 
 }
 .navdiv {
-    display: flex; align-items: center; justify-content: space-between;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
 }
  .name { 
+     font-size:1.5em;
  }
 .icons {
     margin-right: 5px; 
@@ -29,7 +33,7 @@ body {
 li {
     list-style: none;
     display: inline-block;
-    margin-right: 5px; 
+    margin-right: 15px; 
 }
 
 li a {
@@ -39,6 +43,8 @@ li a {
 
 .words {
     color: black;
+    font-size: 1.2em;
+    font-weight: bold;
    
 
 }
