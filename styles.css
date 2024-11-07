@@ -16,7 +16,7 @@ body {
 
 .navbar {
     padding: 20px 0;
-    border-bottom: 5px solid black;
+    border-bottom: 1px solid #ddd;
 
 }
 .navdiv {
@@ -28,6 +28,7 @@ body {
  .name { 
      font-size:1.5em;
      margin-left: 20px;
+     border-right: 1px solid #ddd;
  }
 
  li {
