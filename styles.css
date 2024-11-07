@@ -13,7 +13,12 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
+h3 {
+    text-decoration: underline; /* Underline all h3 headings */
+}
+.jobtitle {
+    text-decoration: none;
+}
 .navbar {
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
@@ -257,9 +262,7 @@ ul li a:hover {
     text-align: center;
 }
 
-h3 {
-    text-decoration: underline; /* Underline all h3 headings */
-}
+
 
 .certifications h2 {
   font-size: 2em;
