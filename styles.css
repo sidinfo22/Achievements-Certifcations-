@@ -85,13 +85,16 @@ ul li a:hover {
         transition: transform 0.3s ease;
         text-align: center;
     }
+}
     
+@media (max-width: 768px) {
     .hamburger {
+        display: block; /* Show hamburger icon on mobile */
         margin-right: 20px;
         border-left: 1px solid rgba(0, 0, 0, 0.2);
         padding-left: 10px;
-        display: block;
     }
+}
 
     .name {
         border-right: none; /* Hide border-right on .name in mobile view */
@@ -113,7 +116,7 @@ ul li a:hover {
         background: none;
         border: none;
     }
-}
+
 
 /* Ensure the close button is hidden on desktop */
 @media (min-width: 769px) {
