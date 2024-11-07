@@ -85,6 +85,17 @@ ul li a:hover {
         transition: transform 0.3s ease;
         text-align: center;
     }
+        @media (max-width: 768px) {
+    .hamburger {
+        margin-right: 20px; /* Move hamburger icon left on mobile */
+        border-left: 1px solid rgba(0, 0, 0, 0.2); /* Add left border on mobile */
+        padding-left: 10px; /* Add padding to create space between icon and border */
+    }
+
+    .name {
+        border-right: none; /* Hide border-right on .name in mobile view */
+    }
+}
 
  .orderlist.show .menu-title {
     font-size: 1.5em;
