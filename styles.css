@@ -42,6 +42,9 @@ h3 {
      padding-right: 5px;
      padding-right: 10px;
  }
+.montserrat-font {
+    font-family: 'Montserrat', sans-serif;
+}
 
  li {
     list-style: none;
