@@ -398,13 +398,13 @@ display: flex;
     padding: 10px; /* Add padding to create some spacing above the button */
     border-top: 3px groove black; /* Apply top border */
     border-bottom: 3px groove black; /* Apply bottom border */
-    background: #f3f3f3; /* Match background color of .certifications h2 */
-}
-
-.view-projects-btn {
     background-image: url('cobblestone2.jpg'); /* End this line with a semicolon */
     background-size: cover; /* Ensure the image covers the area */
     background-position: center; /* Center the image within the element */
+}
+
+.view-projects-btn {
+    background-color: black; /* Set background color to black */
     color: white; /* Set text color to white */
     padding: 7px 12px;
     border: none;
