@@ -108,6 +108,33 @@ ul li a:hover {
      .menu-title {
         display: none; /* Hide title by default */
     }
+
+        @media (max-width: 768px) {
+    .close-button {
+        display: none; /* Hide by default on mobile */
+    }
+
+    .orderlist.show .close-button {
+        display: block; /* Show when menu is open on mobile */
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 1.5em;
+        cursor: pointer;
+        color: red !important; /* Force red color */
+        background: none; /* Remove any background or border */
+        border: none;
+    }
+}
+
+/* Hide the "X" on desktop explicitly */
+@media (min-width: 769px) {
+    .close-button {
+        display: none; /* Ensure hidden on desktop */
+    }
+}
+        
+        
            .close-button {
     }
        .orderlist.show .close-button {
