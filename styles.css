@@ -16,8 +16,9 @@ body {
 h3 {
     text-decoration: underline; /* Underline all h3 headings */
 }
-.jobtitle {
-    text-decoration: none;
+
+#jobtitle {
+    text-decoration: none; /* Remove underline for the specific 'Cybersecurity Analyst' heading */
 }
 .navbar {
     padding: 20px 0;
