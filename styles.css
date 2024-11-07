@@ -109,8 +109,6 @@ ul li a:hover {
         display: none; /* Hide title by default */
     }
            .close-button {
-        display: none; /* Hide close button by default */
-        color: red;
     }
        .orderlist.show .close-button {
         display: block;
@@ -229,7 +227,7 @@ ul li a:hover {
     margin-bottom: 20px;
     padding: 10px 0;
     border-top: 1px solid black;
-    border-bottom: 1px solid block;
+    border-bottom: 1px solid black;
     text-align: center;
 }
 
