@@ -147,6 +147,7 @@ ul li a:hover {
     object-fit: cover;
     margin-bottom: 15px;
     border-bottom: 1px solid black;
+    border-top: 1px solid black;
 }
 @media (max-width: 768px) {
     .banner img {
