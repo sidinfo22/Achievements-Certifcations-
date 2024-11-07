@@ -77,16 +77,31 @@ ul li a:hover {
         transition: transform 0.3s ease;
         text-align: center;
     }
-        
+  .menu-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd; /* Divider under the title */
+    color: black;
+    text-align: center;
+}      
+        .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: black;
+}
     .orderlist.show {
-         display: flex; /* Display menu when .show is added */
+    display: flex; /* Display menu when .show is added */
     flex-direction: column;
     position: fixed;
     top: 0;
     right: 0;
     height: 100%;
     width: 200px;
-    background-color: #9da9ad;
+    background-color: #white;
     padding-top: 60px;
     transform: translateX(0); /* Slide in when 'show' class is added */
     transition: transform 0.3s ease;
