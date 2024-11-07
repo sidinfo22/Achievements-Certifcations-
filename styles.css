@@ -64,14 +64,14 @@ ul li a:hover {
 }
     @media (max-width: 768px) {
     .orderlist {
-        display: none; /* Hide menu on mobile */
+      display: none; /* Hide menu on mobile */
         flex-direction: column;
         position: fixed;
         top: 0;
         right: 0;
         height: 100%;
         width: 200px;
-        background-color: white; /* Set background color to white when open */
+        background-color: rgba(255, 255, 255, 0.9); /* Set transparent background */
         padding-top: 60px;
         transform: translateX(100%); /* Position off-screen by default */
         transition: transform 0.3s ease;
@@ -96,13 +96,15 @@ ul li a:hover {
         left: 10px;
         font-size: 1.5em;
         cursor: pointer;
-        color: black;
+        color: red;
+        background: none; /* Remove background/border around the X */
+        border: none;
     }     
    .close-button {
         display: none; /* Hide close button by default */
     }
     .orderlist.show {
-   display: flex; /* Display menu when .show is added */
+        display: flex; /* Display menu when .show is added */
         flex-direction: column;
         position: fixed;
         top: 0;
