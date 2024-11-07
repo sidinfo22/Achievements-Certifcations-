@@ -311,13 +311,14 @@ h3 {
 }
 
 /* View My Projects Button */
-.button-container {
-    display: flex;
+ display: flex;
     justify-content: center;
     margin: 20px 0;
-    padding-top: 20px; /* Add padding to create some spacing above the button */
-    border-top: 1px solid #ddd; /* Add the border to create separation */
-        background: #D3D3D3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 3px groove black; /* Apply top border */
+    border-bottom: 3px groove black; /* Apply bottom border */
+    background: #D3D3D3; /* Match background color of .certifications h2 */
 }
 
 .view-projects-btn {
