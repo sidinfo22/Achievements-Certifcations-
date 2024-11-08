@@ -389,7 +389,7 @@ ul li a:hover {
     /* Container for the profile image */
     .profile-left {
         flex: 0 0 45%;
-        max-width: 156px;
+        max-width: 160px;
     }
 
     .gradpic {
@@ -426,9 +426,9 @@ ul li a:hover {
         display: flex;
         gap: 11px; /* Smaller gap between logos */
         justify-content: flex-start;
-        margin-top: -6px;
-        margin-left: -1px;
-        margin-bottom: 20px;
+        margin-top: -3px;
+        margin-left: -2px;
+        margin-bottom: 33px;
     }
 
     /* Smaller logo size */
