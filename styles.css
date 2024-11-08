@@ -512,7 +512,9 @@ footer .copyright {
 }
 /* Page Heading Section */
 .page-heading {
-    background: linear-gradient(to right, #1e3c72, #2a5298); /* Gradient background for a modern look */
+    background-image: url('cobblestone.jpg'); /* End this line with a semicolon */
+    background-size: cover; /* Ensure the image covers the area */
+    background-position: center; /* Center the image within the element */
     color: #ffffff; /* White text color for strong contrast */
     padding: 30px;
     text-align: center;
