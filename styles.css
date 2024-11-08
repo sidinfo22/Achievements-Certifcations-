@@ -355,7 +355,7 @@ ul li a:hover {
     padding: 10px 0;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    text-align: left;
+    text-align: center;
     background-image: url('cobblestone2.jpg');
     background-size: cover;
     background-position: center;
@@ -368,7 +368,7 @@ ul li a:hover {
     }
 
     .certifications h3 {
-        padding-left: 10px; /* Adds extra space to the left of headings on mobile */
+        padding-left: 5px; /* Adds extra space to the left of headings on mobile */
         text-align: left;
         margin-top: 20px;
         margin-bottom: 5px;
@@ -383,7 +383,7 @@ ul li a:hover {
     .certifications h3 {
           font-family: 'Montserrat', sans-serif;
     font-size: 1.5em; /* Increase heading size */
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 15px; /* Increase space between section header and images */
     line-height: 1.6; /* Slightly reduce line height */
     text-align: left;
@@ -393,7 +393,7 @@ ul li a:hover {
 .certifications h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3em;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-bottom: 15px; /* Add more space below subsection headers */
     line-height: 1.6;
     text-align: left;
