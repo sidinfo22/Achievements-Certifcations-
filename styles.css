@@ -524,12 +524,21 @@ ul li a:hover {
         padding-left: 10px; /* Adds left padding to the image gallery on mobile */
         gap: 20px; /* Adjusts the spacing between images for mobile */
     }
+
+}
     #college {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-}
+
+@media (max-width: 768px) {
+    #college {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%; /* Ensures the image is responsive */
+    }
 }
 @media (max-width: 768px) {
     .certifications h3 {
