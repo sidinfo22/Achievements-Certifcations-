@@ -40,7 +40,25 @@
         gap: 5px; /* Add space between icon and text */
     }
 }
+@media (max-width: 768px) {
+    .orderlist {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center-align the menu items */
+        text-align: center;
+        margin: 0 auto; /* Center the list in the pull-out menu */
+    }
 
+    .orderlist.show {
+        transform: translateX(0); /* Slide menu in from the right */
+    }
+
+    .close-button {
+        align-self: flex-start;
+        margin-left: 10px;
+        color: red; /* Ensure the close button is aligned to the left */
+    }
+}
 .copyright {
     margin-bottom: -5px;
     }
