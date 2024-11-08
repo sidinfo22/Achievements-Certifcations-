@@ -987,7 +987,7 @@ footer .copyright {
 
 .swipe-indicator {
     text-align: center;
-    font-size: 0.9em;
+    font-size: 1.1em;
     color: #888;
     display: block;
 }
@@ -1031,7 +1031,7 @@ footer .copyright {
 }
 
 .industry-option img {
-    width: 250%;
+    width: 400px;
     height: auto;
     object-fit: cover;
     border-radius: 8px;
