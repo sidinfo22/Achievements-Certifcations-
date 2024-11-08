@@ -8,29 +8,28 @@
 /* Mobile-specific styling to align Home icon next to hamburger */
 @media (max-width: 768px) {
     .navdiv {
-        position: relative;
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
   
+   .name {
+        order: 1; /* Ensure title stays to the left */
+        text-align: left;
+        flex: 1;
+        padding-left: 10px; /* Adjust padding if needed */
+    }
+
     .mobile-home-icon {
-        display: inline-block;
-        font-size: 1.5em; /* Adjust size as needed */
-        color: black; /* Set to desired color */
-        position: absolute;
-        right: 50px; /* Adjust to position Home icon left of hamburger */
-        top: 50%;
-        transform: translateY(-50%);
+        order: 2;
+        margin-right: 10px; /* Adjust spacing between home icon and hamburger */
     }
 
     .hamburger {
-        display: inline-block;
-        position: absolute;
-        right: 10px; /* Keep hamburger icon aligned to the right */
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 1.5em; /* Adjust size as needed */
+        order: 3;
+        margin-right: 10px;
     }
 }
-
 /* Hide the mobile home icon on desktop */
 @media (min-width: 769px) {
     .mobile-home-icon {
