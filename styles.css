@@ -365,48 +365,29 @@ ul li a:hover {
     .security-logo {
         display: block;
         margin: 10px auto 0; /* Centered under the paragraph */
-            border: none; /* Remove any borders */
+        border: none; /* Remove any borders */
     }
 }
 
-@media (max-width: 768px) {
-  .profile {
-    display: flex;
-    align-items: flex-start; /* Align items at the top */
-    gap: 10px; /* Add some space between the image and the text */
-    flex-wrap: wrap; /* Allow items to wrap if needed */
-  }
-
-  .gradpic {
-    width: 40%; /* Adjust the width to a percentage */
-    max-width: 150px; /* Set a maximum width for better control */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 0; /* Remove any negative margin on mobile */
-  }
-
-  .profile-info {
-    flex: 1; /* Allow the profile info to take remaining space */
-    margin-left: 10px; /* Add space on the left to separate from image */
-  }
-}
-/* Mobile view adjustments for profile section layout */
 @media (max-width: 768px) {
     .profile {
         display: flex;
-        align-items: flex-start;
-        gap: 10px;
+        align-items: flex-start; /* Align items at the top */
+        gap: 10px; /* Add some space between the image and the text */
+        flex-wrap: wrap; /* Allow items to wrap if needed */
         padding: 10px;
     }
 
-    /* Container for the profile image */
-    .profile-left {
-        flex: 0 0 40%;
-        max-width: 150px;
+    .gradpic {
+        width: 45%; /* Slightly larger image width */
+        max-width: 160px; /* Set a maximum width for better control */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 0; /* Remove any negative margin on mobile */
     }
 
-    .gradpic {
-        width: 100%;
-        height: auto;
+    .profile-info {
+        flex: 1; /* Allow the profile info to take remaining space */
+        margin-left: 10px; /* Add space on the left to separate from image */
     }
 
     /* Container for profile details (name, job title, logos) */
@@ -429,8 +410,7 @@ ul li a:hover {
     #jobtitle {
         font-size: 1.2em;
         color: gray;
-        margin: 5px 0;
-        margin-bottom: -11px;
+        margin: 5px 0 -11px 0; /* Reducing space between job title and logos */
     }
 
     /* Adjust logo size and reduce gap */
@@ -438,14 +418,12 @@ ul li a:hover {
         display: flex;
         gap: 11px; /* Smaller gap between logos */
         justify-content: flex-start;
-        margin-top: -3px;
-        margin-left: -2px;
-        margin-bottom: 33px;
+        margin: -3px -5px 33px 0; /* Aligning logos closer to the job title */
     }
 
-    /* Smaller logo size */
+    /* Slightly larger logo size */
     .certification-logos img {
-        width: 68px; /* Smaller logo size */
+        width: 72px; /* Adjusted logo size */
         height: auto;
     }
 
@@ -458,18 +436,16 @@ ul li a:hover {
     .professional-statement {
         clear: both;
         text-align: center;
-        margin-top: 15px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 15px auto 0 auto;
         max-width: 90%; /* Occupy more screen width */
     }
 }
+
 /* Certifications Section */
 .certifications {
     padding: 20px;
     text-align: center;
 }
-
 
 
 .certifications h2 {
