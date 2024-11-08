@@ -418,6 +418,7 @@ ul li a:hover {
         font-size: 1.2em;
         color: gray;
         margin: 5px 0;
+        margin-bottom: -5px;
     }
 
     /* Adjust logo size and reduce gap */
@@ -430,7 +431,7 @@ ul li a:hover {
 
     /* Smaller logo size */
     .certification-logos img {
-        width: 65px; /* Smaller logo size */
+        width: 77px; /* Smaller logo size */
         height: auto;
     }
 
