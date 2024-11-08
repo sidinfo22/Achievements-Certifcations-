@@ -625,7 +625,7 @@ footer .copyright {
 }
 
 .industry-button {
-    background-color: #4CAF50; /* Green */
+    background-color: #000000; /* Green */
     color: white;
     padding: 10px 20px;
     margin: 10px 0;
@@ -638,5 +638,5 @@ footer .copyright {
 }
 
 .industry-button:hover {
-    background-color: #45a049;
+    background-color: #333333;
 }
