@@ -417,7 +417,7 @@ display: flex;
 .view-projects-btn {
     background-color: black; /* Set background color to black */
     color: white; /* Set text color to white */
-    padding: 7px 12px;
+    padding: 7px 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
