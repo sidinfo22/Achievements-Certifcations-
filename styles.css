@@ -512,7 +512,7 @@ footer .copyright {
 }
 /* Page Heading Section */
 .page-heading {
-    background-image: url('cobblestone.jpg'); /* End this line with a semicolon */
+    background-image: url('cobblestone2.jpg'); /* End this line with a semicolon */
     background-size: cover; /* Ensure the image covers the area */
     background-position: center; /* Center the image within the element */
     color: #ffffff; /* White text color for strong contrast */
@@ -558,8 +558,8 @@ footer .copyright {
     transform: translateX(-50%);
     width: 80px;
     height: 3px;
-    background: #00c6ff;
-    box-shadow: 0 0 10px #00c6ff, 0 0 20px #0072ff; /* Adds a neon-like shadow */
+    background: #ffffff;
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #333333; /* Adds a neon-like shadow */
     border-radius: 2px;
 }
 
