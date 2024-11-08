@@ -12,7 +12,22 @@
         max-width: 100% !important;
     }
 }
+#view-projects-button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1em;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
+#view-projects-button:hover {
+    background-color: #333;
+    color: #e0e0e0;
+}
 footer2 {
     background-image: url('cobblestone2.jpg');
     background-size: cover;
