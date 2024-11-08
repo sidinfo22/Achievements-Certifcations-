@@ -426,6 +426,7 @@ ul li a:hover {
         display: flex;
         gap: 11px; /* Smaller gap between logos */
         justify-content: flex-start;
+        margin-top: -10px;
     }
 
     /* Smaller logo size */
