@@ -288,26 +288,6 @@ ul li a:hover {
   height: 300px;
   margin-top: -12px;
 }
-@media (max-width: 768px) {
-  .profile {
-    display: flex;
-    align-items: flex-start; /* Align items at the top */
-    gap: 10px; /* Add some space between the image and the text */
-    flex-wrap: wrap; /* Allow items to wrap if needed */
-  }
-
-  .gradpic {
-    width: 40%; /* Adjust the width to a percentage */
-    max-width: 150px; /* Set a maximum width for better control */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 0; /* Remove any negative margin on mobile */
-  }
-
-  .profile-info {
-    flex: 1; /* Allow the profile info to take remaining space */
-    margin-left: 10px; /* Add space on the left to separate from image */
-  }
-}
 
 .blue-name {
     font-size: 1.8em;
@@ -389,6 +369,26 @@ ul li a:hover {
     }
 }
 
+@media (max-width: 768px) {
+  .profile {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    gap: 10px; /* Add some space between the image and the text */
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+  }
+
+  .gradpic {
+    width: 40%; /* Adjust the width to a percentage */
+    max-width: 150px; /* Set a maximum width for better control */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 0; /* Remove any negative margin on mobile */
+  }
+
+  .profile-info {
+    flex: 1; /* Allow the profile info to take remaining space */
+    margin-left: 10px; /* Add space on the left to separate from image */
+  }
+}
 /* Mobile view adjustments for profile section layout */
 @media (max-width: 768px) {
     .profile {
