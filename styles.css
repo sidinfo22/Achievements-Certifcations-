@@ -424,8 +424,7 @@ ul li a:hover {
     /* Adjust logo size and reduce gap */
     .certification-logos {
         display: flex;
-        gap: 3px; /* Smaller gap between logos */
-        margin-top: 2px; /* Reduced top margin */
+        gap: 11px; /* Smaller gap between logos */
         justify-content: flex-start;
     }
 
