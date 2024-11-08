@@ -708,3 +708,53 @@ footer .copyright {
 .industry-button:hover {
     background-color: #333333;
 }
+/* Make images larger and uniform */
+.industry-option img {
+    width: 100%;
+    height: 300px; /* Increase image size */
+    object-fit: cover; /* Ensure images are uniform */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.industry-option {
+    width: 45%; /* 2 columns on desktop */
+    max-width: 500px;
+    margin: 20px;
+    text-align: center;
+}
+
+.project-excerpt {
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+/* Swipe indicators for mobile */
+.swipe-indicator {
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* Carousel for mobile */
+@media (max-width: 768px) {
+    .industry-carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .industry-option {
+        flex: 0 0 90%; /* One item per view */
+        scroll-snap-align: center;
+        margin: 10px auto;
+    }
+
+    /* Show swipe indicator */
+    .swipe-indicator {
+        display: block;
+    }
+}
