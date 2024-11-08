@@ -370,6 +370,7 @@ ul li a:hover {
     margin-top: 30px;
     margin-bottom: 15px;
     text-align: left;
+    font-family: 'Montserrat', sans-serif; /* Modern, clean font */
 }
 
 .certification-gallery {
