@@ -351,13 +351,13 @@ ul li a:hover {
 /* Mobile view: Stack images vertically */
 @media (max-width: 768px) {
     .certification-logos {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center; /* Center align for mobile view */
             border: none; /* Remove any borders */
             gap: 20px; /* Reduced gap for mobile view */
         margin-top: 20px; /* Adjust margin for mobile */
         display: flex;
-        
+        justify-content: center;
     }
 }
 /* General Styling for SecurityPlus Logo */
