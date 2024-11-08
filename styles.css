@@ -576,3 +576,9 @@ footer .copyright {
     text-align: center;
     padding: 20px 20px;
 }
+.industry-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
