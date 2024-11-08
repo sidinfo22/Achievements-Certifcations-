@@ -21,13 +21,12 @@
     display: inline-block;
     background-color: black;
     color: white;
-    padding: 5px 10px; /* Increased horizontal padding, reduced vertical */
+    padding: 7px 14px; /* Increased horizontal padding, reduced vertical */
     border-radius: 4px;
     text-decoration: none;
     font-size: 0.85em; /* Slightly smaller text */
     margin-bottom: 15px;
-    margin-top: 15px;
-    padding-left: 2px;
+    margin-top: 11px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
