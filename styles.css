@@ -19,20 +19,21 @@
 }
 
 /* Display the mobile-home-icon and adjust layout for mobile view */
+/* Mobile view adjustments */
 @media (max-width: 768px) {
     .mobile-home-icon {
         display: inline-block;
-        font-size: 1.2em; /* Adjust icon size */
-        color: black; /* Icon color */
-        margin-right: 10px; /* Add space between icon and hamburger */
+        font-size: 1.2em;
+        color: black; /* Set the icon color to black */
+        margin-left: 10px; /* Add space between hamburger and home icon */
     }
 
-    /* Position the hamburger icon to the right */
+    /* Position the hamburger icon and home icon on opposite sides */
     .hamburger {
-        order: 2;
+        order: 2; /* Ensure hamburger is on the left */
     }
-
-    /* Ensure the house icon and menu item are aligned properly */
+    
+    /* Style for the home icon within the pull-out menu */
     .orderlist li.words a {
         display: flex;
         align-items: center;
