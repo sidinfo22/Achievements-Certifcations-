@@ -349,51 +349,75 @@ ul li a:hover {
 .certifications h2 {
     font-size: 2em;
     font-family: 'Merriweather', serif; /* Darker and more classic font */
-    font-weight: 700; /* Increase font weight for visibility */
-    color: #333333; /* Dark gray color for better contrast */
-    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 40px; /* Increase space below main section title */
     padding: 10px 0;
-    border-top: 1px solid black; /* Thinner border */
-    border-bottom: 1px solid black; /* Thinner border */
-    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: left;
     background-image: url('cobblestone2.jpg');
-    background-size: cover; /* Show the entire cobblestone image */
-    background-position: center; /* Center the image within the element */
-    margin-left: -20px; /* Adjust based on your page's padding */
+    background-size: cover;
+    background-position: center;
+    margin-left: -20px;
     margin-right: -20px;
 }
 @media (max-width: 768px) {
     .certifications h3 {
         font-size: 0.6em; /* This will make the font slightly smaller on mobile */
+        white-space: nowrap; /* Prevents line break on mobile */
+        overflow: hidden;
+        text-overflow: ellipsis; /* Adds "..." if text overflows */
     }
-}
+    }
+
 .certifications h3 {
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
     font-size: 1.3em;
+    line-height: 2; /* Double-spaced effect */
     margin-top: 30px;
-    margin-bottom: 15px;
-    text-align: left;
-    font-family: 'Montserrat', sans-serif; /* Modern, clean font */
+    margin-bottom: 20px; /* Space between heading and images */
+    text-align: left; /* Left-align headings */
 }
 
 .certification-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+  display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between images */
+    justify-content: flex-start; /* Align items to the left */
+    margin-bottom: 30px; /* Space below each gallery section */
 }
 
 .certification-item {
-    display: flex;
+     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* Align images and captions to the left */
+    width: 150px; /* Set a fixed width for uniform alignment */
 }
 
 .certification-gallery img {
-    width: 150px;
-    height: auto;
+    width: 100%; /* Make images fill container width */
+    height: 150px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensure the image maintains proportions within container */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px; /* Space between image and caption */
 }
 
+@media (max-width: 768px) {
+    .certification-gallery {
+        gap: 10px; /* Reduced gap for mobile */
+    }
+    
+    .certification-item {
+        width: 45%; /* Allow two items per row on mobile */
+    }
+
+    .certifications h3 {
+        margin-top: 20px;
+        margin-bottom: 10px; /* Slightly less space on mobile */
+    }
+}
 .cert-caption {
     font-size: 0.9em;
     font-style: italic;
