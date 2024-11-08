@@ -21,7 +21,7 @@
     display: inline-block;
     background-color: black;
     color: white;
-    padding: 7px 14px; /* Increased horizontal padding, reduced vertical */
+    padding: 6px 12px; /* Increased horizontal padding, reduced vertical */
     border-radius: 4px;
     text-decoration: none;
     font-size: 0.85em; /* Slightly smaller text */
