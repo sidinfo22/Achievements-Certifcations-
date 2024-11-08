@@ -18,32 +18,36 @@
     display: none;
 }
 
-/* Mobile-specific styles */
+/* Mobile-specific styling */
 @media (max-width: 768px) {
-    .home-icon-mobile {
-        display: block; /* Show home icon on mobile */
-        margin-right: 10px; /* Space between home icon and hamburger */
-        font-size: 1.2em; /* Adjust icon size as needed */
-        color: black;
+    .mobile-home-icon {
+        display: inline-block;
+        font-size: 1.5em; /* Adjust size as needed */
+        color: black; /* Set to desired color */
+        margin-right: 10px; /* Adjust for spacing */
     }
 
-    .navdiv {
-        display: flex;
-        align-items: center;
+    .name {
+        text-align: center;
+        flex: 1;
     }
 
-    .hamburger {
-        order: 1; /* Position hamburger after the home icon */
+    .navbar .hamburger {
+        margin-left: auto;
     }
 
-    .home-icon-mobile {
-        order: 0; /* Position home icon before the hamburger */
+    .navbar .mobile-home-icon {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
     }
+}
 
-    /* Home icon inside pull-out menu */
-    .orderlist .words a i.fas.fa-home {
-        font-size: 1.2em;
-        color: black;
+/* Hide mobile-home-icon on desktop */
+@media (min-width: 769px) {
+    .mobile-home-icon {
+        display: none;
     }
 }
 .copyright {
