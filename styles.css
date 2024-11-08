@@ -321,6 +321,11 @@ ul li a:hover {
   height: 300px;
   margin-top: -12px;
 }
+@media (min-width: 769px) {
+    .gradpic {
+        width: 400px;
+        height: 400px;
+        position: absolute; /* Position absolutely */
 
 .blue-name {
     font-size: 1.8em;
@@ -442,7 +447,7 @@ ul li a:hover {
     /* Styling for job title */
     #jobtitle {
         font-size: 1.2em;
-        color: gray;
+        color: #f3f3f3;
         margin: 5px 0 -11px 0; /* Reducing space between job title and logos */
     }
 
