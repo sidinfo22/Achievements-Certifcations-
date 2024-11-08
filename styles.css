@@ -386,6 +386,10 @@ ul li a:hover {
     .certification-gallery img {
         max-width: 200px; /* Increase image size for better legibility */
         margin-bottom: 15px; /* Space between image and caption */
+
+            .certifications h3 {
+        margin-bottom: 40px;
+    }
     }
 
     .certifications h3 {
@@ -395,9 +399,10 @@ ul li a:hover {
 .certification-gallery {
   display: flex;
     flex-wrap: wrap;
-    gap: 30px; /* Space between images */
+    gap: 40px; /* Space between images */
     justify-content: flex-start; /* Align items to the left */
     margin-bottom: 50px; /* Space below each gallery section */
+    
 }
 
 .certification-item {
@@ -408,12 +413,12 @@ ul li a:hover {
 }
 
 .certification-gallery img {
-    width: 100%; /* Make images fill container width */
-    height: 200px; /* Set a fixed height for uniformity */
-    object-fit: cover; /* Ensure the image maintains proportions within container */
+    width: auto;
+    height: auto;
+    max-width: 150px; /* Default max-width */
     border-radius: 8px;
-    box-shadow: 0 4px 4=8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px; /* Space between image and caption */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
