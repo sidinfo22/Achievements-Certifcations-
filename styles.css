@@ -145,7 +145,6 @@ ul li a:hover {
         transition: transform 0.3s ease;
         text-align: center;
     }
-        @media (max-width: 768px) {
     .hamburger {
         margin-right: 20px; /* Move hamburger icon left on mobile */
         border-left: 1px solid rgba(0, 0, 0, 0.2); /* Add left border on mobile */
@@ -162,7 +161,6 @@ ul li a:hover {
     font-weight: bold;
     padding: 15px 0;
     border-bottom: 1px solid #ddd; /* Divider under the title */
-    color: black;
     text-align: center;
 }     
      .menu-title {
@@ -171,6 +169,7 @@ ul li a:hover {
 
         @media (max-width: 768px) {
     .close-button {
+        color: red !important;
         display: none; /* Hide by default on mobile */
     }
 
@@ -186,7 +185,10 @@ ul li a:hover {
         border: none;
     }
 }
-
+.close-button {
+        display: none; 
+        color: red;  /* Ensure hidden on desktop */
+    }
 
 @media (min-width: 769px) {
     .close-button {
@@ -276,12 +278,21 @@ ul li a:hover {
 }
 @media (max-width: 768px) {
   .gradpic {
-    width: 30%; /* Adjust the width to a percentage */
+    width: 40%; /* Adjust the width to a percentage */
     max-width: 200px; /* Set a maximum width */
     height: auto; /* Maintain aspect ratio */
     margin-top: -10px; /* Remove any negative margin on mobile */
     margin-left: 0;
+    float: left;
   }
+
+.blue-name {
+    font-size: 1.8em;
+    color: #0073e6; /* Profile name in blue */
+    margin: 0;
+    display: flex;
+}
+
 }
 .profile-pic {
     width: 150px;
@@ -345,6 +356,8 @@ ul li a:hover {
             border: none; /* Remove any borders */
             gap: 20px; /* Reduced gap for mobile view */
         margin-top: 20px; /* Adjust margin for mobile */
+        display: flex;
+        
     }
 }
 /* General Styling for SecurityPlus Logo */
