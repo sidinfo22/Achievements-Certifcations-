@@ -4,6 +4,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+@media (max-width: 768px) {
+    .profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: nowrap; /* Ensure items are side by side */
+    }
+
+    .profile-left {
+        flex-shrink: 0;
+        width: 100px; /* Adjust the width for the graduation picture */
+    }
+
+    .profile-right {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px; /* Adjust spacing as needed */
+    }
+}
 
 /* Mobile-specific styling to align Home icon next to hamburger */
 @media (max-width: 768px) {
@@ -470,11 +491,10 @@ ul li a:hover {
     }
 
     .gradpic {
-        width: 45%; /* Slightly larger image width */
-        max-width: 160px; /* Set a maximum width for better control */
-        height: auto; /* Maintain aspect ratio */
-        margin-top: 0; /* Remove any negative margin on mobile */
+          width: 120px; /* Adjust to desired size */
+        height: auto;
     }
+}
 
     .profile-info {
         flex: 1; /* Allow the profile info to take remaining space */
