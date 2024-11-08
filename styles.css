@@ -370,6 +370,7 @@ ul li a:hover {
     line-height: 2;
 }
 
+
 .certification-logos {
     list-style: none; /* Remove bullet points */
     display: flex;
@@ -410,7 +411,9 @@ ul li a:hover {
         border: none; /* Remove any borders */
     }
 }
-
+.professional-statement p {
+    text-indent: 20px; /* Adjust the value to control the indentation size */
+}
 @media (max-width: 768px) {
     .profile {
         display: flex;
