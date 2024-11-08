@@ -16,7 +16,7 @@
     display: inline-block;
     background-color: black;
     color: white;
-    padding: 8px 20px; /* Increased horizontal padding, reduced vertical */
+    padding: 5px 10px; /* Increased horizontal padding, reduced vertical */
     border-radius: 4px;
     text-decoration: none;
     font-size: 0.85em; /* Slightly smaller text */
