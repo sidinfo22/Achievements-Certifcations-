@@ -31,11 +31,6 @@
         text-align: center;
         flex: 1;
     }
-
-    .navbar .hamburger {
-        margin-left: auto;
-    }
-
     .navbar .mobile-home-icon {
         position: absolute;
         left: 10px;
@@ -73,13 +68,15 @@
     color: #e0e0e0;
 }
 footer2 {
-    background-image: url('cobblestone2.jpg');
+  background-image: url('cobblestone2.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
     padding: 20px;
     border-top: 1px solid #ddd;
     padding-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Adds shadow effect */
+    margin-top: 5px; /* Adds spacing above footer */
 }
 
 .footer-info2 {
@@ -183,6 +180,7 @@ ul li a:hover {
         text-align: center;
     }
     .hamburger {
+        display: block; /* Show hamburger icon on mobile */
         margin-right: 20px; /* Move hamburger icon left on mobile */
         border-left: 1px solid rgba(0, 0, 0, 0.2); /* Add left border on mobile */
         padding-left: 10px; /* Add padding to create space between icon and border */
@@ -267,11 +265,6 @@ ul li a:hover {
  .orderlist li a {
         padding: 10px; /* Additional padding for links when menu is open */
     }
-
-    .hamburger {
-        display: block; /* Show hamburger icon on mobile */
-    }
-}
 
  .icon-linkedin i {
     color: #0a66c2  !important;
@@ -710,15 +703,22 @@ footer .copyright {
     background-color: transparent; /* Transparent background */
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    z-index: 1;
 }
 
 .overlay-button:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Slight background color on hover */
     color: white;
 }
-.overlay-button {
-    z-index: 1;
+/* Make overlay button slightly smaller on mobile */
+@media (max-width: 768px) {
+    .overlay-button {
+        padding: 6px 12px; /* Smaller padding */
+        font-size: 0.9em; /* Slightly smaller font size */
+        border: 1.5px solid rgba(255, 255, 255, 0.5); /* Thinner border */
+    }
 }
+
 /* Page Heading Section */
 .page-heading {
     background-image: url('cobblestone2.jpg'); /* End this line with a semicolon */
