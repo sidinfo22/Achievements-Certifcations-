@@ -13,9 +13,38 @@
     }
 }
 
-/* Hide the mobile-home-icon by default */
-.mobile-home-icon {
+/* Hide the additional home icon by default */
+.home-icon-mobile {
     display: none;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .home-icon-mobile {
+        display: block; /* Show home icon on mobile */
+        margin-right: 10px; /* Space between home icon and hamburger */
+        font-size: 1.2em; /* Adjust icon size as needed */
+        color: black;
+    }
+
+    .navdiv {
+        display: flex;
+        align-items: center;
+    }
+
+    .hamburger {
+        order: 1; /* Position hamburger after the home icon */
+    }
+
+    .home-icon-mobile {
+        order: 0; /* Position home icon before the hamburger */
+    }
+
+    /* Home icon inside pull-out menu */
+    .orderlist .words a i.fas.fa-home {
+        font-size: 1.2em;
+        color: black;
+    }
 }
 .copyright {
     margin-bottom: -5px;
