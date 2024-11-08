@@ -258,11 +258,18 @@ ul li a:hover {
     border-left: 1px solid black;
 }
 @media (max-width: 768px) {
+    .banner {
+        width: 100vw; /* Set banner container to full viewport width */
+        margin: 0; /* Remove any margin */
+        padding: 0; /* Remove any padding */
+    }
+
     .banner img {
-        height: 275px; 
+        width: 100vw; /* Ensure image spans the full viewport width */
+        height: 275px;
+        object-fit: cover; /* Keep the image proportional and cover the area */
         border-top: 1px solid black;
         border-bottom: 0.5px solid black;
-        width: 100%;
     }
 }
 /* Profile Section */
