@@ -423,11 +423,13 @@ ul li a:hover {
 }
 
 .certification-item {
-     display: flex;
+   display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align images and captions to the left */
+    align-items: center; /* Center-align the caption */
     width: 200px; /* Set a fixed width for uniform alignment */
+    text-align: center; /* Ensure text is centered within the container */
 }
+
 
 .certification-gallery img {
     width: auto;
@@ -452,7 +454,7 @@ ul li a:hover {
     }
     .certifications h3 {
         margin-top: 20px;
-        margin-bottom: 15px; /* Slightly less space on mobile */
+        margin-bottom: 5px; /* Slightly less space on mobile */
         font-size: 1.2em;
     }
 }
