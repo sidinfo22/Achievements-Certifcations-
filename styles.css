@@ -546,7 +546,7 @@ footer .copyright {
     position: relative; /* To position the button inside the banner */
 }
 
-* Centered overlay button for banner */
+/* Centered overlay button for banner */
 .banner {
     position: relative; /* Make banner container relative */
 }
