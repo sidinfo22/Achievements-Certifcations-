@@ -32,28 +32,31 @@
     </section>
 
     <section class="industry-section">
-        <div class="swipe-indicator">Swipe to see more →</div>
-        <div class="industry-carousel">
-            <div class="industry-option">
-                <img src="industryexams.jpg" alt="Test your knowledge in the security industry" />
-                <button class="industry-button" onclick="location.href='security.html';">Industry Exams Plus</button>
-                <p class="project-excerpt">Industry Exams Plus is a platform designed for users to test their knowledge in the security industry and explore career resources.</p>
+        <div class="project-gallery">
+            <button class="prev" onclick="changeProject(-1)">&#10094;</button>
+            <div class="industry-carousel">
+                <div class="industry-option">
+                    <img src="industryexams.jpg" alt="Test your knowledge in the security industry" />
+                    <button class="industry-button" onclick="location.href='security.html';">Industry Exams Plus</button>
+                    <p class="project-excerpt">Industry Exams Plus is a platform designed for users to test their knowledge in the security industry and explore career resources.</p>
+                </div>
+                <div class="industry-option">
+                    <img src="robot.jpg" alt="Automation & AI" />
+                    <button class="industry-button" onclick="location.href='automation.html';">Automation & AI</button>
+                    <p class="project-excerpt">This project explores cutting-edge advancements in automation and artificial intelligence, showcasing practical applications.</p>
+                </div>
+                <div class="industry-option">
+                    <img src="database.jpg" alt="My SQL Database" />
+                    <button class="industry-button" onclick="location.href='database.html';">My SQL Database</button>
+                    <p class="project-excerpt">A comprehensive SQL database project, focusing on data management and efficient querying techniques.</p>
+                </div>
+                <div class="industry-option">
+                    <img src="photos.jpg" alt="Wespin360.org Photography" />
+                    <button class="industry-button" onclick="location.href='photography.html';">Wespin360.org Photography</button>
+                    <p class="project-excerpt">A curated gallery of photography projects showcasing creative work on Wespin360.org.</p>
+                </div>
             </div>
-            <div class="industry-option">
-                <img src="robot.jpg" alt="Automation & AI" />
-                <button class="industry-button" onclick="location.href='automation.html';">Automation & AI</button>
-                <p class="project-excerpt">This project explores cutting-edge advancements in automation and artificial intelligence, showcasing practical applications.</p>
-            </div>
-            <div class="industry-option">
-                <img src="database.jpg" alt="My SQL Database" />
-                <button class="industry-button" onclick="location.href='database.html';">My SQL Database</button>
-                <p class="project-excerpt">A comprehensive SQL database project, focusing on data management and efficient querying techniques.</p>
-            </div>
-            <div class="industry-option">
-                <img src="photos.jpg" alt="Wespin360.org Photography" />
-                <button class="industry-button" onclick="location.href='photography.html';">Wespin360.org Photography</button>
-                <p class="project-excerpt">A curated gallery of photography projects showcasing creative work on Wespin360.org.</p>
-            </div>
+            <button class="next" onclick="changeProject(1)">&#10095;</button>
         </div>
     </section>
 
