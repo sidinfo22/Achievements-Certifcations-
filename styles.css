@@ -119,19 +119,21 @@ ul li a:hover {
     }
 
       
-    .close-button {
-        display: none; /* Hide by default on mobile */
-    }
-  @media (max-width: 768px) {
+.close-button {
+    display: none;
+}
+
+/* Display close button on mobile when menu is active */
+@media (max-width: 768px) {
     .orderlist.show .close-button {
-        display: block; /* Show when menu is open on mobile */
+        display: block;
         position: absolute;
         top: 10px;
         left: 10px;
         font-size: 1.5em;
         cursor: pointer;
-        color: red !important; /* Force red color */
-        background: none; /* Remove any background or border */
+        color: red !important;
+        background: none;
         border: none;
     }
 }
@@ -224,14 +226,12 @@ ul li a:hover {
   margin-top: -12px;
 }
 @media (max-width: 768px) {
-  .gradpic {
-    width: 30%; /* Adjust the width to a percentage */
-    max-width: 200px; /* Set a maximum width */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: -10px; /* Remove any negative margin on mobile */
-    margin-left: 0;
-  }
-}
+    .gradpic {
+        width: 40%; /* Slightly larger image */
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
 .profile-pic {
     width: 150px;
     height: 150px;
@@ -288,14 +288,12 @@ ul li a:hover {
 
 /* Mobile view: Stack images vertically */
 @media (max-width: 768px) {
-    .certification-logos {
-        flex-direction: column;
-        align-items: center; /* Center align for mobile view */
-            border: none; /* Remove any borders */
-            gap: 20px; /* Reduced gap for mobile view */
-        margin-top: 20px; /* Adjust margin for mobile */
+    .gradpic {
+        width: 40%; /* Slightly larger image */
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
     }
-}
 /* General Styling for SecurityPlus Logo */
 .security-logo {
     width: 100px; /* Adjust size as needed */
@@ -391,12 +389,13 @@ ul li a:hover {
     }
 
 .certifications h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;
-    margin-top: 15px;
-    margin-bottom: 15px; /* Add more space below subsection headers */
-    line-height: 1.6;
-    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6em; /* Slightly larger font */
+    margin-top: 20px;
+    margin-bottom: 20px; /* Add more space between heading and images */
+    font-weight: 600;
+    text-align: center; /* Center-align for a professional look */
+    text-decoration: none; /* Remove underline */
 }
 @media (min-width: 769px) {
     .certification-gallery img {
@@ -504,8 +503,8 @@ footer {
     padding: 20px;
     border-top: 1px solid #ddd;
     padding-top: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Apply shadow */
 }
-
 .footer-info {
     display: flex;
     justify-content: center;
@@ -571,15 +570,21 @@ footer .copyright {
     background-color: transparent; /* Transparent background */
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    z-index: 1;
 }
 
 .overlay-button:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Slight background color on hover */
     color: white;
 }
-.overlay-button {
-    z-index: 1;
+/* Mobile view - Adjust "View Gallery" button size */
+@media (max-width: 768px) {
+    .overlay-button {
+        font-size: 0.9em; /* Slightly smaller font */
+        padding: 6px 12px; /* Smaller padding */
+    }
 }
+
 /* Page Heading Section */
 .page-heading {
     background-image: url('cobblestone2.jpg'); /* End this line with a semicolon */
@@ -747,12 +752,11 @@ footer .copyright {
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-    }
-
-    .industry-option {
-        flex: 0 0 90%; /* One item per view */
         scroll-snap-align: center;
-        margin: 10px auto;
+    }
+ .industry-option {
+        flex: 0 0 100%;
+        scroll-snap-align: center;
     }
 
     /* Show swipe indicator */
@@ -943,4 +947,39 @@ footer .copyright {
 .industry-carousel:after {
     content: '';
     flex: 0 0 auto;
+}
+.project-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.industry-carousel {
+    display: flex;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    width: 80%; /* Adjust width for layout */
+}
+
+.industry-option {
+    flex: 0 0 50%; /* Show two items at a time */
+    max-width: 50%;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    scroll-snap-align: center;
+}
+
+.prev, .next {
+    cursor: pointer;
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    color: #555;
 }
