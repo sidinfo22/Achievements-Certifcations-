@@ -497,11 +497,6 @@ display: flex;
 
 /* Footer Styling */
 
-.footer2 {
-    background-image: url('cobblestone2.jpg'); /* End this line with a semicolon */
-    background-size: cover; /* Ensure the image covers the area */
-    background-position: center; /* Center the image within the element */
-}
 
 footer {
     background-color: white;
