@@ -404,8 +404,8 @@ display: flex;
     justify-content: center;
     margin: 20px 0;
     padding: 10px; /* Add padding to create some spacing above the button */
-    border-top: 3px groove black; /* Apply top border */
-    border-bottom: 3px groove black; /* Apply bottom border */
+    border-top: 1px groove black; /* Apply top border */
+    border-bottom: 1px groove black; /* Apply bottom border */
     background-image: url('cobblestone2.jpg'); /* End this line with a semicolon */
     background-size: cover; /* Ensure the image covers the area */
     background-position: center; /* Center the image within the element */
@@ -512,7 +512,7 @@ footer .copyright {
 }
 /* Page Heading Section */
 .page-heading {
-    background-image: url('cobblestone.jpg'); /* End this line with a semicolon */
+    background-image: url('cobblestone2.jpg'); /* End this line with a semicolon */
     background-size: cover; /* Ensure the image covers the area */
     background-position: center; /* Center the image within the element */
     color: #ffffff; /* White text color for strong contrast */
