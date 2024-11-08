@@ -840,3 +840,105 @@ footer .copyright {
     text-align: left;
     line-height: 1.4;
 }
+.industry-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.swipe-indicator {
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.industry-carousel {
+    display: flex;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+/* Desktop View: Show 2 projects side-by-side */
+@media (min-width: 769px) {
+    .industry-carousel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 projects side-by-side */
+        gap: 20px;
+    }
+    .industry-option {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+}
+
+/* Mobile View: Show 1 project at a time with swipe */
+@media (max-width: 768px) {
+    .industry-carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+    .industry-option {
+        flex: 0 0 100%;
+        margin: 10px auto;
+        scroll-snap-align: center;
+    }
+}
+
+.industry-option img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.industry-option {
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.industry-button {
+    background-color: #368bc1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.industry-button:hover {
+    background-color: #333333;
+}
+
+.project-description {
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Infinite Scroll for the carousel */
+.industry-carousel {
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.industry-carousel::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+/* For non-ending scroll effect */
+.industry-carousel:after {
+    content: '';
+    flex: 0 0 auto;
+}
