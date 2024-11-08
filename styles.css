@@ -12,6 +12,28 @@
         max-width: 100%;
     }
 }
+
+footer 2 {
+    background-image: url('cobblestone2.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1em;
+    align-items: center;
+}
+
+.footer-info i {
+    margin-right: 5px;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: white;
