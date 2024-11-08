@@ -362,7 +362,23 @@ ul li a:hover {
     margin-left: -20px;
     margin-right: -20px;
 }
+@media (max-width: 768px) {
+    .certifications {
+        padding: 0 10px; /* Adds padding to the left and right on mobile only */
+    }
 
+    .certifications h3 {
+        padding-left: 10px; /* Adds extra space to the left of headings on mobile */
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .certification-gallery {
+        padding-left: 10px; /* Adds left padding to the image gallery on mobile */
+        gap: 20px; /* Adjusts the spacing between images for mobile */
+    }
+}
 @media (max-width: 768px) {
     .certifications h3 {
           font-family: 'Montserrat', sans-serif;
