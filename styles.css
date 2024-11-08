@@ -325,15 +325,14 @@ ul li a:hover {
     .gradpic {
         width: 400px;
         height: 400px;
-        position: absolute; /* Position absolutely */
-
+        margin-top: 0;
+    }
 .blue-name {
     font-size: 1.8em;
     color: #0073e6; /* Profile name in blue */
     margin: 0;
     display: flex;
 }
-
 }
 .profile-pic {
     width: 150px;
