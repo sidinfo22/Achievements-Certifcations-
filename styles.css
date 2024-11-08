@@ -324,6 +324,7 @@ ul li a:hover {
   height: 300px;
     margin-top: 20px;
     margin-left: 20px;
+    margin-bottom: 8px;
 
 }
 @media (min-width: 769px) {
