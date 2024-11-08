@@ -323,8 +323,8 @@ ul li a:hover {
   height: 300px;
   margin-top: -12px;
     margin-left: 0px;
-    top: 20px;
-    left: 20px;
+    top: 40px;
+    left: 40px;
 }
 @media (min-width: 769px) {
     .gradpic {
@@ -488,6 +488,7 @@ ul li a:hover {
     padding: 20px;
     text-align: center;
     background-color: #f3f3f3;
+    margin-top: 0; /* Ensure there's no gap above */
 }
 
 
