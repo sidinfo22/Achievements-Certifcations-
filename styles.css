@@ -388,8 +388,8 @@ ul li a:hover {
 
     /* Container for the profile image */
     .profile-left {
-        flex: 0 0 40%;
-        max-width: 150px;
+        flex: 0 0 45%;
+        max-width: 156px;
     }
 
     .gradpic {
