@@ -530,7 +530,7 @@ footer .copyright {
     color: #ffffff; /* White to contrast with the gradient */
     letter-spacing: 2px; /* Slight spacing for a sleek look */
     text-transform: uppercase;
-    background: linear-gradient(45deg, #00c6ff, #0072ff); /* Subtle gradient text color */
+    background: linear-gradient(45deg, #333333, #000000); /* Subtle gradient text color */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
