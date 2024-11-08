@@ -347,11 +347,11 @@ ul li a:hover {
 
 
 .certifications h2 {
-   font-size: 2em;
+    font-size: 2em;
     font-family: 'Merriweather', serif;
     font-weight: 700;
     color: #333333;
-    margin-bottom: 40px; /* Increase space below main section title */
+    margin-bottom: 50px; /* Increase space below main section title */
     padding: 10px 0;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -362,6 +362,7 @@ ul li a:hover {
     margin-left: -20px;
     margin-right: -20px;
 }
+
 @media (max-width: 768px) {
     .certifications h3 {
           font-family: 'Montserrat', sans-serif;
@@ -374,14 +375,23 @@ ul li a:hover {
     }
 
 .certifications h3 {
-  font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.3em;
-    line-height: 2; /* Double-spaced effect */
-    margin-top: 30px;
-    margin-bottom: 20px; /* Space between heading and images */
-    text-align: left; /* Left-align headings */
+    margin-top: 40px;
+    margin-bottom: 40px; /* Add more space below subsection headers */
+    line-height: 1.6;
+    text-align: left;
 }
+@media (min-width: 769px) {
+    .certification-gallery img {
+        max-width: 200px; /* Increase image size for better legibility */
+        margin-bottom: 15px; /* Space between image and caption */
+    }
 
+    .certifications h3 {
+        margin-bottom: 40px; /* Add more space below subsection headings on desktop */
+    }
+}
 .certification-gallery {
   display: flex;
     flex-wrap: wrap;
