@@ -510,16 +510,23 @@ ul li a:hover {
         padding-left: 10px; /* Adds left padding to the image gallery on mobile */
         gap: 20px; /* Adjusts the spacing between images for mobile */
     }
+    #college {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 }
 @media (max-width: 768px) {
     .certifications h3 {
           font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em; /* Increase heading size */
     margin-top: 30px;
     margin-bottom: 15px; /* Increase space between section header and images */
     line-height: 1.6; /* Slightly reduce line height */
-    text-align: left;
-}
+    text-align: center;
+font-size: 5vw; /* Adjusts font size based on viewport width */
+        white-space: nowrap; /* Prevents the text from wrapping onto a new line */
+    }
     }
 
 .certifications h3 {
@@ -527,8 +534,8 @@ ul li a:hover {
     font-size: 1.3em;
     margin-top: 15px;
     margin-bottom: 15px; /* Add more space below subsection headers */
-    line-height: 1.6;
-    text-align: left;
+    line-height: 2; /* Double spacing */
+    text-align: center;
 }
 @media (min-width: 769px) {
     .certification-gallery img {
@@ -550,7 +557,7 @@ ul li a:hover {
     flex-wrap: wrap;
     gap: 25px; /* Space between images */
     justify-content: flex-start; /* Align items to the left */
-    margin-bottom: 20px; /* Space below each gallery section */
+    margin-bottom: 28px; /* Space below each gallery section */
     
 }
 
@@ -586,7 +593,7 @@ ul li a:hover {
     }
     .certifications h3 {
         margin-top: 20px;
-        margin-bottom: 5px; /* Slightly less space on mobile */
+        margin-bottom: 18px; /* Slightly less space on mobile */
         font-size: 1.2em;
     }
 }
