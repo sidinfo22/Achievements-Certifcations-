@@ -388,7 +388,7 @@ ul li a:hover {
 
     /* Container for the profile image */
     .profile-left {
-        flex: 0 0 45%;
+        flex: 0 0 40%;
         max-width: 160px;
     }
 
