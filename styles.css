@@ -17,48 +17,6 @@
 .mobile-home-icon {
     display: none;
 }
-
-/* Display the mobile-home-icon and adjust layout for mobile view */
-/* Mobile view adjustments */
-@media (max-width: 768px) {
-    .mobile-home-icon {
-        display: inline-block;
-        font-size: 1.2em;
-        color: black; /* Set the icon color to black */
-        margin-left: 10px; /* Add space between hamburger and home icon */
-    }
-
-    /* Position the hamburger icon and home icon on opposite sides */
-    .hamburger {
-        order: 2; /* Ensure hamburger is on the left */
-    }
-    
-    /* Style for the home icon within the pull-out menu */
-    .orderlist li.words a {
-        display: flex;
-        align-items: center;
-        gap: 5px; /* Add space between icon and text */
-    }
-}
-@media (max-width: 768px) {
-    .orderlist {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Center-align the menu items */
-        text-align: center;
-        margin: 0 auto; /* Center the list in the pull-out menu */
-    }
-
-    .orderlist.show {
-        transform: translateX(0); /* Slide menu in from the right */
-    }
-
-    .close-button {
-        align-self: flex-start;
-        margin-left: 10px;
-        color: red; /* Ensure the close button is aligned to the left */
-    }
-}
 .copyright {
     margin-bottom: -5px;
     }
