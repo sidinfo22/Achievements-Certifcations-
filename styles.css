@@ -758,3 +758,85 @@ footer .copyright {
         display: block;
     }
 }
+/* Industry Section Styling */
+.industry-section {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Carousel for mobile */
+@media (max-width: 768px) {
+    .industry-carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .industry-option {
+        flex: 0 0 90%; /* One item per view */
+        scroll-snap-align: center;
+        margin: 10px auto;
+    }
+
+    /* Show swipe indicator */
+    .swipe-indicator {
+        display: block;
+    }
+}
+
+/* 2x2 grid for desktop */
+@media (min-width: 769px) {
+    .industry-carousel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .industry-option {
+        width: 100%;
+        aspect-ratio: 1; /* Square aspect ratio */
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .industry-option img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Cover the entire area */
+    }
+
+    .industry-option:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* Industry button and description styling */
+.industry-button {
+    background-color: #368bc1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 0 0 5px 5px; /* Rounded corners on bottom */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.industry-button:hover {
+    background-color: #333333;
+}
+
+.project-description {
+    padding: 10px;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 1em;
+    text-align: left;
+    line-height: 1.4;
+}
