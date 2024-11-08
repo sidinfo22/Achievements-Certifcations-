@@ -13,103 +13,137 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+h3 {
+    text-decoration: underline; /* Underline all h3 headings */
+}
 
-/* Navbar and Header Section */
+#jobtitle {
+    text-decoration: none; /* Remove underline for the specific 'Cybersecurity Analyst' heading */
+}
 .navbar {
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 1000;
+    position: sticky; /* Make navbar sticky */
+    top: 0; /* Stick to the top */
+    background-color: white; /* Ensure background stays white when scrolling */
+    z-index: 1000; /* Keep it above other content */
 }
-
 .navdiv {
     display: flex;
-    align-items: center;
+    align-items: center; 
     justify-content: space-between;
     gap: 20px;
 }
-
-.name { 
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
-    font-size: 1.2em;
-    font-family: 'Playfair Display', serif;
-    padding-right: 10px;
-    color: #0073e6; /* Blue name */
+ .name { 
+     border-right: 1px solid rgba(0, 0, 0, 0.2);
+     font-size:1.2em;
+     margin-left: 10px;
+     font-family: 'Playfair Display', serif;
+     padding-right: 5px;
+     padding-right: 10px;
+ }
+.montserrat-font {
+    font-family: 'Montserrat', sans-serif;
 }
 
-li {
+ li {
     list-style: none;
     display: inline-block;
     border-right: 1px solid rgba(0, 0, 0, 0.2);
-}
+ }
 li:last-child {
     border-right: none;
 }
-
 li a {
     text-decoration: none;
     margin-right: 25px; 
     padding: 10px 15px;
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-size: 1.2em;
     color: black;
+    text-decoration: none;
     display: block;
 }
 
-/* Hover Effects */
 ul li a:hover {
     color: red;
 }
 
 .words {
-    color: black !important;
+    color: black  !important;
     font-size: 1.2em;
     font-weight: bold;
-}  
-
-.icon-linkedin i {
-    color: #0a66c2; /* LinkedIn Blue */
-    font-size: 1.5em;
-}
-
-.icon-youtube i {
-    color: #ff0000; /* YouTube Red */
-    font-size: 1.5em;
-}
-
+}   
 .hamburger {
-    display: none;
+    display: none; /* Hide by default */
     font-size: 1.5em;
     cursor: pointer;
 }
-
-/* Mobile Menu Styling */
-@media (max-width: 768px) {
+    @media (max-width: 768px) {
     .orderlist {
-        display: none;
+      display: none; /* Hide menu on mobile */
         flex-direction: column;
         position: fixed;
         top: 0;
         right: 0;
         height: 100%;
         width: 200px;
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.2); /* Set transparent background */
         padding-top: 60px;
-        transform: translateX(100%);
+        transform: translateX(100%); /* Position off-screen by default */
         transition: transform 0.3s ease;
         text-align: center;
     }
-
+        @media (max-width: 768px) {
     .hamburger {
-        display: block;
-        margin-right: 20px;
-        border-left: 1px solid rgba(0, 0, 0, 0.2);
-        padding-left: 10px;
+        margin-right: 20px; /* Move hamburger icon left on mobile */
+        border-left: 1px solid rgba(0, 0, 0, 0.2); /* Add left border on mobile */
+        padding-left: 10px; /* Add padding to create space between icon and border */
+    }
+
+    .name {
+        border-right: none; /* Hide border-right on .name in mobile view */
+    }
+}
+
+ .orderlist.show .menu-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd; /* Divider under the title */
+    color: black;
+    text-align: center;
+}     
+     .menu-title {
+        display: none; /* Hide title by default */
+    }
+
+        @media (max-width: 768px) {
+    .close-button {
+        display: none; /* Hide by default on mobile */
     }
 
     .orderlist.show .close-button {
+        display: block; /* Show when menu is open on mobile */
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 1.5em;
+        cursor: pointer;
+        color: red !important; /* Force red color */
+        background: none; /* Remove any background or border */
+        border: none;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .close-button {
+        display: none; /* Ensure hidden on desktop */
+    }
+}
+        
+       .orderlist.show .close-button {
         display: block;
         position: absolute;
         top: 10px;
@@ -117,38 +151,98 @@ ul li a:hover {
         font-size: 1.5em;
         cursor: pointer;
         color: red;
-        background: none;
+        background: none; /* Remove background/border around the X */
         border: none;
+    }     
+
+    .orderlist.show {
+        display: flex; /* Display menu when .show is added */
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 200px;
+        background-color: white; /* Set background color to white when open */
+        padding-top: 60px;
+        transform: translateX(0); /* Slide in when 'show' class is added */
+        transition: transform 0.5s ease;
+    }
+
+        
+    .orderlist.show li {
+        padding: 15px 0;
+        border-bottom: 1px solid #ddd; /* Divider between items */
+    }
+ .orderlist li a {
+        padding: 10px; /* Additional padding for links when menu is open */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon on mobile */
     }
 }
 
-/* Page Headers */
-.page-heading {
-    background-image: url('cobblestone2.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #ffffff;
-    padding: 30px;
-    text-align: center;
-    margin-bottom: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+ .icon-linkedin i {
+    color: #0a66c2  !important;
+    font-size: 1.5em;
 }
 
-.page-heading h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3em;
-    font-weight: 700;
-    background: linear-gradient(45deg, #333333, #000000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+ .icon-youtube i {
+    color: #ff0000  !important;
+    font-size: 1.5em;
 }
 
+/* Banner Styling */
+.banner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-bottom: 1px solid black;
+    border-top: 0.5px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+@media (max-width: 768px) {
+    .banner img {
+        height: 275px; 
+        border-top: 1px solid black;
+        border-bottom: 0.5px solid black;
+    }
+}
 /* Profile Section */
 .profile {
     display: flex;
     align-items: flex-start;
     gap: 20px;
     padding: 20px;
+}
+.gradpic {
+  width: 300px;
+  height: 300px;
+  margin-top: -12px;
+}
+@media (max-width: 768px) {
+  .gradpic {
+    width: 30%; /* Adjust the width to a percentage */
+    max-width: 200px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: -10px; /* Remove any negative margin on mobile */
+    margin-left: 0;
+  }
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .blue-name {
@@ -157,22 +251,90 @@ ul li a:hover {
     margin: 0;
 }
 
-#jobtitle {
+.profile-info h3 {
     font-size: 1.1em;
     color: gray;
+    margin: 5px 0;
 }
 
+.professional-statement {
+    font-size: 1em;
+    margin-top: 10px;
+    line-height: 2;
+}
+
+.certification-logos {
+    list-style: none; /* Remove bullet points */
+    display: flex;
+    gap: 33px; /* Space between images */
+    padding: 0;
+    margin-top: 10px; /* Space above the image list */
+}
+
+/* Style each list item */
+.certification-logos li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none; /* Remove any borders */
+}
+
+/* Style the images */
+.security-logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    border: none; /* Remove any borders */
+}
+
+/* Mobile view: Stack images vertically */
 @media (max-width: 768px) {
     .certification-logos {
         flex-direction: column;
-        align-items: center;
+        align-items: center; /* Center align for mobile view */
+            border: none; /* Remove any borders */
+            gap: 20px; /* Reduced gap for mobile view */
+        margin-top: 20px; /* Adjust margin for mobile */
     }
+}
+/* General Styling for SecurityPlus Logo */
+.security-logo {
+    width: 100px; /* Adjust size as needed */
+    margin-top: 20px; /* Space above logo */
+        border: none; /* Remove any borders */
+}
 
-    .gradpic {
-        width: 40%;
-        margin-right: auto;
-        margin-left: auto;
+/* Desktop view: Logo under paragraph */
+@media (min-width: 768px) {
+    .security-logo {
         display: block;
+        margin: 10px auto 0; /* Centered under the paragraph */
+            border: none; /* Remove any borders */
+    }
+}
+
+/* Mobile view: Logo to the left of the paragraph */
+@media (max-width: 767px) {
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+            border: none; /* Remove any borders */
+    }
+    .gradpic {
+        margin-bottom: 10px; /* Space between gradpic and logo on mobile */
+            border: none; /* Remove any borders */
+    }
+    .profile-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .security-logo {
+        order: -1; /* Places the logo above the paragraph */
+        align-self: flex-start; /* Aligns to the left on mobile */
+        margin-top: 10px; /* Adds space above the logo */
+            border: none; /* Remove any borders */
     }
 }
 
@@ -182,12 +344,14 @@ ul li a:hover {
     text-align: center;
 }
 
+
+
 .certifications h2 {
     font-size: 2em;
     font-family: 'Merriweather', serif;
     font-weight: 700;
     color: #333333;
-    margin-bottom: 33px;
+    margin-bottom: 33px; /* Increase space below main section title */
     padding: 10px 0;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -195,68 +359,588 @@ ul li a:hover {
     background-image: url('cobblestone2.jpg');
     background-size: cover;
     background-position: center;
+    margin-left: -20px;
+    margin-right: -20px;
 }
+@media (max-width: 768px) {
+    .certifications {
+        padding: 0 10px; /* Adds padding to the left and right on mobile only */
+    }
 
+    .certifications h3 {
+        padding-left: 5px; /* Adds extra space to the left of headings on mobile */
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    .certification-gallery {
+        padding-left: 10px; /* Adds left padding to the image gallery on mobile */
+        gap: 20px; /* Adjusts the spacing between images for mobile */
+    }
+}
+@media (max-width: 768px) {
+    .certifications h3 {
+          font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em; /* Increase heading size */
+    margin-top: 30px;
+    margin-bottom: 15px; /* Increase space between section header and images */
+    line-height: 1.6; /* Slightly reduce line height */
+    text-align: left;
+}
+    }
+
+.certifications h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    margin-top: 15px;
+    margin-bottom: 15px; /* Add more space below subsection headers */
+    line-height: 1.6;
+    text-align: left;
+}
+@media (min-width: 769px) {
+    .certification-gallery img {
+        max-width: 200px; /* Increase image size for better legibility */
+        margin-bottom: 10px; /* Space between image and caption */
+        gap: 20px;
+            .certifications h3 {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    }
+
+    .certifications h3 {
+        margin-bottom: 20px; /* Add more space below subsection headings on desktop */
+    }
+}
 .certification-gallery {
-    display: flex;
+  display: flex;
     flex-wrap: wrap;
-    gap: 25px;
-    justify-content: flex-start;
-    margin-bottom: 20px;
+    gap: 25px; /* Space between images */
+    justify-content: flex-start; /* Align items to the left */
+    margin-bottom: 20px; /* Space below each gallery section */
+    
 }
 
 .certification-item {
-    display: flex;
+   display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 200px;
-    text-align: center;
+    align-items: center; /* Center-align the caption */
+    width: 200px; /* Set a fixed width for uniform alignment */
+    text-align: center; /* Ensure text is centered within the container */
 }
 
+
 .certification-gallery img {
-    max-width: 150px;
+    width: auto;
+    height: auto;
+    max-width: 150px; /* Default max-width */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
 }
 
-/* Banner and Overlay Button */
-.banner {
-    position: relative;
+@media (max-width: 768px) {
+    .certification-gallery {
+        gap: 20px; /* Reduced gap for mobile */
+    }
+    
+    .certification-item {
+        width: 45%; /* Allow two items per row on mobile */
+    }
+ .certification-gallery img {
+        height: auto; /* Let height adjust based on image ratio */
+        max-width: 150px; /* Set max width for smaller images on mobile */
+    }
+    .certifications h3 {
+        margin-top: 20px;
+        margin-bottom: 5px; /* Slightly less space on mobile */
+        font-size: 1.2em;
+    }
 }
-
-.overlay-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    padding: 8px 16px;
+.cert-caption {
     font-size: 1em;
-    text-decoration: none;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 4px;
-    background-color: transparent;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    font-style: italic;
+    margin-top: 5px;
+    text-align: center;
 }
 
-.overlay-button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+/* View My Projects Button */
+.button-container {
+display: flex;
+   display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 10px; /* Add padding to create some spacing above the button */
+    border-top: 1px groove black; /* Apply top border */
+    border-bottom: 1px groove black; /* Apply bottom border */
+    background-image: url('cobblestone2.jpg'); /* End this line with a semicolon */
+    background-size: cover; /* Ensure the image covers the area */
+    background-position: center; /* Center the image within the element */
+}
+
+.view-projects-btn {
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
+    padding: 7px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.05em;
+}
+/* Hover Effect */
+.view-projects-btn:hover {
+    background-color: #005bb5; /* Darker blue on hover */
+    color: #E0E0E0; /* Text changes to concrete gray on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25); /* Deepen shadow on hover */
 }
 
 /* Footer Styling */
+
+
 footer {
     background-color: white;
     text-align: center;
     padding: 20px;
     border-top: 1px solid #ddd;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    padding-top: 10px;
 }
+
 .footer-info {
     display: flex;
     justify-content: center;
     gap: 10px;
     font-size: 1em;
     align-items: center;
+}
+
+.footer-info i {
+    margin-right: 5px;
+}
+
+.location {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+footer .copyright {
+    margin-top: 10px;
+    font-size: 0.85em;
+    color: gray;
+}
+/* Set the default background color for pages with .content-bg class */
+.content-bg {
+    background-color: #f3f3f3;
+}
+
+/* Keep the navbar background white */
+.navbar {
+    background-color: white;
+}
+/* Centered overlay button for banner */
+.banner {
+    position: relative; /* To position the button inside the banner */
+}
+
+* Centered overlay button for banner */
+.banner {
+    position: relative; /* Make banner container relative */
+}
+
+* Centered overlay button for banner */
+.banner {
+    position: relative; /* Make banner container relative */
+}
+
+.overlay-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers button horizontally and vertically */
+    color: white; /* White text */
+    padding: 8px 16px; /* Smaller padding for a smaller button */
+    font-size: 1em; /* Adjust font size if needed */
+    text-decoration: none; /* Remove underline */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* More transparent white border */
+    border-radius: 4px;
+    background-color: transparent; /* Transparent background */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.overlay-button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slight background color on hover */
+    color: white;
+}
+.overlay-button {
+    z-index: 1;
+}
+/* Page Heading Section */
+.page-heading {
+    background-image: url('cobblestone2.jpg'); /* End this line with a semicolon */
+    background-size: cover; /* Ensure the image covers the area */
+    background-position: center; /* Center the image within the element */
+    color: #ffffff; /* White text color for strong contrast */
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+    position: relative;
+}
+
+.page-heading h1 {
+    font-family: 'Montserrat', sans-serif; /* Modern, clean font */
+    font-size: 3em;
+    font-weight: 700;
+    color: #ffffff; /* White to contrast with the gradient */
+    letter-spacing: 2px; /* Slight spacing for a sleek look */
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #333333, #000000); /* Subtle gradient text color */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.page-heading:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent 60%);
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    filter: blur(20px); /* Soft blur for a glow effect */
+}
+
+.page-heading h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #ffffff;
+    box-shadow: 0 0 10px #333333, 0 0 20px #535353; /* Adds a neon-like shadow */
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .page-heading h1 {
+        font-size: 2.2em; /* Adjust font size for smaller screens */
+    }
+    .page-heading:before {
+        width: 100px;
+        height: 100px;
+    }
+}
+.industry-section {
+    text-align: center;
+    padding: 20px 20px;
+}
+.industry-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.industry-section {
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.industry-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.industry-option {
+    flex: 1;
+    max-width: 45%;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.industry-option:hover {
+    transform: scale(1.05);
+}
+
+/* Adjust the size of the images */
+.industry-option img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    max-width: 150px; /* Set a max-width to make the images smaller */
+    border-bottom: 1px solid #ddd;
+    border-radius: 15px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.industry-option img:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.industry-button {
+    background-color: #368bc1; /* Green */
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.industry-button:hover {
+    background-color: #333333;
+}
+/* Make images larger and uniform */
+.industry-option img {
+    width: 100%;
+    height: 300px; /* Increase image size */
+    object-fit: cover; /* Ensure images are uniform */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.industry-option {
+    width: 45%; /* 2 columns on desktop */
+    max-width: 500px;
+    margin: 20px;
+    text-align: center;
+}
+
+.project-excerpt {
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+/* Swipe indicators for mobile */
+.swipe-indicator {
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* Carousel for mobile */
+@media (max-width: 768px) {
+    .industry-carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .industry-option {
+        flex: 0 0 90%; /* One item per view */
+        scroll-snap-align: center;
+        margin: 10px auto;
+    }
+
+    /* Show swipe indicator */
+    .swipe-indicator {
+        display: block;
+    }
+}
+/* Industry Section Styling */
+.industry-section {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Carousel for mobile */
+@media (max-width: 768px) {
+    .industry-carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .industry-option {
+        flex: 0 0 90%; /* One item per view */
+        scroll-snap-align: center;
+        margin: 10px auto;
+    }
+
+    /* Show swipe indicator */
+    .swipe-indicator {
+        display: block;
+    }
+}
+
+/* 2x2 grid for desktop */
+@media (min-width: 769px) {
+    .industry-carousel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .industry-option {
+        width: 100%;
+        aspect-ratio: 1; /* Square aspect ratio */
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .industry-option img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Cover the entire area */
+    }
+
+    .industry-option:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* Industry button and description styling */
+.industry-button {
+    background-color: #368bc1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 0 0 5px 5px; /* Rounded corners on bottom */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.industry-button:hover {
+    background-color: #333333;
+}
+
+.project-description {
+    padding: 10px;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 1em;
+    text-align: left;
+    line-height: 1.4;
+}
+.industry-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.swipe-indicator {
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.industry-carousel {
+    display: flex;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+/* Desktop View: Show 2 projects side-by-side */
+@media (min-width: 769px) {
+    .industry-carousel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 projects side-by-side */
+        gap: 20px;
+    }
+    .industry-option {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+}
+
+/* Mobile View: Show 1 project at a time with swipe */
+@media (max-width: 768px) {
+    .industry-carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+    .industry-option {
+        flex: 0 0 100%;
+        margin: 10px auto;
+        scroll-snap-align: center;
+    }
+}
+
+.industry-option img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.industry-option {
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.industry-button {
+    background-color: #368bc1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.industry-button:hover {
+    background-color: #333333;
+}
+
+.project-description {
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Infinite Scroll for the carousel */
+.industry-carousel {
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.industry-carousel::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+/* For non-ending scroll effect */
+.industry-carousel:after {
+    content: '';
+    flex: 0 0 auto;
 }
