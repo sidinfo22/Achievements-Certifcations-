@@ -12,6 +12,11 @@
         max-width: 100% !important;
     }
 }
+
+.copyright {
+    margin-bottom: -5px;
+    }
+    
 #view-projects-button {
     display: inline-block;
     background-color: black;
