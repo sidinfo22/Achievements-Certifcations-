@@ -13,6 +13,33 @@
     }
 }
 
+/* Hide the mobile-home-icon by default */
+.mobile-home-icon {
+    display: none;
+}
+
+/* Display the mobile-home-icon and adjust layout for mobile view */
+@media (max-width: 768px) {
+    .mobile-home-icon {
+        display: inline-block;
+        font-size: 1.2em; /* Adjust icon size */
+        color: black; /* Icon color */
+        margin-right: 10px; /* Add space between icon and hamburger */
+    }
+
+    /* Position the hamburger icon to the right */
+    .hamburger {
+        order: 2;
+    }
+
+    /* Ensure the house icon and menu item are aligned properly */
+    .orderlist li.words a {
+        display: flex;
+        align-items: center;
+        gap: 5px; /* Add space between icon and text */
+    }
+}
+
 .copyright {
     margin-bottom: -5px;
     }
