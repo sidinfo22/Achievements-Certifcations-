@@ -360,17 +360,7 @@ ul li a:hover {
 }
 
 /* Mobile view: Stack images vertically */
-@media (max-width: 768px) {
-    .certification-logos {
-        flex-direction: row;
-        align-items: center; /* Center align for mobile view */
-            border: none; /* Remove any borders */
-            gap: 20px; /* Reduced gap for mobile view */
-        margin-top: 20px; /* Adjust margin for mobile */
-        display: flex;
-        justify-content: center;
-    }
-}
+
 /* General Styling for SecurityPlus Logo */
 .security-logo {
     width: 100px; /* Adjust size as needed */
@@ -388,28 +378,57 @@ ul li a:hover {
 }
 
 /* Mobile view: Logo to the left of the paragraph */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .profile {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-            border: none; /* Remove any borders */
+        align-items: flex-start;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 10px;
     }
+
+    .profile-left {
+        flex: 0 0 40%; /* Adjust the width of the image container */
+    }
+
     .gradpic {
-        margin-bottom: 10px; /* Space between gradpic and logo on mobile */
-            border: none; /* Remove any borders */
+        width: 100%;
+        height: auto;
     }
-    .profile-info {
+
+    .profile-right {
+        flex: 1; /* Make the right section take the remaining space */
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        justify-content: center;
     }
-    .security-logo {
-        order: -1; /* Places the logo above the paragraph */
-        align-self: flex-start; /* Aligns to the left on mobile */
-        margin-top: 10px; /* Adds space above the logo */
-            border: none; /* Remove any borders */
+
+    .blue-name {
+        font-size: 1.5em;
+        color: #0073e6;
+        margin: 0;
+    }
+
+    #jobtitle {
+        font-size: 1.2em;
+        color: gray;
+        margin: 5px 0;
+    }
+
+    .certification-logos {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .certification-logos li {
+        list-style: none;
+    }
+
+    .professional-statement {
+        margin-top: 15px;
+        font-size: 0.9em;
+        line-height: 1.4;
     }
 }
 
