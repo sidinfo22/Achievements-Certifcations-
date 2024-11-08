@@ -383,12 +383,12 @@ ul li a:hover {
         display: flex;
         align-items: flex-start;
         gap: 10px;
-        flex-wrap: wrap;
         padding: 10px;
     }
 
     .profile-left {
-        flex: 0 0 40%; /* Adjust the width of the image container */
+        flex: 0 0 40%; /* Adjusts the width of the image container */
+        max-width: 150px; /* Adjust image size if needed */
     }
 
     .gradpic {
@@ -397,10 +397,11 @@ ul li a:hover {
     }
 
     .profile-right {
-        flex: 1; /* Make the right section take the remaining space */
+        flex: 1;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
+        margin-left: 10px; /* Adds spacing between image and text */
     }
 
     .blue-name {
