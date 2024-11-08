@@ -58,11 +58,14 @@
     text-decoration: none;
     font-size: 0.85em; /* Slightly smaller text */
     margin-bottom: 8px;
-    left: 1px;
     margin-top: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
+@media (min-width: 769px) {
+    #view-projects-button {
+            left: 1px;
+    }
+}
 #view-projects-button:hover {
     background-color: #333;
     color: #e0e0e0;
@@ -475,6 +478,7 @@ ul li a:hover {
 .certifications {
     padding: 20px;
     text-align: center;
+    background-color: #f3f3f3;
 }
 
 
