@@ -118,11 +118,11 @@ ul li a:hover {
         display: none; /* Hide title by default */
     }
 
-        @media (max-width: 768px) {
+      
     .close-button {
         display: none; /* Hide by default on mobile */
     }
-
+  @media (max-width: 768px) {
     .orderlist.show .close-button {
         display: block; /* Show when menu is open on mobile */
         position: absolute;
