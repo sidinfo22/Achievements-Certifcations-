@@ -13,6 +13,10 @@
     }
 }
 
+#cpr-image {
+    position: relative;
+    top: -40px;
+
 .copyright {
     margin-bottom: -5px;
     }
