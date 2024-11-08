@@ -347,8 +347,8 @@ ul li a:hover {
 
 
 .certifications h2 {
-    font-size: 2em;
-    font-family: 'Merriweather', serif; /* Darker and more classic font */
+   font-size: 2em;
+    font-family: 'Merriweather', serif;
     font-weight: 700;
     color: #333333;
     margin-bottom: 40px; /* Increase space below main section title */
@@ -364,11 +364,13 @@ ul li a:hover {
 }
 @media (max-width: 768px) {
     .certifications h3 {
-        font-size: 0.6em; /* This will make the font slightly smaller on mobile */
-        white-space: nowrap; /* Prevents line break on mobile */
-        overflow: hidden;
-        text-overflow: ellipsis; /* Adds "..." if text overflows */
-    }
+          font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em; /* Increase heading size */
+    margin-top: 40px;
+    margin-bottom: 30px; /* Increase space between section header and images */
+    line-height: 1.6; /* Slightly reduce line height */
+    text-align: left;
+}
     }
 
 .certifications h3 {
@@ -383,45 +385,50 @@ ul li a:hover {
 .certification-gallery {
   display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Space between images */
+    gap: 30px; /* Space between images */
     justify-content: flex-start; /* Align items to the left */
-    margin-bottom: 30px; /* Space below each gallery section */
+    margin-bottom: 50px; /* Space below each gallery section */
 }
 
 .certification-item {
      display: flex;
     flex-direction: column;
     align-items: flex-start; /* Align images and captions to the left */
-    width: 150px; /* Set a fixed width for uniform alignment */
+    width: 200px; /* Set a fixed width for uniform alignment */
 }
 
 .certification-gallery img {
     width: 100%; /* Make images fill container width */
-    height: 150px; /* Set a fixed height for uniformity */
+    height: 200px; /* Set a fixed height for uniformity */
     object-fit: cover; /* Ensure the image maintains proportions within container */
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 5px; /* Space between image and caption */
+    box-shadow: 0 4px 4=8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; /* Space between image and caption */
 }
 
 @media (max-width: 768px) {
     .certification-gallery {
-        gap: 10px; /* Reduced gap for mobile */
+        gap: 20px; /* Reduced gap for mobile */
     }
     
     .certification-item {
         width: 45%; /* Allow two items per row on mobile */
     }
-
+ .certification-gallery img {
+        height: auto; /* Let height adjust based on image ratio */
+        max-width: 150px; /* Set max width for smaller images on mobile */
+    }
     .certifications h3 {
         margin-top: 20px;
-        margin-bottom: 10px; /* Slightly less space on mobile */
+        margin-bottom: 15px; /* Slightly less space on mobile */
+        font-size: 1.2em;
     }
 }
 .cert-caption {
-    font-size: 0.9em;
+    font-size: 1em;
     font-style: italic;
     margin-top: 5px;
+    text-align: center;
 }
 
 /* View My Projects Button */
