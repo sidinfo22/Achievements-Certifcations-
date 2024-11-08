@@ -316,6 +316,7 @@ ul li a:hover {
     display: flex;
     align-items: flex-start;
     gap: 20px;
+    padding-top: 20px;
 
 }
 .gradpic {
