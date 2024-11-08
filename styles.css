@@ -13,7 +13,7 @@
     }
 }
 
-footer 2 {
+footer2 {
     background-image: url('cobblestone2.jpg);
     background-size: cover;
     background-position: center;
@@ -23,7 +23,7 @@ footer 2 {
     padding-top: 10px;
 }
 
-.footer-info 2 {
+.footer-info2 {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -31,7 +31,7 @@ footer 2 {
     align-items: center;
 }
 
-.footer-info 2 i {
+.footer-info2 i {
     margin-right: 5px;
 }
 body {
