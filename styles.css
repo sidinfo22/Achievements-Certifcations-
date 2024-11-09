@@ -327,23 +327,21 @@ ul li a:hover {
     font-size: 1.5em;
 }
 
-/* Banner Styling */
-.banner {
+banner {
     width: 100vw; /* Ensure full viewport width */
     margin: 0;
     padding: 0;
     overflow: hidden;
     position: relative; /* Allows positioning of child elements */
+    border: 1px solid black; /* Move borders here to avoid image overflow */
+    box-sizing: border-box; /* Ensure borders don't affect width */
 }
 
 .banner img {
-    width: 100vw;
-    height: 500px; /* Retaining the original height */
+    width: 100%;
+    height: 500px; /* Adjust as needed */
     object-fit: cover;
-    border-top: 0.5px solid black;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
+    display: block; /* Removes any inline gap caused by img tag */
 }
 
 /* Mobile Adjustments */
@@ -542,7 +540,7 @@ ul li a:hover {
 
     /* Slightly larger logo size */
     .certification-logos img {
-        width: 65px; /* Adjusted logo size */
+        width: 72px; /* Adjusted logo size */
         height: auto;
     }
 
