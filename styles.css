@@ -512,15 +512,13 @@ ul li a:hover {
     }
 @media (max-width: 768px) {
     .certification-logos {
-        position: absolute;
-        top: calc(100% -33px); /* Adjusts position to be slightly below gradpic */
-        left: 10; /* Aligns the logos list to the center horizontally */
-        transform: translateX(-50%); /* Centers it horizontally relative to its own width */
+        position: fixed;
+        top: 120px; /* Adjust this value to place the logos vertically as desired */
+        left: 10px; /* Adjust to position logos horizontally as desired */
         display: flex;
         flex-direction: column; /* Stack logos vertically */
-        align-items: center;
-        gap: 20px; /* Adjust vertical spacing as needed */
-        margin-top: 10px; /* Optional additional space */
+        align-items: flex-start; /* Align to the left */
+        gap: 20px; /* Adjust spacing */
     }
 }
 
