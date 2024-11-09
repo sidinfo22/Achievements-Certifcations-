@@ -476,7 +476,7 @@ ul li a:hover {
         
     }
     #jobtitle {
-   font-size:0.9em;
+   font-size:0.8em;
         color: gray;
         margin-bottom: 0px;
         }
@@ -485,6 +485,7 @@ ul li a:hover {
     margin-bottom: 4px;
     font-size: 1.5em;
     color: #0073e6;
+        letter-spacing: 1.2px;
     font-family: "Cambria", "Georgia", serif;
     }
 
@@ -500,7 +501,7 @@ ul li a:hover {
     /* Adjust logo size and reduce gap */
     .certification-logos {
         display: flex;
-        gap: 11px; /* Smaller gap between logos */
+        gap: 14px; /* Smaller gap between logos */
         justify-content: flex-start;
         margin-bottom: 30px;
         margin-top: 0px;
