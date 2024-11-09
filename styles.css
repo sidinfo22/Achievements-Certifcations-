@@ -475,8 +475,11 @@ ul li a:hover {
         margin-bottom: 15px;
         }
     .blue-name {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 4px;
+    font-size: 1.5em;
+    color: #0073e6;
+    font-family: "Cambria", "Georgia", serif;
     }
 
     /* Container for profile details (name, job title, logos) */
@@ -488,17 +491,10 @@ ul li a:hover {
         margin-left: 10px;
     }
 
-    /* Styling for name */
-    .blue-name {
-        font-size: 1.5em;
-        color: #0073e6;
-        margin: 0;
-        font-family: "Cambria", "Georgia", serif;
-    }
 
     /* Styling for job title */
     #jobtitle {
-        font-size: 1.2em;
+        font-size: 0.6em;
         color: #gray;
         margin: 5px 0 -11px 0; /* Reducing space between job title and logos */
         font-style: italic;
@@ -527,7 +523,6 @@ ul li a:hover {
     .professional-statement {
         clear: both;
         text-align: center;
-        margin: 15px auto 0 auto;
     }
 }
 
