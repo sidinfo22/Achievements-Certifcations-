@@ -472,7 +472,11 @@ ul li a:hover {
     #jobtitle {
    font-size:0.4em;
         color: gray;
+        margin-bottom: 15px;
         }
+    .blue-name {
+    margin-top: 10px;
+    margin-bottom: 4px;
     }
 
     /* Container for profile details (name, job title, logos) */
@@ -509,8 +513,8 @@ ul li a:hover {
 @media (max-width: 768px) {
     .certification-logos {
         position: absolute;
-        top: calc(100% -30px); /* Adjusts position to be slightly below gradpic */
-        left: 10%; /* Aligns the logos list to the center horizontally */
+        top: calc(100% -50px); /* Adjusts position to be slightly below gradpic */
+        left: 30; /* Aligns the logos list to the center horizontally */
         transform: translateX(-50%); /* Centers it horizontally relative to its own width */
         display: flex;
         flex-direction: column; /* Stack logos vertically */
