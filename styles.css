@@ -475,7 +475,7 @@ ul li a:hover {
         height: auto;
         padding: 0px;
         margin-top: 22px;
-        margin-left: 0px;
+        margin-left: 10px;
         margin-bottom: 0px;
         
     }
@@ -491,6 +491,7 @@ ul li a:hover {
     color: #0073e6;
         letter-spacing: 1.2px;
     font-family: "Cambria", "Georgia", serif;
+        margin-right: 0px;
     }
 
     /* Container for profile details (name, job title, logos) */
@@ -509,6 +510,7 @@ ul li a:hover {
         justify-content: flex-start;
         margin-bottom: 80px;
         margin-top: -9px;
+        margin-right: 0px;
     }
     }
 
