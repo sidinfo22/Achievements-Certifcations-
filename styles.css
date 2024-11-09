@@ -328,7 +328,7 @@ ul li a:hover {
 }
 
 banner {
-    width: 100vw; /* Ensure full viewport width */
+    width: 100%; /* Ensure full viewport width */
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -347,7 +347,7 @@ banner {
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     .banner img {
-        width: 100vw;
+        width: 100%;
         height: 275px; /* Retaining mobile height as specified */
         object-fit: cover;
         border-top: 1px solid black;
