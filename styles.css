@@ -25,31 +25,6 @@ html, body {
 .email-link:hover {
     text-decoration: underline;
 }
-/* Mobile-specific styling to align Home icon next to hamburger */
-@media (max-width: 768px) {
-    .navdiv {
-    display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-  
-   .name {
-        order: 1; /* Ensure title stays to the left */
-        text-align: left;
-        flex: 1;
-        padding-left: 10px; /* Adjust padding if needed */
-    }
-
-    .mobile-home-icon {
-        order: 2;
-        margin-right: 10px; /* Adjust spacing between home icon and hamburger */
-    }
-
-    .hamburger {
-        order: 3;
-        margin-right: 10px;
-    }
-}
 /* Hide the mobile home icon on desktop */
 @media (min-width: 769px) {
     .mobile-home-icon {
@@ -67,27 +42,6 @@ html, body {
 /* Hide the additional home icon by default */
 .home-icon-mobile {
     display: none;
-}
-
-/* Mobile-specific styling */
-@media (max-width: 768px) {
-    .mobile-home-icon {
-        display: inline-block;
-        font-size: 1.5em; /* Adjust size as needed */
-        color: black; /* Set to desired color */
-        margin-right: 10px; /* Adjust for spacing */
-    }
-
-    .name {
-        text-align: center;
-        flex: 1;
-    }
-    .navbar .mobile-home-icon {
-        position: absolute;
-        left: 4px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
 }
 
 /* Hide mobile-home-icon on desktop */
@@ -278,12 +232,13 @@ ul li a:hover {
 }
 .close-button {
         display: none; 
-        color: red;  /* Ensure hidden on desktop */
+        color: red !important; /* Ensure hidden on desktop */
     }
 
 @media (min-width: 769px) {
     .close-button {
         display: none; /* Ensure hidden on desktop */
+        color: red !important;
     }
 }
         
@@ -532,7 +487,7 @@ banner {
         gap: 20px; /* Smaller gap between logos */
         justify-content: flex-start;
         margin-bottom: 80px;
-        margin-top: -4px;
+        margin-top: -7px;
         margin-right: 0px;
         left: -1px;
     }
