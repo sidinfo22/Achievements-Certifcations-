@@ -123,7 +123,6 @@ h3 {
     align-items: flex-end; /* Align items to the bottom */
     justify-content: space-between; /* Space items evenly if needed */
     height: 50px; /* Set a fixed height for the navbar */
-    border-bottom: 1px solid #ddd;
     position: sticky;
     top: 0;
     background-color: white;
@@ -206,6 +205,7 @@ ul li a:hover {
 
     .name {
         border-right: none; /* Hide border-right on .name in mobile view */
+        margin-rigft: 10px;
     }
 }
 
