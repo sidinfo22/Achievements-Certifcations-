@@ -5,11 +5,16 @@
     box-sizing: border-box;
 }
 #certifications-gallery {
-    margin-right: 31px; /* Adjust this value as needed */
+    margin-right: 30px; /* Adjust this value as needed */
 }
 #career-highlights {
-    margin-right: 75px; /* Adds 50px of margin to the right */
+    margin-right: 90px; /* Adds 50px of margin to the right */
 }
+
+#sidiq-certifications {
+    margin-right: 5px; /* Adds 5px of margin to the right */
+}
+
 
 html, body {
     margin: 0;
