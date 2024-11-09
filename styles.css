@@ -510,13 +510,13 @@ ul li a:hover {
         display: flex;
         gap: 14px; /* Smaller gap between logos */
         justify-content: flex-start;
-        margin-bottom: 120px;
+        margin-bottom: 80px;
         margin-top: -9px;
         margin-right: 0px;
     }
 
     .certification-logos img {
-    width: 60%; /* Adjust the percentage to control size */
+    width: 80px; /* Adjust the percentage to control size */
     height: auto; /* Keeps the aspect ratio */
 }
     
