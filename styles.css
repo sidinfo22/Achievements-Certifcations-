@@ -510,17 +510,7 @@ ul li a:hover {
         gap: 11px; /* Smaller gap between logos */
         justify-content: flex-start;
     }
-@media (max-width: 768px) {
-    .certification-logos {
-        position: relative;
-        top: 110px; /* Adjust this value to place the logos vertically as desired */
-        left: -9px; /* Adjust to position logos horizontally as desired */
-        display: flex;
-        flex-direction: column; /* Stack logos vertically */
-        align-items: flex-start; /* Align to the left */
-        gap: 20px; /* Adjust spacing */
-    }
-}
+
 
     /* Slightly larger logo size */
     .certification-logos img {
