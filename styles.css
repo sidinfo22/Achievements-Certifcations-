@@ -502,7 +502,8 @@ ul li a:hover {
         display: flex;
         gap: 11px; /* Smaller gap between logos */
         justify-content: flex-start;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        margin-top: 0px;
     }
     }
 
