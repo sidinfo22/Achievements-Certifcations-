@@ -139,6 +139,7 @@ h3 {
 #jobtitle {
     text-decoration: none; /* Remove underline for the specific 'Cybersecurity Analyst' heading */
     color: gray;
+    font: 1.2em;
 }
 .navbar {
     padding: 20px 0;
@@ -370,7 +371,6 @@ ul li a:hover {
     margin: 0;
     display: flex;
     line-height: 2;
-    letter-spacing: 2px; /* Adjust the spacing as needed */
 }
 #jobtitle {
    font-size:0.8em;
@@ -451,6 +451,9 @@ ul li a:hover {
 }
 .professional-statement p {
     text-indent: 20px; /* Adjust the value to control the indentation size */
+     font-family: "Cambria", "Georgia", serif;
+    margin-bottom: 5px;
+    
 }
 @media (max-width: 768px) {
     .profile {
@@ -472,7 +475,7 @@ ul li a:hover {
         margin-bottom: 5px;
     }
     #jobtitle {
-   font-size:0.4em;
+   font-size:0.9em;
         color: gray;
         margin-bottom: 15px;
         }
@@ -491,15 +494,6 @@ ul li a:hover {
         flex-direction: column;
         justify-content: flex-start;
         margin-left: 10px;
-    }
-
-
-    /* Styling for job title */
-    #jobtitle {
-        font-size: 0.6em;
-        color: #gray;
-        margin: 5px 0 -11px 0; /* Reducing space between job title and logos */
-        font-style: italic;
     }
 
     /* Adjust logo size and reduce gap */
