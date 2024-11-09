@@ -480,13 +480,15 @@ ul li a:hover {
         
     }
     #jobtitle {
-   font-size:0.84em;
-        color: gray;
-        margin-bottom: 15px;
+   font-size:0.88em;
+        color: #696969;
+        margin-bottom: 5px;
+        font-style: italic;
         }
+    
     .blue-name {
     margin-top: 45px;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
     font-size: 1.4em;
     color: #0073e6;
         letter-spacing: 1.2px;
@@ -508,10 +510,16 @@ ul li a:hover {
         display: flex;
         gap: 14px; /* Smaller gap between logos */
         justify-content: flex-start;
-        margin-bottom: 80px;
+        margin-bottom: 120px;
         margin-top: -9px;
         margin-right: 0px;
     }
+
+    .certification-logos img {
+    width: 60%; /* Adjust the percentage to control size */
+    height: auto; /* Keeps the aspect ratio */
+}
+    
     }
 
 
