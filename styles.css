@@ -29,6 +29,7 @@ html, body {
 @media (min-width: 769px) {
     .mobile-home-icon {
         display: none;
+        
     }
 }
 
@@ -40,16 +41,15 @@ html, body {
     }
 
 /* Hide the additional home icon by default */
-.home-icon-mobile {
+.mobile-home-icon {
     display: none;
 }
 
-/* Hide mobile-home-icon on desktop */
-@media (min-width: 769px) {
-    .mobile-home-icon {
-        display: none;
-    }
+ @media (max-width: 768px) {
+.mobile-home-icon {
+    transform: translateX(15px); 
 }
+ }
 .copyright {
     margin-bottom: -5px;
     }
