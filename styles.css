@@ -478,11 +478,12 @@ ul li a:hover {
     #jobtitle {
    font-size:0.9em;
         color: gray;
+        margin-bottom: 0px;
         }
     .blue-name {
     margin-top: 20px;
     margin-bottom: 4px;
-    font-size: 1.8em;
+    font-size: 1.5em;
     color: #0073e6;
     font-family: "Cambria", "Georgia", serif;
     }
@@ -501,6 +502,8 @@ ul li a:hover {
         display: flex;
         gap: 11px; /* Smaller gap between logos */
         justify-content: flex-start;
+        margin-bottom: 20px;
+    }
     }
 
 
