@@ -4,9 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.name, .mobile-home-icon, .hamburger {
-    margin-top: 10px; /* Adjust as needed */
-}
+
 html, body {
     margin: 0;
 
@@ -45,11 +43,12 @@ html, body {
 /* Hide the additional home icon by default */
 .mobile-home-icon {
     display: none;
+    color: black;
 }
 
  @media (max-width: 768px) {
 .mobile-home-icon {
-    transform: translateX(22px); 
+    transform: translateX(25px); 
     display: block;
 }
  }
@@ -119,7 +118,7 @@ h3 {
     font: 1.2em;
 }
 .navbar {
-    padding: 15px 0;
+    padding-top: 15px 0;
     border-bottom: 1px solid #ddd;
     position: sticky; /* Make navbar sticky */
     top: 0; /* Stick to the top */
