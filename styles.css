@@ -365,11 +365,15 @@ ul li a:hover {
         margin-top: 0;
     }
 .blue-name {
-    font-size: 1.8em;
+    font-size: 1.3em;
     color: #0073e6; /* Profile name in blue */
     margin: 0;
     display: flex;
 }
+#jobtitle {
+   font-size:0.8em;
+}
+    
 }
 .profile-pic {
     width: 150px;
@@ -481,7 +485,7 @@ ul li a:hover {
         font-size: 1.5em;
         color: #0073e6;
         margin: 0;
-       font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+        font-family: "Cambria", "Georgia", serif;
     }
 
     /* Styling for job title */
