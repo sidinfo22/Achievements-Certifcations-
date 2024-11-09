@@ -469,7 +469,11 @@ ul li a:hover {
         margin-left: 12px;
         margin-bottom: 5px;
     }
-}
+    #jobtitle {
+   font-size:0.4em;
+        color: gray;
+        }
+    }
 
     /* Container for profile details (name, job title, logos) */
     .profile-right {
@@ -501,8 +505,20 @@ ul li a:hover {
         display: flex;
         gap: 11px; /* Smaller gap between logos */
         justify-content: flex-start;
-        margin: -3px -5px 33px 0; /* Aligning logos closer to the job title */
     }
+@media (max-width: 768px) {
+    .certification-logos {
+        position: absolute;
+        top: calc(100% + 10px); /* Adjusts position to be slightly below gradpic */
+        left: 50%; /* Aligns the logos list to the center horizontally */
+        transform: translateX(-50%); /* Centers it horizontally relative to its own width */
+        display: flex;
+        flex-direction: column; /* Stack logos vertically */
+        align-items: center;
+        gap: 20px; /* Adjust vertical spacing as needed */
+        margin-top: 10px; /* Optional additional space */
+    }
+}
 
     /* Slightly larger logo size */
     .certification-logos img {
