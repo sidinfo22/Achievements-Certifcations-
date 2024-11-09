@@ -467,7 +467,7 @@ ul li a:hover {
     }
 
     .gradpic {
-          width: 205px; /* Adjust to desired size */
+          width: 198px; /* Adjust to desired size */
         height: auto;
         padding: 0px;
         margin-top: 22px;
@@ -495,7 +495,7 @@ ul li a:hover {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        margin-left: 10px;
+        margin-left: 5px;
     }
 
     /* Adjust logo size and reduce gap */
