@@ -472,7 +472,7 @@ ul li a:hover {
         padding: 0px;
         margin-top: 22px;
         margin-left: 0px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         
     }
     #jobtitle {
@@ -503,7 +503,7 @@ ul li a:hover {
         display: flex;
         gap: 14px; /* Smaller gap between logos */
         justify-content: flex-start;
-        margin-bottom: 50px;
+        margin-bottom: 80px;
         margin-top: -9px;
     }
     }
