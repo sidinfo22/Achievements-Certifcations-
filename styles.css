@@ -493,6 +493,7 @@ ul li a:hover {
     .gradpic {
           width: 160px; /* Adjust to desired size */
         height: auto;
+        padding: 0px;
     }
 }
 
@@ -604,11 +605,10 @@ ul li a:hover {
     line-height: 1.6; /* Slightly reduce line height */
     text-align: center;
 font-size: 5vw; /* Adjusts font size based on viewport width */
-        white-space: nowrap; /* Prevents the text from wrapping onto a new line */
     }
     }
 
-.certifications h3 {
+.wrap {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3em;
     margin-top: 15px;
@@ -621,13 +621,13 @@ font-size: 5vw; /* Adjusts font size based on viewport width */
         max-width: 200px; /* Increase image size for better legibility */
         margin-bottom: 10px; /* Space between image and caption */
         gap: 20px;
-            .certifications h3 {
+            .wrap {
         margin-bottom: 15px;
         margin-top: 15px;
     }
     }
 
-    .certifications h3 {
+    .wrap {
         margin-bottom: 20px; /* Add more space below subsection headings on desktop */
     }
 }
