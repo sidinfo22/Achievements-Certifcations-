@@ -43,7 +43,7 @@ html, body {
 /* Hide the additional home icon by default */
 .mobile-home-icon {
     display: none;
-    color: blue;
+    color: #c4c4c4;
 }
 
  @media (max-width: 768px) {
@@ -205,7 +205,7 @@ ul li a:hover {
 
     .name {
         border-right: none; /* Hide border-right on .name in mobile view */
-        margin-rigft: 45px;
+        margin-rigft: 50px;
     }
 }
 
