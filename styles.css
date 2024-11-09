@@ -512,9 +512,9 @@ ul li a:hover {
     }
 @media (max-width: 768px) {
     .certification-logos {
-        position: fixed;
-        top: 80px; /* Adjust this value to place the logos vertically as desired */
-        left: 25px; /* Adjust to position logos horizontally as desired */
+        position: relative;
+        top: 280px; /* Adjust this value to place the logos vertically as desired */
+        left: 35px; /* Adjust to position logos horizontally as desired */
         display: flex;
         flex-direction: column; /* Stack logos vertically */
         align-items: flex-start; /* Align to the left */
