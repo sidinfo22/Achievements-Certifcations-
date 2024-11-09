@@ -326,7 +326,7 @@ ul li a:hover {
 @media (max-width: 768px) {
     /* Ensure banner container takes full viewport width */
     .banner {
-        width: 100vw;
+        width: 100%;
         margin: 0;
         padding: 0;
         overflow: hidden; /* Prevents any overflow issues */
@@ -338,7 +338,7 @@ ul li a:hover {
         height: 275px;
         object-fit: cover;
         border-top: 1px solid black;
-        border-bottom: 0.5px solid black;
+        border-bottom: 1px solid black;
         display: block; /* Remove any inline spacing */
     }
 }
@@ -461,8 +461,8 @@ ul li a:hover {
           width: 160px; /* Adjust to desired size */
         height: auto;
         padding: 0px;
-        margin-top: 8px;
-        margin-left: 8px;
+        margin-top: 12px;
+        margin-left: 12px;
         margin-bottom: 5px;
     }
 }
@@ -481,7 +481,7 @@ ul li a:hover {
         font-size: 1.5em;
         color: #0073e6;
         margin: 0;
-        font-family: 'Montserrat', sans-serif;
+       font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     }
 
     /* Styling for job title */
