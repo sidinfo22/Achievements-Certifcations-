@@ -456,6 +456,11 @@ ul li a:hover {
     
 }
 @media (max-width: 768px) {
+     .professional-statement {
+        clear: both;
+        text-align: justify;
+     }
+    
     .profile {
         display: flex;
         align-items: flex-start; /* Align items at the top */
