@@ -5,7 +5,10 @@
     box-sizing: border-box;
 }
 #certifications-gallery {
-    margin-right: 22px; /* Adjust this value as needed */
+    margin-right: 24px; /* Adjust this value as needed */
+}
+#career-highlights {
+    margin-right: 50px; /* Adds 50px of margin to the right */
 }
 
 html, body {
@@ -46,7 +49,7 @@ html, body {
 /* Hide the additional home icon by default */
 .mobile-home-icon {
     display: none;
-    color: #95a5bf;
+    color: #677fa3;
 }
 
  @media (max-width: 768px) {
