@@ -48,6 +48,7 @@ html, body {
  @media (max-width: 768px) {
 .mobile-home-icon {
     transform: translateX(15px); 
+    display: block;
 }
  }
 .copyright {
