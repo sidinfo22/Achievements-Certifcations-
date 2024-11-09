@@ -313,34 +313,35 @@ ul li a:hover {
 }
 
 /* Banner Styling */
+.banner {
+    width: 100vw; /* Ensure full viewport width */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative; /* Allows positioning of child elements */
+}
+
 .banner img {
     width: 100%;
-    height: 500px;
+    height: 500px; /* Retaining the original height */
     object-fit: cover;
-    margin-bottom: 15px;
-    border-bottom: 1px solid black;
+    margin-bottom: 15px; /* Preserving the specified bottom margin */
     border-top: 0.5px solid black;
+    border-bottom: 1px solid black;
     border-right: 1px solid black;
     border-left: 1px solid black;
-    margin-bottom: -5px;
 }
-@media (max-width: 768px) {
-    /* Ensure banner container takes full viewport width */
-    .banner {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        overflow: hidden; /* Prevents any overflow issues */
-    }
 
-    /* Adjust banner image */
+/* Mobile Adjustments */
+@media (max-width: 768px) {
     .banner img {
         width: 100%;
-        height: 275px;
+        height: 275px; /* Retaining mobile height as specified */
         object-fit: cover;
+        margin-bottom: 15px; /* Preserving the bottom margin */
         border-top: 1px solid black;
         border-bottom: 1px solid black;
-        display: block; /* Remove any inline spacing */
+        display: block; /* Ensures no inline spacing */
     }
 }
 /* Profile Section */
@@ -739,7 +740,7 @@ footer .copyright {
 .navbar {
     background-color: white;
 }
-/* Centered overlay button for banner */
+/* Centered overlay button for  */
 .banner {
     position: relative; /* To position the button inside the banner */
 }
