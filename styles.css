@@ -389,12 +389,6 @@ banner {
 }
     
 }
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-}
 
 .profile-info {
     flex: 1;
@@ -416,8 +410,12 @@ banner {
 
 .professional-statement {
     font-size: 1em;
-    margin-top: 10px;
-    line-height: 2;
+    line-height: 1.6; /* Adjusted for readability */
+    text-align: justify; /* Keeps text justified */
+    margin: 0 auto;
+    padding: 0 10px; /* Small padding to prevent touching screen edges */
+    box-sizing: border-box; /* Ensures padding doesn’t add to width */
+    max-width: 100%; /* Prevents overflow */
 }
 
 
@@ -467,12 +465,14 @@ banner {
     margin-bottom: 5px;
     
 }
+
 @media (max-width: 768px) {
-     .professional-statement {
-        clear: both;
+    .professional-statement {
         text-align: justify;
-     }
-    
+        width: 100%; /* Contains it within viewport width */
+        padding: 0 10px; /* Padding to prevent overflow on mobile */
+    }
+}
     .profile {
         display: flex;
         align-items: flex-start; /* Align items at the top */
