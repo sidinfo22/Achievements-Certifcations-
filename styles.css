@@ -204,7 +204,7 @@ ul li a:hover {
 
     .name {
         border-right: none; /* Hide border-right on .name in mobile view */
-        margin-rigft: 10px;
+        margin-rigft: 40px;
     }
 }
 
