@@ -475,7 +475,7 @@ ul li a:hover {
         height: auto;
         padding: 0px;
         margin-top: 22px;
-        margin-left: 18px;
+        margin-left: 12px;
         margin-bottom: 0px;
         
     }
@@ -500,7 +500,7 @@ ul li a:hover {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        margin-left: 5px;
+        margin-left: 3px;
     }
 
     /* Adjust logo size and reduce gap */
