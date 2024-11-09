@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+#certifications-gallery {
+    margin-right: 20px; /* Adjust this value as needed */
+}
 
 html, body {
     margin: 0;
