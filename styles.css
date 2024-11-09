@@ -467,22 +467,22 @@ ul li a:hover {
     }
 
     .gradpic {
-          width: 160px; /* Adjust to desired size */
+          width: 180px; /* Adjust to desired size */
         height: auto;
         padding: 0px;
         margin-top: 12px;
         margin-left: 12px;
         margin-bottom: 5px;
+        
     }
     #jobtitle {
    font-size:0.9em;
         color: gray;
-        margin-bottom: 15px;
         }
     .blue-name {
     margin-top: 20px;
     margin-bottom: 4px;
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: #0073e6;
     font-family: "Cambria", "Georgia", serif;
     }
