@@ -322,7 +322,7 @@ ul li a:hover {
 }
 
 .banner img {
-    width: 100%;
+    width: 100vw;
     height: 500px; /* Retaining the original height */
     object-fit: cover;
     border-top: 0.5px solid black;
@@ -334,10 +334,9 @@ ul li a:hover {
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     .banner img {
-        width: 100%;
+        width: 100vw;
         height: 275px; /* Retaining mobile height as specified */
         object-fit: cover;
-        margin-bottom: 15px; /* Preserving the bottom margin */
         border-top: 1px solid black;
         border-bottom: 1px solid black;
         display: block; /* Ensures no inline spacing */
