@@ -516,7 +516,7 @@ ul li a:hover {
     }
 
     .certification-logos img {
-    width: 80px; /* Adjust the percentage to control size */
+    width: 50px; /* Adjust the percentage to control size */
     height: auto; /* Keeps the aspect ratio */
 }
     
