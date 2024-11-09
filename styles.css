@@ -138,7 +138,7 @@ h3 {
 
 #jobtitle {
     text-decoration: none; /* Remove underline for the specific 'Cybersecurity Analyst' heading */
-    color: #gray;
+    color: gray;
 }
 .navbar {
     padding: 20px 0;
@@ -369,6 +369,8 @@ ul li a:hover {
     color: #0073e6; /* Profile name in blue */
     margin: 0;
     display: flex;
+    line-height: 2;
+    letter-spacing: 2px; /* Adjust the spacing as needed */
 }
 #jobtitle {
    font-size:0.8em;
