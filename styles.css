@@ -118,8 +118,7 @@ h3 {
     font: 1.2em;
 }
 .navbar {
-    padding-top: 15px 0;
-    padding-bottom: 15px 0;
+    padding: 15px;
     border-bottom: 1px solid #ddd;
     position: sticky; /* Make navbar sticky */
     top: 0; /* Stick to the top */
