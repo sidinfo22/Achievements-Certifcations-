@@ -43,7 +43,7 @@ html, body {
 /* Hide the additional home icon by default */
 .mobile-home-icon {
     display: none;
-    color: #c4c4c4;
+    color: #d1d9e3;
 }
 
  @media (max-width: 768px) {
