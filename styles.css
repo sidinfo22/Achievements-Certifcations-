@@ -513,7 +513,7 @@ ul li a:hover {
 @media (max-width: 768px) {
     .certification-logos {
         position: absolute;
-        top: calc(100% -40px); /* Adjusts position to be slightly below gradpic */
+        top: calc(100% -33px); /* Adjusts position to be slightly below gradpic */
         left: 10; /* Aligns the logos list to the center horizontally */
         transform: translateX(-50%); /* Centers it horizontally relative to its own width */
         display: flex;
@@ -540,7 +540,6 @@ ul li a:hover {
         clear: both;
         text-align: center;
         margin: 15px auto 0 auto;
-        max-width: 90%; /* Occupy more screen width */
     }
 }
 
