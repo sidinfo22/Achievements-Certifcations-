@@ -533,7 +533,7 @@ banner {
     }
 
     .certification-logos img {
-    width: 50px; /* Adjust the percentage to control size */
+    width: 72px; /* Adjust the percentage to control size */
     height: auto; /* Keeps the aspect ratio */
 }
     
