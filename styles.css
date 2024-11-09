@@ -138,7 +138,7 @@ h3 {
 
 #jobtitle {
     text-decoration: none; /* Remove underline for the specific 'Cybersecurity Analyst' heading */
-    color: #grey;
+    color: #gray;
 }
 .navbar {
     padding: 20px 0;
@@ -461,9 +461,9 @@ ul li a:hover {
           width: 160px; /* Adjust to desired size */
         height: auto;
         padding: 0px;
-        margin-top: 0px;
-        margin-left: 0px;
-        margin-bottom: 0px;
+        margin-top: 8px;
+        margin-left: 8px;
+        margin-bottom: 5px;
     }
 }
 
@@ -481,13 +481,15 @@ ul li a:hover {
         font-size: 1.5em;
         color: #0073e6;
         margin: 0;
+        font-family: 'Montserrat', sans-serif;
     }
 
     /* Styling for job title */
     #jobtitle {
         font-size: 1.2em;
-        color: #grey;
+        color: #gray;
         margin: 5px 0 -11px 0; /* Reducing space between job title and logos */
+        font-style: italic;
     }
 
     /* Adjust logo size and reduce gap */
