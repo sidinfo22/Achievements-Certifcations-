@@ -118,12 +118,15 @@ h3 {
     font: 1.2em;
 }
 .navbar {
-    padding: 15px;
+    display: flex;
+    align-items: flex-end; /* Align items to the bottom */
+    justify-content: space-between; /* Space items evenly if needed */
+    height: 60px; /* Set a fixed height for the navbar */
     border-bottom: 1px solid #ddd;
-    position: sticky; /* Make navbar sticky */
-    top: 0; /* Stick to the top */
-    background-color: white; /* Ensure background stays white when scrolling */
-    z-index: 1000; /* Keep it above other content */
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
 }
 .navdiv {
     display: flex;
