@@ -127,8 +127,7 @@ h3 {
     top: 0;
     background-color: white;
     z-index: 1000;
-    padding: 0 15px;
-    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd;
 }
 .navdiv {
     display: flex;
