@@ -386,22 +386,10 @@ banner {
     
 }
 
-.profile-info {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
 .blue-name {
     font-size: 1.4em;
     color: #0073e6; /* Profile name in blue */
     margin-top: 15px;
-}
-
-.profile-info h3 {
-    font-size: 1.1em;
-    color: gray;
-    margin: 5px 0;
 }
 
 .professional-statement {
