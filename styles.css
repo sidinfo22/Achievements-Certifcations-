@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+.close-button {
+        display: none; 
+        color: red !important; /* Ensure hidden on desktop */
+    }
 #certifications-gallery {
     margin-right: 28px; /* Adjust this value as needed */
 }
@@ -246,7 +250,7 @@ ul li a:hover {
     font-weight: bold;
     padding: 15px 0;
     border-bottom: 1px solid #ddd; /* Divider under the title */
-    text-align: center;
+    text-align: right;
 }     
      .menu-title {
         display: none; /* Hide title by default */
