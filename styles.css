@@ -251,9 +251,7 @@ ul li a:hover {
         border-right: none; /* Hide border-right on .name in mobile view */
         margin-rigft: 50px; 
         margin-left: 13px;
-        margin-top: 10px;
          font-family: 'Playfair Display', serif;
-        font-size: 1.2em;
     display: flex;
     align-items: center; 
     justify-content: space-between;
