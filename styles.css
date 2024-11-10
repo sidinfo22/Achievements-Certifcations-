@@ -366,6 +366,7 @@ banner {
     height: 500px; /* Adjust as needed */
     object-fit: cover;
     display: block; /* Removes any inline gap caused by img tag */
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 /* Mobile Adjustments */
@@ -805,7 +806,7 @@ footer .copyright {
     padding: 30px;
     text-align: center;
     margin-bottom: 20px;
-    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
     position: relative;
 }
 
@@ -816,9 +817,9 @@ footer .copyright {
     color: black; /* White to contrast with the gradient */
     letter-spacing: 2px; /* Slight spacing for a sleek look */
     text-transform: uppercase;
-    /* background: linear-gradient(45deg, #333333, #000000); /* Subtle gradient text color */
-    /*-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+     background: linear-gradient(45deg, #333333, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
     position: relative;
     z-index: 1;
 }
@@ -845,7 +846,7 @@ footer .copyright {
     width: 80px;
     height: 3px;
     background: #ffffff;
-    /* box-shadow: 0 0 10px #333333, 0 0 20px #535353; /* Adds a neon-like shadow */
+    box-shadow: 0 0 10px #333333, 0 0 20px #535353; /* Adds a neon-like shadow */
     border-radius: 2px;
 }
 
