@@ -42,13 +42,7 @@ html, body {
     .mobile-home-icon {
         display: none;
     }
-    .orderlist {
-     margin-left: 500px;
-    }
- #certifications-gallery {
-    position: relative;
-    left: 20px; /* Moves the element 20px to the right */
-}
+
 }
 
 /* Center only the .center-college item */
