@@ -249,7 +249,12 @@ ul li a:hover {
 
     .name {
         border-right: none; /* Hide border-right on .name in mobile view */
-        margin-rigft: 50px;
+        margin-rigft: 50px; 
+     border-right: 1px solid rgba(0, 0, 0, 0.2);
+     font-size:1.2em;
+     margin-left: 10px;
+     font-family: 'Playfair Display', serif;
+     padding-right: 10px;
     }
 }
 
@@ -289,13 +294,6 @@ ul li a:hover {
         display: none; /* Ensure hidden on desktop */
         color: red !important;
     }
-     .name { 
-     border-right: 1px solid rgba(0, 0, 0, 0.2);
-     font-size:1.2em;
-     margin-left: 10px;
-     font-family: 'Playfair Display', serif;
-     padding-right: 50px;
- }
 }
         
        .orderlist.show .close-button {
