@@ -644,10 +644,22 @@ font-size: 5vw; /* Adjusts font size based on viewport width */
 .certification-gallery img {
     width: auto;
     height: auto;
-    max-width: 150px; /* Default max-width */
+    max-width: 150px; /* Keeps current max-width */
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.1), /* Existing shadow */
+        0 6px 12px rgba(0, 0, 0, 0.15), /* Adds depth with a larger shadow */
+        0 8px 16px rgba(0, 0, 0, 0.05); /* Subtle additional shadow */
     margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+.certification-gallery img:hover {
+    transform: translateY(-6px); /* Slight lift on hover */
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.2), /* Enhanced shadow for depth on hover */
+        0 10px 20px rgba(0, 0, 0, 0.15),
+        0 6px 6px rgba(0, 0, 0, 0.05) inset; /* Inner shadow for a 3D effect */
 }
 
 @media (max-width: 768px) {
