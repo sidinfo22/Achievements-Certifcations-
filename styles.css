@@ -252,9 +252,6 @@ ul li a:hover {
     border-bottom: 1px solid #ddd; /* Divider under the title */
     text-align: right;
 }     
-     .menu-title {
-        display: none; /* Hide title by default */
-    }
 
         @media (max-width: 768px) {
     .close-button {
