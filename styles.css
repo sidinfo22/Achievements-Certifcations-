@@ -187,6 +187,11 @@ h3 {
     justify-content: space-between;
     gap: 20px;
 }
+       .orderlist {
+        display: flex; /* Aligns items horizontally */
+        justify-content: center; /* Aligns the list to the right */
+        text-align: center; /* Aligns the text inside each list item to the right */
+    }
  }
 
  .name { 
