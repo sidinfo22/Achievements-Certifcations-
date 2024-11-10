@@ -805,7 +805,7 @@ footer .copyright {
     padding: 30px;
     text-align: center;
     margin-bottom: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
     position: relative;
 }
 
@@ -816,7 +816,7 @@ footer .copyright {
     color: #ffffff; /* White to contrast with the gradient */
     letter-spacing: 2px; /* Slight spacing for a sleek look */
     text-transform: uppercase;
-    background: linear-gradient(45deg, #333333, #000000); /* Subtle gradient text color */
+    /* background: linear-gradient(45deg, #333333, #000000); /* Subtle gradient text color */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
@@ -830,7 +830,7 @@ footer .copyright {
     left: 50%;
     width: 150px;
     height: 150px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent 60%);
+    /* background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent 60%); */
     transform: translate(-50%, -50%);
     z-index: 0;
     filter: blur(20px); /* Soft blur for a glow effect */
@@ -845,7 +845,7 @@ footer .copyright {
     width: 80px;
     height: 3px;
     background: #ffffff;
-    box-shadow: 0 0 10px #333333, 0 0 20px #535353; /* Adds a neon-like shadow */
+    /* box-shadow: 0 0 10px #333333, 0 0 20px #535353; /* Adds a neon-like shadow */
     border-radius: 2px;
 }
 
