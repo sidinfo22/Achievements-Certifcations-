@@ -1096,8 +1096,8 @@ footer .copyright {
         scroll-snap-align: center;
     }
     .industry-option img {
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 300px;
     object-fit: cover; /* Ensures the image covers the entire area */
     border-radius: 0; /* Removes any rounded corners */
     display: block; /* Eliminates any inline space issues */
