@@ -250,9 +250,10 @@ ul li a:hover {
     .name {
         border-right: none; /* Hide border-right on .name in mobile view */
         margin-rigft: 50px; 
-        margin-left: 20px;
+        margin-left: 13px;
         margin-top: 10px;
          font-family: 'Playfair Display', serif;
+        font-size: 1.2em;
 }
 
  .orderlist.show .menu-title {
