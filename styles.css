@@ -41,6 +41,12 @@ html, body {
 .email-link:hover {
     text-decoration: underline;
 }
+  .orderlist {
+        display: flex; /* Aligns items horizontally */
+        justify-content: flex-end; /* Aligns the list to the right */
+        text-align: right; /* Aligns the text inside each list item to the right */
+    }
+
 /* Hide the mobile home icon on desktop */
 @media (min-width: 769px) {
     .mobile-home-icon {
