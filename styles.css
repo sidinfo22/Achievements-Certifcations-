@@ -41,8 +41,10 @@ html, body {
 @media (min-width: 769px) {
     .mobile-home-icon {
         display: none;
-        
     }
+            #certifications-gallery {
+    margin-right: 58px; /* Adjust this value as needed */
+}
 }
 
 /* Center only the .center-college item */
@@ -95,6 +97,13 @@ html, body {
     #view-projects-button {
             left: 1px;
     }
+     .name { 
+     border-right: 1px solid rgba(0, 0, 0, 0.2);
+     font-size:1.2em;
+     margin-left: 10px;
+     font-family: 'Playfair Display', serif;
+     padding-right: 10px;
+ }
 }
 #view-projects-button:hover {
     background-color: #333;
