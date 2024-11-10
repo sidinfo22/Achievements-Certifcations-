@@ -547,9 +547,6 @@ banner {
     width: 72px; /* Adjust the percentage to control size */
     height: auto; /* Keeps the aspect ratio */
 }
-    
-    }
-
 
     /* Slightly larger logo size */
     .certification-logos img {
@@ -597,6 +594,7 @@ banner {
         text-align: left;
         margin-top: 20px;
         margin-bottom: 5px;
+        text-decorations: underline;
     }
 
     .certification-gallery {
