@@ -43,11 +43,12 @@ html, body {
         display: none;
     }
     .orderlist {
-     margin-left: 200px;
+     margin-left: 500px;
     }
-    #certifications-gallery {
-    margin-right: 20px; /* Moves the element 20px closer to the right */
-    }
+ #certifications-gallery {
+    position: relative;
+    left: 20px; /* Moves the element 20px to the right */
+}
 }
 
 /* Center only the .center-college item */
