@@ -44,12 +44,20 @@ html, body {
     }
 }
 
-    #college {
-        display: block !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        max-width: 100% !important;
-    }
+/* Center the container for #college */
+.center-college {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally within the container */
+    width: 100%; /* Ensures it takes the full width of its parent container */
+}
+
+/* Ensure #college image itself is centered */
+#college {
+    display: block;
+    margin: 0 auto; /* Center image within its container */
+    max-width: 100%; /* Ensure it doesn't exceed container width */
+}
 
 /* Hide the additional home icon by default */
 .mobile-home-icon {
