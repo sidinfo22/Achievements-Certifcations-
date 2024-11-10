@@ -80,6 +80,7 @@ html, body {
 @media (min-width: 769px) {
     .mobile-home-icon {
         display: none;
+        color: #677fa3;
     }
         .orderlist {
         display: flex; /* Aligns items horizontally */
@@ -124,6 +125,7 @@ html, body {
     transform: translateX(18px); 
     display: block;
     padding-right: 9px;
+    color: #677fa3;
 }
  }
 .copyright {
