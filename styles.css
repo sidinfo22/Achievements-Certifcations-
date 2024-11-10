@@ -413,6 +413,7 @@ banner {
     margin-bottom: 5px; /* Adjust for spacing below */
     font-family: "Cambria", "Georgia", serif; /* Original font */
     text-indent: 20px; /* Restore indentation for paragraphs */
+    overflow: hidden;
 }
 
 .certification-logos {
