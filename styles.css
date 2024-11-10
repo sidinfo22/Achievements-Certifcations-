@@ -42,7 +42,11 @@ html, body {
     .mobile-home-icon {
         display: none;
     }
-
+        .orderlist {
+        display: flex; /* Aligns items horizontally */
+        justify-content: flex-end; /* Aligns the list to the right */
+        text-align: right; /* Aligns the text inside each list item to the right */
+    }
 }
 
 /* Center only the .center-college item */
