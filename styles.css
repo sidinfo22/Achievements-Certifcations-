@@ -109,13 +109,7 @@ html, body {
     #view-projects-button {
             left: 1px;
     }
-     .name { 
-     border-right: 1px solid rgba(0, 0, 0, 0.2);
-     font-size:1.2em;
-     margin-left: 10px;
-     font-family: 'Playfair Display', serif;
-     padding-right: 10px;
- }
+    
 }
 #view-projects-button:hover {
     background-color: #333;
@@ -194,13 +188,6 @@ h3 {
     }
  }
 
- .name { 
-     border-right: 1px solid rgba(0, 0, 0, 0.2);
-     font-size:1.2em;
-     margin-left: 10px;
-     font-family: 'Playfair Display', serif;
-     padding-right: 10px;
- }
 .montserrat-font {
     font-family: 'Montserrat', sans-serif;
 }
