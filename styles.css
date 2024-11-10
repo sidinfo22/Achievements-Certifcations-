@@ -254,6 +254,11 @@ ul li a:hover {
         margin-top: 10px;
          font-family: 'Playfair Display', serif;
         font-size: 1.2em;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 20px;
+}
 }
 
  .orderlist.show .menu-title {
@@ -263,7 +268,7 @@ ul li a:hover {
     border-bottom: 1px solid #ddd; /* Divider under the title */
     text-align: right;
 }     
-
+    }
         @media (max-width: 768px) {
     .close-button {
         color: red !important;
