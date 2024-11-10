@@ -617,29 +617,13 @@ font-size: 5vw; /* Adjusts font size based on viewport width */
     }
     }
 
-.wrap {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;
-    margin-top: 15px;
-    margin-bottom: 15px; /* Add more space below subsection headers */
-    line-height: 2; /* Double spacing */
-    text-align: center;
-}
 @media (min-width: 769px) {
     .certification-gallery img {
         max-width: 200px; /* Increase image size for better legibility */
         margin-bottom: 10px; /* Space between image and caption */
         gap: 20px;
-            .wrap {
-        margin-bottom: 15px;
-        margin-top: 15px;
     }
     }
-
-    .wrap {
-        margin-bottom: 20px; /* Add more space below subsection headings on desktop */
-    }
-}
 .certification-gallery {
   display: flex;
     flex-wrap: wrap;
