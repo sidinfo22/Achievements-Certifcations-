@@ -801,7 +801,7 @@ footer .copyright {
     background-image: url('cobblestone2.jpg'); /* End this line with a semicolon */
     background-size: cover; /* Ensure the image covers the area */
     background-position: center; /* Center the image within the element */
-    color: #ffffff; /* White text color for strong contrast */
+    color: black; /* White text color for strong contrast */
     padding: 30px;
     text-align: center;
     margin-bottom: 20px;
@@ -813,12 +813,12 @@ footer .copyright {
     font-family: 'Montserrat', sans-serif; /* Modern, clean font */
     font-size: 3em;
     font-weight: 700;
-    color: #ffffff; /* White to contrast with the gradient */
+    color: black; /* White to contrast with the gradient */
     letter-spacing: 2px; /* Slight spacing for a sleek look */
     text-transform: uppercase;
     /* background: linear-gradient(45deg, #333333, #000000); /* Subtle gradient text color */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /*-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
     position: relative;
     z-index: 1;
 }
