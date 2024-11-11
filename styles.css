@@ -16,8 +16,8 @@ html, body {
     }
 
     .profile-left {
-        flex: 0 0 auto; /* Ensures the image section has a fixed width */
-        margin-right: 20px; /* Adds spacing between the image and the text */
+        flex: 0 0 300px; /* Fixed width for the image */
+        margin-right: 20px;
     }
 
     .profile-right {
@@ -26,12 +26,15 @@ html, body {
         flex-direction: column;
         gap: 10px;
     }
-   .professional-statement-box {
+
+    .statement-box {
+        flex: 1;
         padding: 20px;
         border: 1px solid #ccc;
         background-color: #f9f9f9;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        width: 100%; /* Ensures the box takes the full width of .profile-right */
+        max-width: 600px; /* Control the width */
+        margin-left: auto; /* Aligns it to the right of the available space */
     }
 
     .professional-statement {
@@ -43,6 +46,7 @@ html, body {
         margin: 0;
     }
 }
+
 
 .certification-logos img.security-logo {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
