@@ -112,11 +112,14 @@
 }
 @media (min-width: 769px) {
     /* Container to hold all projects in a vertical stack */
-    .project-gallery {
+  .project-gallery {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px; /* Space between each project */
+        margin: 0 auto;
+        width: 100%; /* Ensures it takes the full width */
+        max-width: 1000px; /* Optional max-width for design balance */
     }
 
     /* Centered swipe indicator for desktop only */
@@ -182,6 +185,11 @@
     /* Styling for next and prev buttons - hidden in this layout */
     .next, .prev {
         display: none;
+    }
+      .industry-option img {
+        width: 100%; /* Makes image take full width of left section */
+        height: auto; /* Maintains aspect ratio */
+        object-fit: cover;
     }
 }
 
