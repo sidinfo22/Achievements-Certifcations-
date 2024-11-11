@@ -36,7 +36,6 @@
     font-family: 'Merriweather', serif; /* Darker, fancy font */
     line-height: 2; /* Double spacing */
 }
-
 .industry-button {
     width: 50%; /* Matches the image width */
     background-color: #007bff; /* Blue background */
@@ -51,14 +50,19 @@
     line-height: 1; /* Tighter line height for compact text */
     transition: all 0.3s ease; /* Smooth transition for hover effects */
     margin-top: 0; /* Ensures no gap between image and button */
+
+    /* Embossed effect */
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(255, 255, 255, 0.4); /* Inset shadows */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Slight shadow on text for depth */
 }
 
 /* Hover effect to enhance button appearance */
 .industry-button:hover {
     background-color: #0056b3; /* Darker blue on hover */
     transform: scale(1.05); /* Slightly enlarges button on hover */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for a 3D effect */
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset -2px -2px 5px rgba(255, 255, 255, 0.3); /* Enhanced inset shadows on hover */
 }
+
 @media (max-width: 768px) {
     .project-gallery {
         display: flex;
