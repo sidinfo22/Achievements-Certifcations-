@@ -69,7 +69,7 @@
         color: gray;
     }
     .next {
-    width: 400%; /* Increases the width to 4 times the original */
+    width: 30px; /* Increases the width to 4 times the original */
     margin-bottom: 6px; /* Adds a 10px margin at the bottom */
 }
 }
