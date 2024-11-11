@@ -34,7 +34,6 @@ html, body {
         background-color: #f9f9f9;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         max-width: 600px; /* Control the width */
-        margin-left: auto; /* Aligns it to the right of the available space */
     }
 
     .professional-statement {
