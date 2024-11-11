@@ -4,6 +4,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.project-excerpt {
+    background-color: white;
+    padding: 10px;
+    border-radius: 0 0 8px 8px; /* Rounds the bottom corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to separate it from the image */
+    text-align: center;
+    font-size: 0.9em;
+    color: #333;
+}
+.industry-button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0; /* Removes rounding */
+}
 @media (max-width: 768px) {
     .project-gallery {
         display: flex;
