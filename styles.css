@@ -28,14 +28,14 @@
     width: 50%; /* Matches the image width */
     background-color: #007bff; /* Blue background */
     color: white; /* White text */
-    padding: 10px 20px; /* Adds padding for a more substantial look */
-    font-size: 1em;
+    padding: 6px 14px; /* Reduced padding for a tighter look */
+    font-size: 0.9em; /* Slightly smaller font for a balanced appearance */
     font-family: 'Playfair Display', serif; /* Fancy font for a more elegant look */
     border: none;
     cursor: pointer;
     border-radius: 20px; /* Rounded edges */
     text-align: center; /* Centers text horizontally */
-    line-height: 1.2; /* Adjusts line height for vertical centering */
+    line-height: 1; /* Tighter line height for compact text */
     transition: all 0.3s ease; /* Smooth transition for hover effects */
     margin-top: 0; /* Ensures no gap between image and button */
 }
@@ -72,6 +72,7 @@
         width: 300px;
         height: 300px;
         object-fit: cover;
+        margin-bottom: 0px;
     }
 
     .swipe-indicator {
@@ -87,6 +88,9 @@
     .prev {
         display: none;
     }
+    .industry-button {
+    width: 70%; /* Matches the image width */
+        margin-top: 0px;
 }
 @media (min-width: 769px) {
     /* Centering and vertical stacking for desktop */
