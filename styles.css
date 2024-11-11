@@ -80,10 +80,12 @@
 }
 @media (min-width: 769px) {
     /* Centering and vertical stacking for desktop */
-    .industry-option {
+    .project-gallery {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        position: relative;
+        flex-direction: column; /* Stacks items vertically */
     }
 
     /* Centered swipe indicator for desktop only */
@@ -93,29 +95,50 @@
         font-size: 1em;
         color: gray;
     }
-}
-@media (min-width: 769px) {
-    .project-gallery {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
 
     .industry-option {
         display: none; /* Hide all projects initially */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center elements horizontally */
+        text-align: center;
     }
 
     .industry-option.active {
-        display: block; /* Show only the active project */
+        display: flex; /* Show only the active project */
     }
 
     .industry-option img {
         width: 300px;
         height: 300px;
         object-fit: cover;
+        margin-bottom: 10px; /* Adds spacing below the image */
     }
 
+    .industry-button {
+        width: 100%; /* Makes the button the same width as the image */
+        max-width: 300px;
+        background-color: #007bff;
+        color: white;
+        padding: 10px;
+        font-size: 1em;
+        border: none;
+        cursor: pointer;
+        margin: 10px 0; /* Adds spacing above and below the button */
+    }
+
+    .project-excerpt {
+        max-width: 300px;
+        padding: 10px;
+        background-color: white;
+        font-size: 0.9em;
+        color: #333;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        text-align: center;
+        margin-top: 10px; /* Adds spacing above the excerpt */
+    }
+
+    /* Styling for next and prev buttons */
     .next, .prev {
         cursor: pointer;
         font-size: 1.5em;
@@ -132,6 +155,7 @@
         left: 10px;
     }
 }
+
 .lightbox-overlay {
     display: none;
     position: fixed;
