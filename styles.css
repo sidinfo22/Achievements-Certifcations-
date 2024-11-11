@@ -25,16 +25,26 @@
 }
 
 .industry-button {
-     width: 50%; /* Matches the image width */
+    width: 50%; /* Matches the image width */
     background-color: #007bff; /* Blue background */
     color: white; /* White text */
-    padding: 10px;
-    padding-top: 0px;
+    padding: 10px 20px; /* Adds padding for a more substantial look */
     font-size: 1em;
+    font-family: 'Playfair Display', serif; /* Fancy font for a more elegant look */
     border: none;
     cursor: pointer;
-    border-radius: 0; /* Square edges to match the image */
+    border-radius: 20px; /* Rounded edges */
+    text-align: center; /* Centers text horizontally */
+    line-height: 1.2; /* Adjusts line height for vertical centering */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
     margin-top: 0; /* Ensures no gap between image and button */
+}
+
+/* Hover effect to enhance button appearance */
+.industry-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarges button on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for a 3D effect */
 }
 @media (max-width: 768px) {
     .project-gallery {
@@ -71,7 +81,7 @@
         color: gray;
     }
     .next {
-    width: 25%; /* Increases the width to 4 times the original */
+    width: 15%; /* Increases the width to 4 times the original */
     margin-bottom: 10px; /* Adds a 10px margin at the bottom */
 }
     .prev {
