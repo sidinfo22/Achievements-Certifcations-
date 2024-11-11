@@ -24,10 +24,11 @@
 }
 
 .industry-button {
-     width: 100%; /* Matches the image width */
+     width: 50%; /* Matches the image width */
     background-color: #007bff; /* Blue background */
     color: white; /* White text */
     padding: 10px;
+    padding-top: 0px;
     font-size: 1em;
     border: none;
     cursor: pointer;
