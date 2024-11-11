@@ -69,11 +69,11 @@
         color: gray;
     }
     .next {
-    width: 30px; /* Increases the width to 4 times the original */
-    margin-bottom: 6px; /* Adds a 10px margin at the bottom */
+    width: 50%; /* Increases the width to 4 times the original */
+    margin-bottom: 10px; /* Adds a 10px margin at the bottom */
 }
     .prev {
-        diplay: none;
+        display: none;
     }
 }
 @media (min-width: 769px) {
