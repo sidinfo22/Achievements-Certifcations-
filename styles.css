@@ -4,6 +4,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.certification-logos img.security-logo {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow */
+}
+
+.certification-logos img.security-logo:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
 .project-excerpt a {
     color: blue; /* Makes the link text blue */
     text-decoration: underline; /* Adds an underline to the link */
