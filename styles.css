@@ -8,7 +8,7 @@ html, body {
     overflow-x: hidden;
 }
 @media (min-width: 769px) {
-     .profile {
+ .profile {
         display: flex;
         align-items: flex-start;
         gap: 20px;
