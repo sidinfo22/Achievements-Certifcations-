@@ -136,15 +136,6 @@
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for each project box */
         background-color: white;
     }
-
-    /* Image and button section on the left */
-    .image-button-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 40%; /* Width for the image and button section */
-    }
-
     /* Image styling for consistent look */
     .industry-option img {
         width: 100%;
