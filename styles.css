@@ -10,6 +10,7 @@
     object-fit: cover;
     border: 5px solid rgba(0, 0, 0, 0.2); /* Semi-transparent border for a frame effect */
     border-radius: 8px 8px 0 0; /* Rounds the top corners */
+    margin-bottom: 0px;
 }
 
 .project-excerpt {
@@ -89,8 +90,9 @@
         display: none;
     }
     .industry-button {
-    width: 70%; /* Matches the image width */
+    width: 75%; /* Matches the image width */
         margin-top: 0px;
+        font-size: 1.1em;
 }
 @media (min-width: 769px) {
     /* Centering and vertical stacking for desktop */
