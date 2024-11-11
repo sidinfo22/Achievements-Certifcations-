@@ -107,13 +107,12 @@
 }
 }
 @media (min-width: 769px) {
-    /* Centering and vertical stacking for desktop */
+    /* Container to hold all projects in a vertical stack */
     .project-gallery {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        position: relative;
-        flex-direction: column; /* Stacks items vertically */
+        gap: 20px; /* Space between each project */
     }
 
     /* Centered swipe indicator for desktop only */
@@ -124,65 +123,73 @@
         color: gray;
     }
 
+    /* Each project displayed in a row (image on left, content on right) */
     .industry-option {
-        display: none; /* Hide all projects initially */
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center elements horizontally */
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 80%; /* Width of each project section */
+        max-width: 1000px; /* Limits the width on larger screens */
+        border: 1px solid rgba(0, 0, 0, 0.1); /* Optional border */
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for each project box */
+        background-color: white;
     }
 
-    .industry-option.active {
-        display: flex; /* Show only the active project */
+    /* Image and button section on the left */
+    .image-button-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%; /* Width for the image and button section */
     }
 
+    /* Image styling for consistent look */
     .industry-option img {
-        width: 300px;
-        height: 300px;
+        width: 100%;
+        height: 200px;
         object-fit: cover;
-        margin-bottom: 10px; /* Adds spacing below the image */
+        border-radius: 8px 0 0 0; /* Rounded top-left corner */
     }
 
+    /* Button directly below the image */
     .industry-button {
-        width: 100%; /* Makes the button the same width as the image */
-        max-width: 300px;
+        width: 100%;
         background-color: #007bff;
         color: white;
         padding: 10px;
         font-size: 1em;
+        font-family: 'Playfair Display', serif;
         border: none;
         cursor: pointer;
-        margin: 10px 0; /* Adds spacing above and below the button */
+        border-radius: 0; /* No rounded corners */
+        transition: background-color 0.3s ease;
+        text-align: center;
     }
 
+    /* Button hover effect */
+    .industry-button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Content section (excerpt) on the right */
     .project-excerpt {
-        max-width: 300px;
-        padding: 10px;
-        background-color: white;
+        width: 60%; /* Width for the excerpt section */
+        padding: 20px;
         font-size: 0.9em;
         color: #333;
-        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        text-align: center;
-        margin-top: 10px; /* Adds spacing above the excerpt */
+        text-align: left;
+        font-family: 'Merriweather', serif;
+        line-height: 1.6;
     }
 
-    /* Styling for next and prev buttons */
+    /* Styling for next and prev buttons - hidden in this layout */
     .next, .prev {
-        cursor: pointer;
-        font-size: 1.5em;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .next {
-        right: 10px;
-    }
-
-    .prev {
-        left: 10px;
+        display: none;
     }
 }
+
 
 .lightbox-overlay {
     display: none;
