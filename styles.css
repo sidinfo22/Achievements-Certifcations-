@@ -4,6 +4,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+@media (min-width: 769px) {
+    .profile {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    .profile-left {
+        flex: 0 0 auto; /* Ensures the image section has a fixed width */
+        margin-right: 20px; /* Adds spacing between the image and the text */
+    }
+
+    .profile-right {
+        flex: 1; /* Allows the right side to take up remaining space */
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .professional-statement {
+        flex: 1; /* Allows the statement to take full width beside the logos */
+        max-width: none; /* Removes any restrictions on width */
+        margin: 0;
+    }
+}
 html, body {
     overflow-x: hidden;
 }
