@@ -4,6 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+.project-excerpt a {
+    color: blue; /* Makes the link text blue */
+    text-decoration: underline; /* Adds an underline to the link */
+}
+
+.project-excerpt a:hover {
+    color: darkblue; /* Optional: changes color on hover */
+}
 .industry-option img {
     width: 100%; /* Ensures the image width matches the container */
     height: 300px;
