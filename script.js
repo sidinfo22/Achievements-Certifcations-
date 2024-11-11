@@ -3,23 +3,6 @@ function toggleMenu() {
 }
 let currentIndex = 0;
 
-function changeProject(direction) {
-    const projects = document.querySelectorAll('.industry-option');
-    const totalProjects = projects.length;
-    
-    // Hide all projects initially
-    projects.forEach(project => project.style.display = 'none');
-    
-    // Update index with wrap-around
-    currentIndex = (currentIndex + direction * 2 + totalProjects) % totalProjects;
-    
-    // Display the current two projects
-    projects[currentIndex].style.display = 'block';
-    projects[(currentIndex + 1) % totalProjects].style.display = 'block';
-}
-
-// Initialize with the first two projects shown
-document.addEventListener('DOMContentLoaded', () => changeProject(0));
 
 // JavaScript functions for lightbox functionality
 function openLightbox(imageElement) {
@@ -30,3 +13,28 @@ function openLightbox(imageElement) {
 function closeLightbox() {
     document.getElementById('lightbox-overlay').style.display = 'none';
 }
+
+// Initial display
+setActiveProject(currentProject);
+
+// Desktop: Next and Previous buttons
+function changeProject(direction) {
+    currentProject = (currentProject + direction + totalProjects) % totalProjects;
+    setActiveProject(currentProject);
+}
+
+// Mobile: Swipe functionality
+let startX = 0;
+
+document.querySelector('.project-gallery').addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+});
+
+document.querySelector('.project-gallery').addEventListener('touchend', (e) => {
+    let endX = e.changedTouches[0].clientX;
+    if (startX - endX > 50) {
+        changeProject(1); // Swipe left
+    } else if (endX - startX > 50) {
+        changeProject(-1); // Swipe right
+    }
+});
