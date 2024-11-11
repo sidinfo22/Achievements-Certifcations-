@@ -756,7 +756,7 @@ banner {
     .professional-statement {
         text-align: center;
         width: 100%; /* Contains it within viewport width */
-        padding: 0 0px; /* Slight padding on mobile to prevent overflow */
+        padding: 0 10px; /* Slight padding on mobile to prevent overflow */
     }
 }
     .profile {
