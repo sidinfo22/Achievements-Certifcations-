@@ -27,10 +27,13 @@
     border-radius: 0 0 8px 8px; /* Rounds the bottom corners */
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     font-size: 0.9em;
-    color: #333;
+    color: #000; /* Dark black text color */
     margin-top: 10px;
     text-align: center;
     margin-bottom: 20px;
+    
+    font-family: 'Merriweather', serif; /* Darker, fancy font */
+    line-height: 2; /* Double spacing */
 }
 
 .industry-button {
