@@ -14,6 +14,20 @@ function closeLightbox() {
     document.getElementById('lightbox-overlay').style.display = 'none';
 }
 
+let currentProject = 0;
+const projects = document.querySelectorAll('.industry-option');
+const totalProjects = projects.length;
+
+// Function to set the active project
+function setActiveProject(index) {
+    projects.forEach((project, i) => {
+        project.classList.remove('active');
+        if (i === index) {
+            project.classList.add('active');
+        }
+    });
+}
+
 // Initial display
 setActiveProject(currentProject);
 
