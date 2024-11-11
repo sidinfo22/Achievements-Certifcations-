@@ -12,6 +12,12 @@
 .project-excerpt a:hover {
     color: darkblue; /* Optional: changes color on hover */
 }
+.image-button-wrapper {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures button and excerpt are visually attached to the image */
+}
 .industry-option img {
     width: 100%; /* Ensures the image width matches the container */
     height: 300px;
