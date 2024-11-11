@@ -72,6 +72,9 @@
     width: 30px; /* Increases the width to 4 times the original */
     margin-bottom: 6px; /* Adds a 10px margin at the bottom */
 }
+    .prev {
+        diplay: none;
+    }
 }
 @media (min-width: 769px) {
     /* Centering and vertical stacking for desktop */
