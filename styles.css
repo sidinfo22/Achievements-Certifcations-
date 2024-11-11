@@ -8,8 +8,6 @@ html, body {
     overflow-x: hidden;
 }
 
-
-
 .certification-logos img.security-logo {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow */
@@ -81,6 +79,18 @@ html, body {
     background-color: #0056b3; /* Darker blue on hover */
     transform: scale(1.05); /* Slightly enlarges button on hover */
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset -2px -2px 5px rgba(255, 255, 255, 0.3); /* Enhanced inset shadows on hover */
+}
+    .professional-statement {
+    font-size: 1em;
+    line-height: 2; /* Restore the original line height */
+    text-align: center; /* Keeps text justified */
+    box-sizing: border-box; /* Ensures padding doesn’t add to width */
+    max-width: 100%; /* Keeps within viewport */
+    margin-top: 5px; /* Adjust for spacing above */
+    margin-bottom: 5px; /* Adjust for spacing below */
+    font-family: "Cambria", "Georgia", serif; /* Original font */
+    text-indent: 20px; /* Restore indentation for paragraphs */
+        padding: 0 10px;
 }
 
 @media (max-width: 768px) {
