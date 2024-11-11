@@ -8,6 +8,8 @@
 .certification-logos img.security-logo {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow */
+      background: transparent;
+    border: none;
 }
 
 .certification-logos img.security-logo:hover {
