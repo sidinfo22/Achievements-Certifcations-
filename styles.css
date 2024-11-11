@@ -92,7 +92,6 @@
     .industry-button {
     width: 75%; /* Matches the image width */
         margin-top: 0px;
-        font-size: 1.1em;
 }
 @media (min-width: 769px) {
     /* Centering and vertical stacking for desktop */
