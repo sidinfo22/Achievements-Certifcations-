@@ -9,21 +9,23 @@
     background-color: white;
     padding: 10px;
     border-radius: 0 0 8px 8px; /* Rounds the bottom corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to separate it from the image */
-    text-align: center;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     font-size: 0.9em;
     color: #333;
+    margin-top: 10px;
+    text-align: center;
 }
+
 .industry-button {
-    width: 100%;
-    background-color: #007bff;
-    color: white;
+    width: 100%; /* Matches the container width */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
     padding: 10px;
     font-size: 1em;
-    margin-top: 10px;
     border: none;
     cursor: pointer;
-    border-radius: 0; /* Removes rounding */
+    border-radius: 0; /* Square edges */
+    margin-top: 10px; /* Space between image and button */
 }
 @media (max-width: 768px) {
     .project-gallery {
@@ -56,6 +58,21 @@
     .swipe-indicator {
         margin-top: 10px;
         font-size: 0.9em;
+        color: gray;
+    }
+}
+@media (min-width: 769px) {
+    .industry-carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Centered swipe indicator above the project content */
+    .swipe-indicator {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 1em;
         color: gray;
     }
 }
