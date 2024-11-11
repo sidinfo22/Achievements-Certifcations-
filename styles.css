@@ -24,10 +24,17 @@
         gap: 10px;
     }
 
-    .professional-statement {
-        flex: 1; /* Allows the statement to take full width beside the logos */
-        max-width: none; /* Removes any restrictions on width */
-        margin: 0;
+   .professional-statement {
+    font-size: 1em;
+    line-height: 2; /* Restore the original line height */
+    text-align: justify; /* Keeps text justified */
+    box-sizing: border-box; /* Ensures padding doesn’t add to width */
+    max-width: 100%; /* Keeps within viewport */
+    margin-top: 5px; /* Adjust for spacing above */
+    margin-bottom: 5px; /* Adjust for spacing below */
+    font-family: "Cambria", "Georgia", serif; /* Original font */
+    text-indent: 20px; /* Restore indentation for paragraphs */
+}
     }
 }
 html, body {
@@ -113,6 +120,17 @@ html, body {
         align-items: center;
         text-align: center;
     }
+    .professional-statement {
+    font-size: 1em;
+    line-height: 2; /* Restore the original line height */
+    text-align: justify; /* Keeps text justified */
+    box-sizing: border-box; /* Ensures padding doesn’t add to width */
+    max-width: 100%; /* Keeps within viewport */
+    margin-top: 5px; /* Adjust for spacing above */
+    margin-bottom: 5px; /* Adjust for spacing below */
+    font-family: "Cambria", "Georgia", serif; /* Original font */
+    text-indent: 20px; /* Restore indentation for paragraphs */
+}
     .industry-carousel {
         display: flex;
         flex-direction: column;
