@@ -13,7 +13,17 @@ function openLightbox(imageElement) {
 function closeLightbox() {
     document.getElementById('lightbox-overlay').style.display = 'none';
 }
+function openLightbox(element) {
+    var lightboxOverlay = document.getElementById("lightbox-overlay");
+    var lightboxImg = document.getElementById("lightbox-img");
+    lightboxOverlay.style.display = "flex";
+    lightboxImg.src = element.src; // Set the source of the lightbox to the clicked image
+}
 
+function closeLightbox() {
+    var lightboxOverlay = document.getElementById("lightbox-overlay");
+    lightboxOverlay.style.display = "none";
+}
 let currentProject = 0;
 const projects = document.querySelectorAll('.industry-option');
 const totalProjects = projects.length;
