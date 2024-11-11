@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html, body {
+    overflow-x: hidden;
+}
 .certification-logos img.security-logo {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow */
@@ -796,7 +798,7 @@ banner {
         margin-right: 0px;
     }
 
-    /* Container for profile details (name, job title, logos) */
+    /* Container for  details (name, job title, logos) */
     .profile-right {
         flex: 1;
         display: flex;
