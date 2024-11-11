@@ -124,24 +124,26 @@
     }
 
     /* Each project displayed in a row (image on left, content on right) */
-    .industry-option {
+      .industry-option {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        width: 80%; /* Width of each project section */
-        max-width: 1000px; /* Limits the width on larger screens */
+        width: 80%; /* Adjust width to fit within your design */
+        max-width: 1000px;
         border: 1px solid rgba(0, 0, 0, 0.1); /* Optional border */
         border-radius: 8px;
         overflow: hidden;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for each project box */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         background-color: white;
+        margin-bottom: 20px; /* Space between each project */
     }
+
     /* Image styling for consistent look */
     .industry-option img {
-        width: 100%;
-        height: 200px;
+        width: 40%; /* Set the width of the image */
+        height: auto; /* Maintain aspect ratio */
         object-fit: cover;
-        border-radius: 8px 0 0 0; /* Rounded top-left corner */
+        border-radius: 8px 0 0 8px; /* Rounded corners for left side */
     }
 
     /* Button directly below the image */
@@ -165,9 +167,7 @@
     }
 
     /* Content section (excerpt) on the right */
-    .project-excerpt {
-        width: 60%; /* Width for the excerpt section */
-        padding: 20px;
+.project-excerpt {
         font-size: 0.9em;
         color: #333;
         text-align: left;
