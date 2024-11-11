@@ -1,10 +1,81 @@
 /* Basic Reset */
 * {
-    margin: 0;
+    margin: 0;e
     padding: 0;
     box-sizing: border-box;
 }
+@media (max-width: 768px) {
+    .project-gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .industry-carousel {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
 
+    .industry-option {
+        display: none; /* Hide all projects initially */
+    }
+
+    .industry-option.active {
+        display: block; /* Show only the active project */
+    }
+
+    .industry-option img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .swipe-indicator {
+        margin-top: 10px;
+        font-size: 0.9em;
+        color: gray;
+    }
+}
+@media (min-width: 769px) {
+    .project-gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .industry-option {
+        display: none; /* Hide all projects initially */
+    }
+
+    .industry-option.active {
+        display: block; /* Show only the active project */
+    }
+
+    .industry-option img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .next, .prev {
+        cursor: pointer;
+        font-size: 1.5em;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    .prev {
+        left: 10px;
+    }
+}
 .lightbox-overlay {
     display: none;
     position: fixed;
@@ -938,310 +1009,11 @@ footer .copyright {
         height: 100px;
     }
 }
-.industry-section {
-    text-align: center;
-    padding: 20px 20px;
-}
-.industry-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-.industry-section {
-    text-align: center;
-    padding: 20px 20px;
-}
 
-.industry-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.industry-option {
-    flex: 1;
-    max-width: 45%;
-    margin: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.industry-option:hover {
-    transform: scale(1.05);
-}
-
-/* Adjust the size of the images */
-.industry-option img {
-    width: 100%; /* Make images responsive */
-    height: auto;
-    max-width: 300px; /* Set a max-width to make the images smaller */
-    border-bottom: 1px solid #ddd;
-    border-radius: 15px; /* Rounded edges */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-}
-
-.industry-option img:hover {
-    transform: scale(1.1); /* Slightly increase size on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
-}
-
-.industry-button {
-    background-color: #368bc1; /* Green */
-    color: white;
-    padding: 10px 20px;
-    margin: 10px 0;
-    border: none;
-    cursor: pointer;
-    display: block;
-    width: 100%;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.industry-button:hover {
-    background-color: #333333;
-}
-/* Make images larger and uniform */
-.industry-option img {
-    width: 100%;
-    height: 300px; /* Increase image size */
-    object-fit: cover; /* Ensure images are uniform */
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.industry-option {
-    width: 45%; /* 2 columns on desktop */
-    max-width: 500px;
-    margin: 20px;
-    text-align: center;
-}
-
-.project-excerpt {
-    font-size: 1em;
-    color: #555;
-    margin-top: 10px;
-    padding: 0 10px;
-}
 
 /* Swipe indicators for mobile */
 .swipe-indicator {
     text-align: center;
     font-size: 1.3em;
     color: #888;
-}
-
-/* Carousel for mobile */
-@media (max-width: 768px) {
-    .industry-carousel {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-    }
-
-    .industry-option {
-        flex: 0 0 90%; /* One item per view */
-        scroll-snap-align: center;
-        margin: 10px auto;
-    }
-
-    /* Show swipe indicator */
-    .swipe-indicator {
-        display: block;
-    }
-}
-/* Industry Section Styling */
-.industry-section {
-    text-align: center;
-    padding: 20px;
-}
-
-/* Carousel for mobile */
-@media (max-width: 768px) {
-    .industry-carousel {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-    }
-
-    .industry-option {
-        flex: 0 0 90%; /* One item per view */
-        scroll-snap-align: center;
-        margin: 10px auto;
-    }
-
-    /* Show swipe indicator */
-    .swipe-indicator {
-        display: block;
-    }
-}
-
-/* 2x2 grid for desktop */
-@media (min-width: 769px) {
-    .industry-carousel {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
-        gap: 20px;
-        justify-items: center;
-    }
-
-    .industry-option {
-        width: 100%;
-        aspect-ratio: 1; /* Square aspect ratio */
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-    }
-
-    .industry-option img {
-        width: 300px;
-        height: auto;
-        object-fit: cover; /* Cover the entire area */
-    }
-
-    .industry-option:hover {
-        transform: scale(1.05);
-    }
-}
-
-/* Industry button and description styling */
-.industry-button {
-    background-color: #368bc1;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    display: block;
-    width: 100%;
-    text-align: center;
-    border-radius: 0 0 5px 5px; /* Rounded corners on bottom */
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.industry-button:hover {
-    background-color: #333333;
-}
-
-.project-description {
-    padding: 10px;
-    background-color: #ffffff;
-    color: #333333;
-    font-size: 1em;
-    text-align: left;
-    line-height: 1.4;
-}
-.industry-section {
-    text-align: center;
-    padding: 20px;
-}
-
-.swipe-indicator {
-    text-align: center;
-    font-size: 1.1em;
-    color: #888;
-    display: block;
-}
-
-.industry-carousel {
-    display: flex;
-    overflow: hidden;
-    scroll-snap-type: x mandatory;
-}
-
-/* Desktop View: Show 2 projects side-by-side */
-@media (min-width: 769px) {
-    .industry-carousel {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 projects side-by-side */
-        gap: 20px;
-    }
-    .industry-option {
-        max-width: 100%;
-        margin: 0 auto;
-        text-align: center;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        overflow: hidden;
-        transition: transform 0.3s ease;
-    }
-}
-
-/* Mobile View: Show 1 project at a time with swipe */
-@media (max-width: 768px) {
-    .industry-carousel {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-    }
-    .industry-option {
-        flex: 0 0 100%;
-        margin: 10px auto;
-        scroll-snap-align: center;
-    }
-    .industry-option img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover; /* Ensures the image covers the entire area */
-    border-radius: 0; /* Removes any rounded corners */
-    display: block; /* Eliminates any inline space issues */
-}
-}
-
-.industry-option img {
-    width: 400px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.industry-option {
-    text-align: center;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.industry-button {
-    background-color: #368bc1;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    width: 100%;
-    border-radius: 4px;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.industry-button:hover {
-    background-color: #333333;
-}
-
-.project-description {
-    font-size: 1em;
-    color: #555;
-    margin-top: 10px;
-}
-
-/* Infinite Scroll for the carousel */
-.industry-carousel {
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-}
-
-.industry-carousel::-webkit-scrollbar {
-    display: none; /* Hide scrollbar */
-}
-
-/* For non-ending scroll effect */
-.industry-carousel:after {
-    content: '';
-    flex: 0 0 auto;
 }
