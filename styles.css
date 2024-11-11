@@ -14,6 +14,8 @@
 
 .certification-logos img.security-logo:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+     background: transparent;
+    border: none;
 }
 .project-excerpt a {
     color: blue; /* Makes the link text blue */
