@@ -26,19 +26,23 @@ html, body {
         flex-direction: column;
         gap: 10px;
     }
-
-   .professional-statement {
-    font-size: 1em;
-    line-height: 2; /* Restore the original line height */
-    text-align: center; /* Keeps text justified */
-    box-sizing: border-box; /* Ensures padding doesn’t add to width */
-    max-width: 100%; /* Keeps within viewport */
-    margin-top: 5px; /* Adjust for spacing above */
-    margin-bottom: 5px; /* Adjust for spacing below */
-    font-family: "Cambria", "Georgia", serif; /* Original font */
-    text-indent: 20px; /* Restore indentation for paragraphs */
-}
+   .professional-statement-box {
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%; /* Ensures the box takes the full width of .profile-right */
     }
+
+    .professional-statement {
+        text-align: center;
+        font-size: 1em;
+        line-height: 2;
+        font-family: "Cambria", "Georgia", serif;
+        text-indent: 20px;
+        margin: 0;
+    }
+}
 
 .certification-logos img.security-logo {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
