@@ -69,31 +69,31 @@ document.addEventListener("DOMContentLoaded", function () {
     const projects = document.querySelectorAll(".industry-option");
     const nextBtn = document.querySelector(".next");
     const prevBtn = document.querySelector(".prev");
-    let currentIndex = Math.floor(projects.length / 2); // Start with center project
+    let currentIndex = 1; // Start with the second project in the center
     const intervalTime = 10000; // Time in milliseconds
 
     function updateCarousel() {
         projects.forEach((project, index) => {
-            project.classList.remove("active"); // Reset all to default state
+            project.classList.remove("active");
             if (index === currentIndex) {
-                project.classList.add("active"); // Highlight current project
+                project.classList.add("active");
             }
         });
-        const offset = -currentIndex * (projects[0].offsetWidth + 20); // Adjust for margin
+        const offset = -currentIndex * (projects[0].offsetWidth + 20); // Adjust for project width and margin
         document.querySelector(".industry-carousel").style.transform = `translateX(calc(50% + ${offset}px))`;
     }
 
     function nextProject() {
-        currentIndex = (currentIndex + 1) % projects.length; // Loop to first
+        currentIndex = (currentIndex + 1) % projects.length;
         updateCarousel();
     }
 
     function prevProject() {
-        currentIndex = (currentIndex - 1 + projects.length) % projects.length; // Loop to last
+        currentIndex = (currentIndex - 1 + projects.length) % projects.length;
         updateCarousel();
     }
 
-    // Event listeners for buttons
+    // Event listeners for next and previous buttons
     nextBtn.addEventListener("click", nextProject);
     prevBtn.addEventListener("click", prevProject);
 
