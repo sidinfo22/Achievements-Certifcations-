@@ -177,14 +177,14 @@ html, body {
 }
 @media (min-width: 769px) {
     /* Container to hold all projects in a vertical stack */
-   .project-gallery {
+  .project-gallery {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px; /* Space between each project */
+        gap: 10px; /* Reduce space between each project */
         margin: 0 auto;
-        width: 64%; /* Reduced width to center more and keep it within viewport */
-        max-width: 640px; /* Optional max-width to control overall size */
+        width: 64%; /* Centered layout */
+        max-width: 640px;
     }
 
     /* Centered swipe indicator for desktop only */
@@ -196,21 +196,20 @@ html, body {
     }
 
     /* Each project displayed in a row (image on left, content on right) */
-      .industry-option {
+ .industry-option {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        width: 100%; /* Full width within reduced project gallery */
+        width: 100%;
         max-width: 640px;
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 8px;
         overflow: hidden;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         background-color: white;
-        margin-bottom: 20px;
-        transform: scale(0.64); /* Scale down the entire container */
+        margin-bottom: 10px; /* Reduce gap below each project */
+        transform: scale(0.64); /* Shrink both image and container */
     }
-
     /* Image styling for consistent look */
        .industry-option img {
         width: 100%; /* Maintain full width within scaled container */
@@ -241,12 +240,16 @@ html, body {
     }
 
     /* Content section (excerpt) on the right */
-    .project-excerpt {
+       .project-excerpt {
         font-size: 0.9em;
         color: #333;
-        text-align: left;
+        text-align: left; /* Align text to the left within the text box */
         font-family: 'Merriweather', serif;
         line-height: 1.6;
+        padding: 10px; /* Add padding inside the text container */
+        flex: 1; /* Ensures the text box fills the remaining space next to the image */
+        display: flex;
+        align-items: center; /* Vertically centers the text content within the box */
     }
 
     /* Styling for next and prev buttons - hidden in this layout */
