@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const projects = document.querySelectorAll(".industry-option");
     const nextBtn = document.querySelector(".next");
     const prevBtn = document.querySelector(".prev");
-    let currentIndex = 0;
+    let currentIndex = Math.floor(projects.length / 2); // Start with center project
     const intervalTime = 10000; // Time in milliseconds
 
     function updateCarousel() {
@@ -79,8 +79,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 project.classList.add("active"); // Highlight current project
             }
         });
-        const offset = -currentIndex * (projects[0].offsetWidth + 20); // 20px for margin
-        document.querySelector(".industry-carousel").style.transform = `translateX(${offset}px)`;
+        const offset = -currentIndex * (projects[0].offsetWidth + 20); // Adjust for margin
+        document.querySelector(".industry-carousel").style.transform = `translateX(calc(50% + ${offset}px))`;
     }
 
     function nextProject() {
