@@ -20,6 +20,8 @@ html, body {
         text-align: center; /* Center-align text inside the statement box */
         margin-right: 15px;
         padding: 10px;
+        padding-top: 20px; /* Adds space inside the statement box itself */
+        font-size: 1.1em;
     }
 
     .professional-statement p {
