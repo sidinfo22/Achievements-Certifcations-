@@ -25,7 +25,7 @@ html, body {
         height: auto;
     }
 
-    .professional-statement p {
+    .tatement p {
         font-size: 1em;
         line-height: 1.6;
         font-family: "Cambria", "Georgia", serif;
@@ -112,6 +112,7 @@ html, body {
     box-sizing: border-box; /* Ensures padding doesn’t add to width */
     max-width: 100%; /* Keeps within viewport */
     margin-bottom: 5px; /* Adjust for spacing below */
+        margin-top: 5px;
     font-family: "Cambria", "Georgia", serif; /* Original font */
     text-indent: 20px; /* Restore indentation for paragraphs */
         padding: 0 10px;
