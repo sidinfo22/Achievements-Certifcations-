@@ -11,6 +11,7 @@ html, body {
     .professional-statement {
         width: 50%; /* Start with a wider width */
         max-width: 800px; /* Cap it to avoid excessive width */
+        height: auto;
     }
 }
 
@@ -39,7 +40,7 @@ html, body {
         text-align: center; /* Center-align text inside the statement box */
         margin-right: 21px;
         padding-top: 30px; /* Adds space inside the statement box itself */
-        font-size: 1.1em;
+        font-size: 1.2em;
         line-height: 2;
         height: auto;
     }
