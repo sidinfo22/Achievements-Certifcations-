@@ -600,7 +600,7 @@ ul li a:hover {
     font-weight: bold;
     padding: 15px 0;
     border-bottom: 1px solid #ddd; /* Divider under the title */
-    text-align: right;
+    text-align: left;
 }     
         @media (max-width: 768px) {
     .close-button {
