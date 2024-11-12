@@ -41,6 +41,7 @@ html, body {
         padding-top: 30px; /* Adds space inside the statement box itself */
         font-size: 1.1em;
         line-height: 2;
+        height: auto;
     }
 
     .professional-statement p {
