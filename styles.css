@@ -176,15 +176,17 @@ html, body {
 }
 }
 @media (min-width: 769px) {
-    /* Container to hold all projects in a vertical stack */
-  .project-gallery {
+    /* Container to hold the project carousel */
+    .project-gallery {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px; /* Reduce space between each project */
+        gap: 0; /* Remove gap to ensure carousel alignment */
         margin: 0 auto;
-        width: 71%; /* Centered layout */
-        max-width: 710px;
+        width: 80%;
+        max-width: 720px;
+        overflow: hidden; /* Hide overflow for carousel effect */
+        position: relative;
     }
 
     /* Centered swipe indicator for desktop only */
@@ -196,8 +198,15 @@ html, body {
         color: gray;
     }
 
-    /* Each project displayed in a row (image on left, content on right) */
- .industry-option {
+    /* Carousel styling */
+    .industry-carousel {
+        display: flex;
+        transition: transform 0.5s ease; /* Smooth transition */
+        transform: translateX(0); /* Initialize position */
+    }
+
+    /* Each project displayed in a row */
+    .industry-option {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -208,17 +217,25 @@ html, body {
         overflow: hidden;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         background-color: white;
-        margin-bottom: 10px; /* Reduce gap below each project */
-        transform: scale(0.71); /* Shrink both image and container */
+        margin: 0 10px; /* Reduce gap between each project */
+        opacity: 0.5; /* Initially faded */
+        transform: scale(0.8); /* Smaller size for side projects */
+        transition: transform 0.5s ease, opacity 0.5s ease;
     }
-    /* Image styling for consistent look */
-       .industry-option img {
-        width: 100%; /* Maintain full width within scaled container */
+
+    /* Styling for centered (highlighted) project */
+    .industry-option.active {
+        opacity: 1; /* Full opacity */
+        transform: scale(1); /* Normal size */
+    }
+
+    /* Image styling */
+    .industry-option img {
+        width: 40%;
         height: auto;
         object-fit: cover;
         border-radius: 8px 0 0 8px;
     }
-
 
     /* Button directly below the image */
     .industry-button {
@@ -241,20 +258,48 @@ html, body {
     }
 
     /* Content section (excerpt) on the right */
-      .project-excerpt {
-        font-size: 1em; /* Increase font size */
+    .project-excerpt {
+        font-size: 1.2em; /* Slightly larger text */
         color: #333;
-        text-align: left; /* Align text to the left within the text box */
+        text-align: left;
         font-family: 'Merriweather', serif;
-        line-height: 2;
-        padding: 20px; /* Add padding inside the text container */
-        width: 100%; /* Set width to control size */
-        box-sizing: border-box; /* Ensure padding doesn't add to width */
+        line-height: 1.8;
+        padding: 20px;
+        width: 60%; /* Set width for text box */
+        box-sizing: border-box;
     }
-      .industry-option img {
-        width: 100%; /* Makes image take full width of left section */
-        height: auto; /* Maintains aspect ratio */
-        object-fit: cover;
+
+    /* Next and previous buttons with increased width */
+    .next, .prev {
+        font-size: 24px;
+        color: #333;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px; /* Wider button */
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.7); /* Light background */
+        border-radius: 50%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    /* Hide overflow of projects on the side */
+    .project-gallery {
+        overflow: hidden;
     }
 }
 
