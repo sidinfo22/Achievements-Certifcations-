@@ -75,7 +75,6 @@ html, body {
     margin-top: 10px;
     text-align: center;
     margin-bottom: 20px;
-    
     font-family: 'Merriweather', serif; /* Darker, fancy font */
     line-height: 2; /* Double spacing */
 }
@@ -885,7 +884,7 @@ banner {
         text-align: left;
         margin-top: 20px;
         margin-bottom: 5px;
-        text-decorations: underline;
+        text-decoration: underline;
     }
 
     .certification-gallery {
