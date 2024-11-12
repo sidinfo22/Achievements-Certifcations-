@@ -8,7 +8,7 @@ html, body {
     overflow-x: hidden;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 769px) {
     .professional-statement {
         padding: 20px;
         border: 1px solid #ccc;
@@ -116,8 +116,16 @@ html, body {
         padding: 0 10px;
 }
 
-@media (max-width: 1299px) {
-    .professional-statement {
+  
+}
+@media (max-width: 768px) {
+    .project-gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+      .professional-statement {
     font-size: 1em;
     line-height: 2; /* Restore the original line height */
     text-align: center; /* Keeps text justified */
@@ -129,14 +137,6 @@ html, body {
     text-indent: 20px; /* Restore indentation for paragraphs */
         padding: 0 10px;
 }
-}
-@media (max-width: 768px) {
-    .project-gallery {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
     .industry-carousel {
         display: flex;
         flex-direction: column;
