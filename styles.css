@@ -14,8 +14,8 @@ html, body {
         border: 1px solid #ccc;
         background-color: #f9f9f9;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        width: 70%; /* Adjust width to fit next to the profile section */
-        margin-top: 55px; /* Align it with the top of the profile section */
+        width: 75%; /* Adjust width to fit next to the profile section */
+        margin-top: 60px; /* Align it with the top of the profile section */
         margin-left: auto; /* Aligns it to the right within the container */
         text-align: center; /* Center-align text inside the statement box */
         margin-right: 21px;
@@ -109,7 +109,7 @@ html, body {
     text-align: center; /* Keeps text justified */
     box-sizing: border-box; /* Ensures padding doesn’t add to width */
     max-width: 100%; /* Keeps within viewport */
-    margin-top: 55px; /* Adjust for spacing above */
+    margin-top: 60px; /* Adjust for spacing above */
     margin-bottom: 5px; /* Adjust for spacing below */
     font-family: "Cambria", "Georgia", serif; /* Original font */
     text-indent: 20px; /* Restore indentation for paragraphs */
