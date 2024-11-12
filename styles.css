@@ -21,6 +21,7 @@ html, body {
         margin-right: 21px;
         padding-top: 30px; /* Adds space inside the statement box itself */
         font-size: 1.1em;
+        line-height: 2;
     }
 
     .professional-statement p {
