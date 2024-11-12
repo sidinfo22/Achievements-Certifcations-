@@ -240,16 +240,15 @@ html, body {
     }
 
     /* Content section (excerpt) on the right */
-       .project-excerpt {
-        font-size: 0.9em;
+      .project-excerpt {
+        font-size: 1em; /* Increase font size */
         color: #333;
         text-align: left; /* Align text to the left within the text box */
         font-family: 'Merriweather', serif;
         line-height: 1.6;
-        padding: 10px; /* Add padding inside the text container */
-        flex: 1; /* Ensures the text box fills the remaining space next to the image */
-        display: flex;
-        align-items: center; /* Vertically centers the text content within the box */
+        padding: 20px; /* Add padding inside the text container */
+        width: 60%; /* Set width to control size */
+        box-sizing: border-box; /* Ensure padding doesn't add to width */
     }
 
     /* Styling for next and prev buttons - hidden in this layout */
