@@ -327,8 +327,8 @@ html, body {
 }
   .orderlist {
         display: flex; /* Aligns items horizontally */
-        justify-content: flex-end; /* Aligns the list to the right */
-        text-align: right; /* Aligns the text inside each list item to the right */
+        justify-content: flex-start; /* Aligns the list to the right */
+        text-align: left; /* Aligns the text inside each list item to the right */
     }
 
 /* Hide the mobile home icon on desktop */
