@@ -123,9 +123,11 @@ html, body {
         align-items: center;
         text-align: center;
     }
-    .next {
-        text-align: center;
-    }
+.next {
+    display: block; /* Makes the button take the full width of its container */
+    margin: 0 auto; /* Centers the button horizontally */
+    width: fit-content; /* Shrinks the button to its content width */
+}
       .professional-statement {
     font-size: 1em;
     line-height: 2; /* Restore the original line height */
