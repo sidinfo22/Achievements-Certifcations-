@@ -65,38 +65,4 @@ document.querySelector('.project-gallery').addEventListener('touchend', (e) => {
 
 
 // updated desktop carousel 
-document.addEventListener("DOMContentLoaded", function () {
-    const projects = document.querySelectorAll(".industry-option");
-    const nextBtn = document.querySelector(".next");
-    const prevBtn = document.querySelector(".prev");
-    let currentIndex = 1; // Start with the second project in the center
-    const intervalTime = 10000; // Time in milliseconds
 
-    function updateCarousel() {
-        projects.forEach((project, index) => {
-            project.classList.remove("active");
-            if (index === currentIndex) {
-                project.classList.add("active");
-            }
-        });
-        const offset = -currentIndex * (projects[0].offsetWidth + 20); // Adjust for project width and margin
-        document.querySelector(".industry-carousel").style.transform = `translateX(calc(50% + ${offset}px))`;
-    }
-
-    function nextProject() {
-        currentIndex = (currentIndex + 1) % projects.length;
-        updateCarousel();
-    }
-
-    function prevProject() {
-        currentIndex = (currentIndex - 1 + projects.length) % projects.length;
-        updateCarousel();
-    }
-
-    // Event listeners for next and previous buttons
-    nextBtn.addEventListener("click", nextProject);
-    prevBtn.addEventListener("click", prevProject);
-
-    // Auto-scroll every interval
-    setInterval(nextProject, intervalTime);
-});
