@@ -181,14 +181,14 @@ html, body {
 }
 @media (min-width: 769px) {
     /* Container to hold all projects in a vertical stack */
-  .project-gallery {
+     .project-gallery {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px; /* Space between each project */
         margin: 0 auto;
-        width: 100%; /* Ensures it takes the full width */
-        max-width: 1000px; /* Optional max-width for design balance */
+        width: 100%;
+        max-width: 800px; /* Restrict maximum width */
+         gap: 20px;
     }
 
     /* Centered swipe indicator for desktop only */
@@ -200,13 +200,13 @@ html, body {
     }
 
     /* Each project displayed in a row (image on left, content on right) */
-      .industry-option {
+   .industry-option {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        width: 80%; /* Adjust width to fit within your design */
-        max-width: 1000px;
-        border: 1px solid rgba(0, 0, 0, 0.1); /* Optional border */
+        width: 46%; /* Shrink to 64% of its original width */
+        max-width: 800px; /* Additional restriction */
+        border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 8px;
         overflow: hidden;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -215,11 +215,11 @@ html, body {
     }
 
     /* Image styling for consistent look */
-    .industry-option img {
-        width: 40%; /* Set the width of the image */
+ .industry-option img {
+        width: 100%; /* Full width of its container */
         height: auto; /* Maintain aspect ratio */
         object-fit: cover;
-        border-radius: 8px 0 0 8px; /* Rounded corners for left side */
+        border-radius: 8px 0 0 8px;
     }
 
     /* Button directly below the image */
