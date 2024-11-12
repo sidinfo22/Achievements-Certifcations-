@@ -843,11 +843,10 @@ banner {
         list-style: none;
     }
 
-/* Certifications Section */
 .certifications {
     text-align: center;
     background-color: #f3f3f3;
-    margin-top: 0; /* Ensure there's no gap above */
+    margin-top: 0px; /* Ensure there's no gap above */
 }
 
 
@@ -871,6 +870,7 @@ banner {
 @media (max-width: 768px) {
     .certifications {
         padding: 0 10px; /* Adds padding to the left and right on mobile only */
+        margin-top: 0px;
     }
 
     .certifications h3 {
