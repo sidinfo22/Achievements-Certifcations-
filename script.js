@@ -62,3 +62,41 @@ document.querySelector('.project-gallery').addEventListener('touchend', (e) => {
         changeProject(-1); // Swipe right
     }
 });
+
+
+// updated desktop carousel 
+document.addEventListener("DOMContentLoaded", function () {
+    const projects = document.querySelectorAll(".industry-option");
+    const nextBtn = document.querySelector(".next");
+    const prevBtn = document.querySelector(".prev");
+    let currentIndex = 0;
+    const intervalTime = 10000; // Time in milliseconds
+
+    function updateCarousel() {
+        projects.forEach((project, index) => {
+            project.classList.remove("active"); // Reset all to default state
+            if (index === currentIndex) {
+                project.classList.add("active"); // Highlight current project
+            }
+        });
+        const offset = -currentIndex * (projects[0].offsetWidth + 20); // 20px for margin
+        document.querySelector(".industry-carousel").style.transform = `translateX(${offset}px)`;
+    }
+
+    function nextProject() {
+        currentIndex = (currentIndex + 1) % projects.length; // Loop to first
+        updateCarousel();
+    }
+
+    function prevProject() {
+        currentIndex = (currentIndex - 1 + projects.length) % projects.length; // Loop to last
+        updateCarousel();
+    }
+
+    // Event listeners for buttons
+    nextBtn.addEventListener("click", nextProject);
+    prevBtn.addEventListener("click", prevProject);
+
+    // Auto-scroll every interval
+    setInterval(nextProject, intervalTime);
+});
