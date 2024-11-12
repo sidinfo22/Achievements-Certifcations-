@@ -7,6 +7,25 @@
 html, body {
     overflow-x: hidden;
 }
+@media (min-width: 1375px) {
+    .professional-statement {
+        width: 50%; /* Start with a wider width */
+        max-width: 800px; /* Cap it to avoid excessive width */
+    }
+}
+
+/* Shrink width gradually as the screen gets smaller */
+@media (max-width: 1374px) {
+    .professional-statement {
+        width: 40%; /* Gradually reduce to 60% */
+    }
+}
+
+@media (max-width: 1200px) {
+    .professional-statement {
+        width: 30%; /* Shrink down to 50% */
+    }
+}
 
 @media (min-width: 769px) {
     .professional-statement {
