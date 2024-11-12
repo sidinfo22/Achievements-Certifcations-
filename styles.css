@@ -7,26 +7,6 @@
 html, body {
     overflow-x: hidden;
 }
-@media (max-width: 1376px) {
-    .professional-statement {
-        width: 50%; /* Start with a wider width */
-        max-width: 800px; /* Cap it to avoid excessive width */
-        height: auto;
-    }
-}
-
-/* Shrink width gradually as the screen gets smaller */
-@media (max-width: 1374px) {
-    .professional-statement {
-        width: 40%; /* Gradually reduce to 60% */
-    }
-}
-
-@media (max-width: 1200px) {
-    .professional-statement {
-        width: 30%; /* Shrink down to 50% */
-    }
-}
 
 @media (min-width: 769px) {
     .professional-statement {
@@ -131,7 +111,6 @@ html, body {
     text-align: center; /* Keeps text justified */
     box-sizing: border-box; /* Ensures padding doesn’t add to width */
     max-width: 100%; /* Keeps within viewport */
-    margin-top: 60px; /* Adjust for spacing above */
     margin-bottom: 5px; /* Adjust for spacing below */
     font-family: "Cambria", "Georgia", serif; /* Original font */
     text-indent: 20px; /* Restore indentation for paragraphs */
