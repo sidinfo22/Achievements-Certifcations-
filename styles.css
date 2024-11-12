@@ -78,23 +78,23 @@ html, body {
     line-height: 2; /* Double spacing */
 }
 .industry-button {
-    width: 50%; /* Matches the image width */
-    background-color: #007bff; /* Blue background */
-    color: white; /* White text */
-    padding: 6px 14px; /* Reduced padding for a tighter look */
-    font-size: 0.9em; /* Slightly smaller font for a balanced appearance */
-    font-family: 'Playfair Display', serif; /* Fancy font for a more elegant look */
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1em;
+    font-family: 'Playfair Display', serif;
     border: none;
     cursor: pointer;
-    border-radius: 20px; /* Rounded edges */
-    text-align: center; /* Centers text horizontally */
-    line-height: 1; /* Tighter line height for compact text */
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
-    margin-top: 0; /* Ensures no gap between image and button */
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Subtle glow effect */
+}
 
-    /* Embossed effect */
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(255, 255, 255, 0.4); /* Inset shadows */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Slight shadow on text for depth */
+.industry-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 12px rgba(0, 86, 179, 0.7); /* Stronger glow on hover */
 }
 
 /* Hover effect to enhance button appearance */
@@ -176,44 +176,51 @@ html, body {
 }
 }
 @media (min-width: 769px) {
-    /* Grid layout for projects */
-    .industry-carousel {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for a balanced grid */
-        gap: 20px; /* Spacing between each project */
-        justify-items: center;
-        align-items: start;
+    /* Container for the projects with minimal gaps */
+    .project-gallery {
+        display: flex;
+        flex-direction: row; /* Arrange in a row for grid-like appearance */
+        align-items: flex-start;
+        gap: 0; /* No gap between projects */
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center;
+        margin: 0 auto;
         width: 100%;
-        max-width: 900px; /* Optional: controls the max width of the grid container */
-        margin: 0 auto; /* Center the grid on the page */
+        max-width: 1200px; /* Adjust as per your preference */
     }
 
+    /* Project container styling */
     .industry-option {
-        width: 100%; /* Ensures each project takes the full width of its grid cell */
-        max-width: 420px; /* Optional: limits the max width of each project box */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 48%; /* Two items per row */
+        margin: 1%; /* Small margin to create spacing without gap */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
     }
 
-    /* Style adjustments for buttons */
-    .next, .prev {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 1.5em;
-        padding: 5px 10px;
+    /* Button to take full width */
+    .industry-button {
+        width: 100%;
+        padding: 10px 0; /* Uniform padding */
+        font-size: 1em;
+        font-family: 'Playfair Display', serif;
+        border: none;
         cursor: pointer;
-        z-index: 10;
-        background-color: rgba(0, 0, 0, 0.1); /* Slight background for visibility */
-        border-radius: 50%;
+        border-radius: 0 0 8px 8px;
+        text-align: center;
+        transition: background-color 0.3s ease;
     }
 
-    .next {
-        right: 10px;
-    }
-
-    .prev {
-        left: 10px;
+    /* Adjust button hover effect */
+    .industry-button:hover {
+        background-color: #0056b3;
     }
 }
+
 
 .lightbox-overlay {
     display: none;
