@@ -123,6 +123,9 @@ html, body {
         align-items: center;
         text-align: center;
     }
+    .next {
+        text-align: center;
+    }
       .professional-statement {
     font-size: 1em;
     line-height: 2; /* Restore the original line height */
@@ -159,7 +162,7 @@ html, body {
 
     .swipe-indicator {
         margin-top: 10px;
-        margin-bottom: 0px;
+        margin-bottom: 10px;
         font-size: 0.9em;
         color: gray;
     }
