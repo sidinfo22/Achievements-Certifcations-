@@ -111,7 +111,7 @@ html, body {
     box-sizing: border-box; /* Ensures padding doesn’t add to width */
     max-width: 100%; /* Keeps within viewport */
     margin-bottom: 5px; /* Adjust for spacing below */
-        margin-top: 5px;
+        margin-top: 60px;
     font-family: "Cambria", "Georgia", serif; /* Original font */
     text-indent: 20px; /* Restore indentation for paragraphs */
         padding: 0 10px;
@@ -776,16 +776,6 @@ banner {
         display: block;
         margin: 10px auto 0; /* Centered under the paragraph */
         border: none; /* Remove any borders */
-    }
-}
-
-
-@media (max-width: 1299px) {
-    .professional-statement {
-        text-align: center;
-        width: 100%; /* Contains it within viewport width */
-        padding: 0 10px; /* Slight padding on mobile to prevent overflow */
-        font-family: "Cambria", "Georgia", serif; /* Original font */
     }
 }
     .profile {
