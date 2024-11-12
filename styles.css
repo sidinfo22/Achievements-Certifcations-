@@ -181,15 +181,15 @@ html, body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0; /* Remove gap to ensure carousel alignment */
+        gap: 0; /* Remove gap for carousel alignment */
         margin: 0 auto;
         width: 80%;
-        max-width: 720px;
+        max-width: 710px;
         overflow: hidden; /* Hide overflow for carousel effect */
         position: relative;
     }
 
-    /* Centered swipe indicator for desktop only */
+    /* Centered swipe indicator */
     .swipe-indicator {
         text-align: center;
         margin-bottom: 10px;
@@ -202,7 +202,7 @@ html, body {
     .industry-carousel {
         display: flex;
         transition: transform 0.5s ease; /* Smooth transition */
-        transform: translateX(0); /* Initialize position */
+        transform: translateX(-50%); /* Center the initial project in the middle */
     }
 
     /* Each project displayed in a row */
@@ -210,14 +210,14 @@ html, body {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        width: 100%;
+        width: 71%; /* Restore width to original size */
         max-width: 710px;
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 8px;
         overflow: hidden;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         background-color: white;
-        margin: 0 10px; /* Reduce gap between each project */
+        margin: 0 20px; /* Margin between each project */
         opacity: 0.5; /* Initially faded */
         transform: scale(0.8); /* Smaller size for side projects */
         transition: transform 0.5s ease, opacity 0.5s ease;
@@ -231,7 +231,7 @@ html, body {
 
     /* Image styling */
     .industry-option img {
-        width: 40%;
+        width: 40%; /* 71% of project width */
         height: auto;
         object-fit: cover;
         border-radius: 8px 0 0 8px;
@@ -264,7 +264,7 @@ html, body {
         text-align: left;
         font-family: 'Merriweather', serif;
         line-height: 1.8;
-        padding: 20px;
+        padding: 10px; /* Reduce padding */
         width: 60%; /* Set width for text box */
         box-sizing: border-box;
     }
