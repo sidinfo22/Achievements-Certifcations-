@@ -7,7 +7,7 @@
 html, body {
     overflow-x: hidden;
 }
-@media (min-width: 1375px) {
+@media (max-width: 1376px) {
     .professional-statement {
         width: 50%; /* Start with a wider width */
         max-width: 800px; /* Cap it to avoid excessive width */
