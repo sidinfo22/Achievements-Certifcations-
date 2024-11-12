@@ -18,6 +18,8 @@ html, body {
         margin-top: 20px; /* Align it with the top of the profile section */
         margin-left: auto; /* Aligns it to the right within the container */
         text-align: center; /* Center-align text inside the statement box */
+        margin-right: 20px;
+        padding: 10px;
     }
 
     .professional-statement p {
