@@ -115,7 +115,7 @@ html, body {
     font-family: "Cambria", "Georgia", serif; /* Original font */
     text-indent: 20px; /* Restore indentation for paragraphs */
         padding: 0 10px;
-}
+    }
 
 @media (max-width: 768px) {
     .project-gallery {
@@ -482,7 +482,7 @@ h3 {
 #jobtitle {
     text-decoration: none; /* Remove underline for the specific 'Cybersecurity Analyst' heading */
     color: gray;
-    font: 1.2em;
+    font-size: 1.2em;
 }
 .navbar {
     display: flex;
@@ -602,7 +602,7 @@ ul li a:hover {
         color: red !important;
         display: none; /* Hide by default on mobile */
     }
-
+        }
     .orderlist.show .close-button {
         display: block; /* Show when menu is open on mobile */
         position: absolute;
@@ -1057,9 +1057,9 @@ footer .copyright {
     position: relative; /* To position the button inside the banner */
 }
 
-* Centered overlay button for banner */
+
 .banner {
-    position: relative; /* Make banner container relative */
+    position: relative; 
 }
 
 * Centered overlay button for banner */
