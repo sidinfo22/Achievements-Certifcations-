@@ -14,7 +14,7 @@ html, body {
         border: 1px solid #ccc;
         background-color: #f9f9f9;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        width: 70%; /* Adjust width to fit next to the profile section */
+        width: 75%; /* Adjust width to fit next to the profile section */
         margin-top: 50px; /* Align it with the top of the profile section */
         margin-left: auto; /* Aligns it to the right within the container */
         text-align: center; /* Center-align text inside the statement box */
