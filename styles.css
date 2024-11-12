@@ -1,4 +1,4 @@
-/* Basic Reset */
+./* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +25,7 @@ html, body {
         height: auto;
     }
 
-    .tatement p {
+    .professional-statement p {
         font-size: 1em;
         line-height: 1.6;
         font-family: "Cambria", "Georgia", serif;
