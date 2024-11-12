@@ -21,7 +21,6 @@ html, body {
         margin-right: 15px;
         padding-top: 30px; /* Adds space inside the statement box itself */
         font-size: 1.1em;
-        line-height: 1.9;
     }
 
     .professional-statement p {
@@ -110,7 +109,7 @@ html, body {
     text-align: center; /* Keeps text justified */
     box-sizing: border-box; /* Ensures padding doesn’t add to width */
     max-width: 100%; /* Keeps within viewport */
-    margin-top: 40px; /* Adjust for spacing above */
+    margin-top: 50px; /* Adjust for spacing above */
     margin-bottom: 5px; /* Adjust for spacing below */
     font-family: "Cambria", "Georgia", serif; /* Original font */
     text-indent: 20px; /* Restore indentation for paragraphs */
