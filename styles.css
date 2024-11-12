@@ -118,8 +118,6 @@ html, body {
         padding: 0 10px;
 }
 
-  
-}
 @media (max-width: 768px) {
     .project-gallery {
         display: flex;
@@ -601,7 +599,6 @@ ul li a:hover {
     border-bottom: 1px solid #ddd; /* Divider under the title */
     text-align: right;
 }     
-    }
         @media (max-width: 768px) {
     .close-button {
         color: red !important;
