@@ -179,14 +179,14 @@ html, body {
     /* Container for the projects with minimal gaps */
     .project-gallery {
         display: flex;
-        flex-direction: row; /* Arrange in a row for grid-like appearance */
+        flex-direction: row;
         align-items: flex-start;
         gap: 0; /* No gap between projects */
         flex-wrap: wrap; /* Allow wrapping */
         justify-content: center;
         margin: 0 auto;
         width: 100%;
-        max-width: 1200px; /* Adjust as per your preference */
+        max-width: 1200px; /* Container width */
     }
 
     /* Project container styling */
@@ -194,18 +194,19 @@ html, body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 48%; /* Two items per row */
-        margin: 1%; /* Small margin to create spacing without gap */
+        width: 46%; /* Reduced width to ensure proper grid layout */
+        margin: 1.5%; /* Small margin for spacing */
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         background-color: white;
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 8px;
+        transform: scale(0.9); /* Scale down everything by 10% */
     }
 
-    /* Button to take full width */
+    /* Full-width button styling */
     .industry-button {
         width: 100%;
-        padding: 10px 0; /* Uniform padding */
+        padding: 10px 0;
         font-size: 1em;
         font-family: 'Playfair Display', serif;
         border: none;
@@ -218,6 +219,11 @@ html, body {
     /* Adjust button hover effect */
     .industry-button:hover {
         background-color: #0056b3;
+    }
+
+    /* Hide the next and prev buttons */
+    .next, .prev {
+        display: none;
     }
 }
 
