@@ -20,7 +20,7 @@ html, body {
         text-align: center; /* Center-align text inside the statement box */
         margin-right: 15px;
         padding: 10px;
-        padding-top: 20px; /* Adds space inside the statement box itself */
+        padding-top: 30px; /* Adds space inside the statement box itself */
         font-size: 1.1em;
         line-height: 1.9;
     }
@@ -784,6 +784,7 @@ banner {
         text-align: center;
         width: 100%; /* Contains it within viewport width */
         padding: 0 10px; /* Slight padding on mobile to prevent overflow */
+        font-family: "Cambria", "Georgia", serif; /* Original font */
     }
 }
     .profile {
