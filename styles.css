@@ -191,7 +191,13 @@ html, body {
         width: 100%;
         max-width: 1200px; /* Container width */
     }
-
+@media (min-width: 769px) {
+    .industry-carousel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+        grid-auto-rows: auto; /* Automatically adjust row height */
+        gap: 0; /* Keep your original spacing settings */
+    }
 
     /* Project container styling */
     .industry-option {
