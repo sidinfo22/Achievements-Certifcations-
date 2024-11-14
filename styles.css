@@ -198,7 +198,7 @@ html, body {
         grid-auto-rows: auto; /* Automatically adjust row height */
         gap: 0; /* Keep your original spacing settings */
          margin-left: 35px; /* Shift the entire grid 15px to the right */
-         column-gap: 40px; /* Add 15px space between columns */
+         column-gap: 55px; /* Add 15px space between columns */
     }
 
     /* Project container styling */
