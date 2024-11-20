@@ -191,6 +191,7 @@ html, body {
         width: 100%;
         max-width: 1200px; /* Container width */
     }
+}
 @media (min-width: 769px) {
     .industry-carousel {
         display: grid;
@@ -1037,7 +1038,7 @@ footer .copyright {
     position: relative; 
 }
 
-* Centered overlay button for banner */
+/* Centered overlay button for banner */
 .banner {
     position: relative; /* Make banner container relative */
 }
