@@ -342,7 +342,7 @@ html, body {
         font-size: 1.2em; /* Match navbar font size */
         color: black; /* Match navbar color */
         font-weight: bold; /* Consistent bold text */
-        text-align: left;
+        text-align: center;
     }
 }
 
